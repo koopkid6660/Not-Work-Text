@@ -1,0 +1,4260 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER FROM MorrisBr
+]=]
+
+
+-- Instances: 273 | Scripts: ?? | Modules: ??
+
+local G2L = {}
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+
+--[[
+    Instances:
+--]]
+
+--ScreenGui
+G2L["0"] = Instance.new("ScreenGui")
+
+--ScreenGui.Frame
+G2L["1"] = Instance.new("Frame")
+
+--ScreenGui.Frame.ScrollingFrame
+G2L["2"] = Instance.new("ScrollingFrame")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel
+G2L["3"] = Instance.new("TextLabel")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.UIStroke
+G2L["4"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.UIGradient
+G2L["5"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel
+G2L["6"] = Instance.new("TextLabel")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel.UIGradient
+G2L["7"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel.UIStroke
+G2L["8"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju
+G2L["9"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke
+G2L["10"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke.UIGradient
+G2L["11"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.Script
+G2L["12"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.LocalScript
+G2L["13"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.RemoteEvent
+G2L["14"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju
+G2L["15"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke
+G2L["16"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke.UIGradient
+G2L["17"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.Script
+G2L["18"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.dec
+G2L["19"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.dec.UIStroke
+G2L["20"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.dec.UIStroke.UIGradient
+G2L["21"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.dec.Script
+G2L["22"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.sk
+G2L["23"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.sk.UIStroke
+G2L["24"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.sk.UIStroke.UIGradient
+G2L["25"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.sk.Script
+G2L["26"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju
+G2L["27"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke
+G2L["28"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke.UIGradient
+G2L["29"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.Script
+G2L["30"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["31"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["32"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["33"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["34"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["35"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["36"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["37"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["38"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["39"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["40"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["41"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["42"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script.RemoteEvent
+G2L["43"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..LocalScript
+G2L["44"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["45"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["46"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["47"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["48"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["49"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["50"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["51"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["52"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["53"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["54"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["55"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["56"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["57"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["58"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["59"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["60"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["61"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["62"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["63"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["64"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["65"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["66"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["67"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["68"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["69"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["70"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["71"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["72"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["73"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["74"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["75"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["76"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["77"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["78"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["79"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["80"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["81"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["82"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["83"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["84"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["85"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["86"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["87"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["88"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["89"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["90"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["91"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["92"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["93"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["94"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["95"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["96"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["97"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["98"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["99"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["100"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["101"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["102"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["103"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["104"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["105"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["106"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["107"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["108"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["109"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["110"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["111"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["112"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["113"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["114"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["115"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["116"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["117"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["118"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["119"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["120"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["121"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["122"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["123"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["124"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["125"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["126"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["127"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["128"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["129"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["130"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["131"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["132"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["133"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["134"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["135"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["136"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["137"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["138"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["139"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["140"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["141"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["142"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["143"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["144"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["145"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["146"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["147"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["148"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Rainbow
+G2L["149"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["150"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["151"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["152"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["153"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["154"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["155"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["156"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["157"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["158"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["159"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["160"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["161"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["162"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["163"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["164"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["165"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["166"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["167"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["168"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["169"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["170"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["171"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["172"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["173"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["174"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["175"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["176"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["177"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["178"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["179"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["180"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["181"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["182"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["183"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["184"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["185"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["186"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["187"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["188"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["189"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["190"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["191"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["192"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["193"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["194"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["195"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["196"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["197"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["198"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["199"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["200"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["201"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["202"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["203"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["204"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["205"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["206"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["207"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["208"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["209"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["210"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["211"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["212"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["213"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["214"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["215"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["216"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["217"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["218"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["219"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["220"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["221"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["222"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["223"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["224"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["225"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["226"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["227"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["228"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["229"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["230"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["231"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["232"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["233"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.Smooth GUI Dragging
+G2L["234"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.TextButton
+G2L["235"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["236"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["237"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.TextButton.Script
+G2L["238"] = Instance.new("Script")
+
+--ScreenGui.Frame.TextButton.LocalScript
+G2L["239"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.TextButton.RemoteEvent
+G2L["240"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.TextButton
+G2L["241"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["242"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["243"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.TextButton.Script
+G2L["244"] = Instance.new("Script")
+
+--ScreenGui.Frame.TextButton
+G2L["245"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["246"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["247"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.TextButton.Script
+G2L["248"] = Instance.new("Script")
+
+--ScreenGui.Frame.TextButton
+G2L["249"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["250"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["251"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.TextButton.Script
+G2L["252"] = Instance.new("Script")
+
+--ScreenGui.Frame.TextButton
+G2L["253"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["254"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["255"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.TextButton.Script
+G2L["256"] = Instance.new("Script")
+
+--ScreenGui.Frame.TextButton
+G2L["257"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["258"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["259"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.TextButton.Script
+G2L["260"] = Instance.new("Script")
+
+--ScreenGui.Frame.TextButton.LocalScript
+G2L["261"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.TextButton.RemoteEvent
+G2L["262"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.TextButton
+G2L["263"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["264"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["265"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.TextButton.Script
+G2L["266"] = Instance.new("Script")
+
+--ScreenGui.Frame.TextButton.Script.FakeMouse
+G2L["267"] = Instance.new("ModuleScript")
+
+--ScreenGui.Frame.TextButton.Script.FakeMouse.Client
+G2L["268"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.TextButton.Script.FakeMouse.GetPlr
+G2L["269"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.TextButton.Script.FakeMouse.GetPlrE
+G2L["270"] = Instance.new("RemoteFunction")
+
+--ScreenGui.Frame.ImageLabel
+G2L["271"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ImageLabel
+G2L["272"] = Instance.new("ImageLabel")
+
+
+
+--[[
+    Properties:
+--]]
+--ScreenGui
+G2L["0"].Name = [[ScreenGui]]
+G2L["0"].Enabled = true
+G2L["0"].ZIndexBehavior = Enum.ZIndexBehavior.Global
+G2L["0"].Parent = game.Players.LocalPlayer.PlayerGui
+
+--ScreenGui.Frame
+G2L["1"].Name = [[Frame]]
+G2L["1"].Active = false
+G2L["1"].AnchorPoint = Vector2.new(0, 0)
+G2L["1"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["1"].BackgroundTransparency = 0
+G2L["1"].BorderColor3 = Color3.fromRGB(0, 0, 127.00001)
+G2L["1"].BorderSizePixel = 3
+G2L["1"].ClipsDescendants = false
+G2L["1"].Draggable = false
+G2L["1"].Position = UDim2.new(0.16575092, 0, 0.020766772, 0)
+G2L["1"].Rotation = 0
+G2L["1"].Selectable = false
+G2L["1"].SelectionOrder = 0
+G2L["1"].Size = UDim2.new(0, 458, 0, 515)
+G2L["1"].Visible = true
+G2L["1"].ZIndex = 1
+G2L["1"].Parent = G2L["0"]
+
+--ScreenGui.Frame.ScrollingFrame
+G2L["2"].Name = [[ScrollingFrame]]
+G2L["2"].BottomImage = [[rbxasset://textures/ui/Scroll/scroll-bottom.png]]
+G2L["2"].CanvasSize = UDim2.new(0, 0, 2, 0)
+G2L["2"].HorizontalScrollBarInset = Enum.ScrollBarInset.None
+G2L["2"].ScrollBarThickness = 22
+G2L["2"].TopImage = [[rbxasset://textures/ui/Scroll/scroll-top.png]]
+G2L["2"].Active = true
+G2L["2"].AnchorPoint = Vector2.new(0, 0)
+G2L["2"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["2"].BackgroundTransparency = 0
+G2L["2"].BorderColor3 = Color3.fromRGB(0, 0, 255)
+G2L["2"].BorderSizePixel = 1
+G2L["2"].ClipsDescendants = true
+G2L["2"].Draggable = false
+G2L["2"].Position = UDim2.new(0.025221113, 0, 0.018673055, 0)
+G2L["2"].Rotation = 0
+G2L["2"].Selectable = true
+G2L["2"].SelectionOrder = 0
+G2L["2"].Size = UDim2.new(0, 437, 0, 493)
+G2L["2"].Visible = true
+G2L["2"].ZIndex = 1
+G2L["2"].Parent = G2L["1"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel
+G2L["3"].Name = [[TextLabel]]
+G2L["3"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["3"].Text = [[JO1TAR0 gui v15]]
+G2L["3"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["3"].TextScaled = true
+G2L["3"].TextSize = 14
+G2L["3"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["3"].TextStrokeTransparency = 1
+G2L["3"].TextWrapped = true
+G2L["3"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["3"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["3"].Active = false
+G2L["3"].AnchorPoint = Vector2.new(0, 0)
+G2L["3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["3"].BackgroundTransparency = 0
+G2L["3"].BorderColor3 = Color3.fromRGB(209.00002, 209.00002, 0)
+G2L["3"].BorderSizePixel = 1
+G2L["3"].ClipsDescendants = false
+G2L["3"].Draggable = false
+G2L["3"].Position = UDim2.new(0.26613975, 0, -0.0006231808, 0)
+G2L["3"].Rotation = 0
+G2L["3"].Selectable = false
+G2L["3"].SelectionOrder = 0
+G2L["3"].Size = UDim2.new(0, 200, 0, 50)
+G2L["3"].Visible = true
+G2L["3"].ZIndex = 1
+G2L["3"].Parent = G2L["2"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.UIStroke
+G2L["4"].Name = [[UIStroke]]
+G2L["4"].ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+G2L["4"].Color = Color3.fromRGB(255, 255, 0)
+G2L["4"].Enabled = true
+G2L["4"].Thickness = 1
+G2L["4"].Transparency = 0
+G2L["4"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.UIGradient
+G2L["5"].Name = [[UIGradient]]
+G2L["5"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["5"].Enabled = true
+G2L["5"].Rotation = 0
+G2L["5"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["5"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel
+G2L["6"].Name = [[TextLabel]]
+G2L["6"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["6"].Text = [[Made By Azeroyian]]
+G2L["6"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["6"].TextScaled = true
+G2L["6"].TextSize = 14
+G2L["6"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["6"].TextStrokeTransparency = 1
+G2L["6"].TextWrapped = true
+G2L["6"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["6"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["6"].Active = false
+G2L["6"].AnchorPoint = Vector2.new(0, 0)
+G2L["6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["6"].BackgroundTransparency = 0
+G2L["6"].BorderColor3 = Color3.fromRGB(209.00002, 209.00002, 0)
+G2L["6"].BorderSizePixel = 1
+G2L["6"].ClipsDescendants = false
+G2L["6"].Draggable = false
+G2L["6"].Position = UDim2.new(-0.0035765076, 0, 1.187338, 0)
+G2L["6"].Rotation = 0
+G2L["6"].Selectable = false
+G2L["6"].SelectionOrder = 0
+G2L["6"].Size = UDim2.new(0, 200, 0, 50)
+G2L["6"].Visible = true
+G2L["6"].ZIndex = 1
+G2L["6"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel.UIGradient
+G2L["7"].Name = [[UIGradient]]
+G2L["7"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["7"].Enabled = true
+G2L["7"].Rotation = 0
+G2L["7"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["7"].Parent = G2L["6"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel.UIStroke
+G2L["8"].Name = [[UIStroke]]
+G2L["8"].ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+G2L["8"].Color = Color3.fromRGB(255, 255, 0)
+G2L["8"].Enabled = true
+G2L["8"].Thickness = 1
+G2L["8"].Transparency = 0
+G2L["8"].Parent = G2L["6"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju
+G2L["9"].Name = [[ju]]
+G2L["9"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["9"].Text = [[R6]]
+G2L["9"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].TextScaled = true
+G2L["9"].TextSize = 14
+G2L["9"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].TextStrokeTransparency = 1
+G2L["9"].TextWrapped = true
+G2L["9"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["9"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["9"].Active = true
+G2L["9"].AnchorPoint = Vector2.new(0, 0)
+G2L["9"].BackgroundColor3 = Color3.fromRGB(220.00002, 220.00002, 0)
+G2L["9"].BackgroundTransparency = 0
+G2L["9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].BorderSizePixel = 0
+G2L["9"].ClipsDescendants = false
+G2L["9"].Draggable = false
+G2L["9"].Position = UDim2.new(-0.52968246, 0, 0.14080864, 0)
+G2L["9"].Rotation = 0
+G2L["9"].Selectable = true
+G2L["9"].SelectionOrder = 0
+G2L["9"].Size = UDim2.new(0, 84, 0, 42)
+G2L["9"].Visible = true
+G2L["9"].ZIndex = 1
+G2L["9"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke
+G2L["10"].Name = [[UIStroke]]
+G2L["10"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["10"].Color = Color3.fromRGB(255, 255, 255)
+G2L["10"].Enabled = true
+G2L["10"].Thickness = 3
+G2L["10"].Transparency = 0
+G2L["10"].Parent = G2L["9"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke.UIGradient
+G2L["11"].Name = [[UIGradient]]
+G2L["11"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["11"].Enabled = true
+G2L["11"].Rotation = 0
+G2L["11"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["11"].Parent = G2L["10"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.Script
+G2L["12"].Name = [[Script]]
+G2L["12"].Parent = G2L["9"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.LocalScript
+G2L["13"].Name = [[LocalScript]]
+G2L["13"].Parent = G2L["9"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.RemoteEvent
+G2L["14"].Name = [[RemoteEvent]]
+G2L["14"].Parent = G2L["9"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju
+G2L["15"].Name = [[ju]]
+G2L["15"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["15"].Text = [[Stop Sounds]]
+G2L["15"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["15"].TextScaled = true
+G2L["15"].TextSize = 14
+G2L["15"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["15"].TextStrokeTransparency = 1
+G2L["15"].TextWrapped = true
+G2L["15"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["15"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["15"].Active = true
+G2L["15"].AnchorPoint = Vector2.new(0, 0)
+G2L["15"].BackgroundColor3 = Color3.fromRGB(220.00002, 220.00002, 0)
+G2L["15"].BackgroundTransparency = 0
+G2L["15"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["15"].BorderSizePixel = 0
+G2L["15"].ClipsDescendants = false
+G2L["15"].Draggable = false
+G2L["15"].Position = UDim2.new(1.0483333, 0, 0.06080864, 0)
+G2L["15"].Rotation = 0
+G2L["15"].Selectable = true
+G2L["15"].SelectionOrder = 0
+G2L["15"].Size = UDim2.new(0, 84, 0, 42)
+G2L["15"].Visible = true
+G2L["15"].ZIndex = 1
+G2L["15"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke
+G2L["16"].Name = [[UIStroke]]
+G2L["16"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["16"].Color = Color3.fromRGB(255, 255, 255)
+G2L["16"].Enabled = true
+G2L["16"].Thickness = 3
+G2L["16"].Transparency = 0
+G2L["16"].Parent = G2L["15"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke.UIGradient
+G2L["17"].Name = [[UIGradient]]
+G2L["17"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["17"].Enabled = true
+G2L["17"].Rotation = 0
+G2L["17"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["17"].Parent = G2L["16"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.Script
+G2L["18"].Name = [[Script]]
+G2L["18"].Parent = G2L["15"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.dec
+G2L["19"].Name = [[dec]]
+G2L["19"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["19"].Text = [[Decal]]
+G2L["19"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["19"].TextScaled = true
+G2L["19"].TextSize = 14
+G2L["19"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["19"].TextStrokeTransparency = 1
+G2L["19"].TextWrapped = true
+G2L["19"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["19"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["19"].Active = true
+G2L["19"].AnchorPoint = Vector2.new(0, 0)
+G2L["19"].BackgroundColor3 = Color3.fromRGB(220.00002, 220.00002, 0)
+G2L["19"].BackgroundTransparency = 0
+G2L["19"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["19"].BorderSizePixel = 0
+G2L["19"].ClipsDescendants = false
+G2L["19"].Draggable = false
+G2L["19"].Position = UDim2.new(-0.52523804, 0, 2.502534, 0)
+G2L["19"].Rotation = 0
+G2L["19"].Selectable = true
+G2L["19"].SelectionOrder = 0
+G2L["19"].Size = UDim2.new(0, 125, 0, 42)
+G2L["19"].Visible = true
+G2L["19"].ZIndex = 1
+G2L["19"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.dec.UIStroke
+G2L["20"].Name = [[UIStroke]]
+G2L["20"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["20"].Color = Color3.fromRGB(255, 255, 255)
+G2L["20"].Enabled = true
+G2L["20"].Thickness = 3
+G2L["20"].Transparency = 0
+G2L["20"].Parent = G2L["19"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.dec.UIStroke.UIGradient
+G2L["21"].Name = [[UIGradient]]
+G2L["21"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["21"].Enabled = true
+G2L["21"].Rotation = 0
+G2L["21"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["21"].Parent = G2L["20"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.dec.Script
+G2L["22"].Name = [[Script]]
+G2L["22"].Parent = G2L["19"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.sk
+G2L["23"].Name = [[sk]]
+G2L["23"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["23"].Text = [[Skybox]]
+G2L["23"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["23"].TextScaled = true
+G2L["23"].TextSize = 14
+G2L["23"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["23"].TextStrokeTransparency = 1
+G2L["23"].TextWrapped = true
+G2L["23"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["23"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["23"].Active = true
+G2L["23"].AnchorPoint = Vector2.new(0, 0)
+G2L["23"].BackgroundColor3 = Color3.fromRGB(220.00002, 220.00002, 0)
+G2L["23"].BackgroundTransparency = 0
+G2L["23"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["23"].BorderSizePixel = 0
+G2L["23"].ClipsDescendants = false
+G2L["23"].Draggable = false
+G2L["23"].Position = UDim2.new(0.18722214, 0, 2.502534, 0)
+G2L["23"].Rotation = 0
+G2L["23"].Selectable = true
+G2L["23"].SelectionOrder = 0
+G2L["23"].Size = UDim2.new(0, 125, 0, 42)
+G2L["23"].Visible = true
+G2L["23"].ZIndex = 1
+G2L["23"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.sk.UIStroke
+G2L["24"].Name = [[UIStroke]]
+G2L["24"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["24"].Color = Color3.fromRGB(255, 255, 255)
+G2L["24"].Enabled = true
+G2L["24"].Thickness = 3
+G2L["24"].Transparency = 0
+G2L["24"].Parent = G2L["23"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.sk.UIStroke.UIGradient
+G2L["25"].Name = [[UIGradient]]
+G2L["25"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["25"].Enabled = true
+G2L["25"].Rotation = 0
+G2L["25"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["25"].Parent = G2L["24"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.sk.Script
+G2L["26"].Name = [[Script]]
+G2L["26"].Parent = G2L["23"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju
+G2L["27"].Name = [[ju]]
+G2L["27"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["27"].Text = [[Jumpscare]]
+G2L["27"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["27"].TextScaled = true
+G2L["27"].TextSize = 14
+G2L["27"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["27"].TextStrokeTransparency = 1
+G2L["27"].TextWrapped = true
+G2L["27"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["27"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["27"].Active = true
+G2L["27"].AnchorPoint = Vector2.new(0, 0)
+G2L["27"].BackgroundColor3 = Color3.fromRGB(220.00002, 220.00002, 0)
+G2L["27"].BackgroundTransparency = 0
+G2L["27"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["27"].BorderSizePixel = 0
+G2L["27"].ClipsDescendants = false
+G2L["27"].Draggable = false
+G2L["27"].Position = UDim2.new(0.90031755, 0, 2.502534, 0)
+G2L["27"].Rotation = 0
+G2L["27"].Selectable = true
+G2L["27"].SelectionOrder = 0
+G2L["27"].Size = UDim2.new(0, 105, 0, 42)
+G2L["27"].Visible = true
+G2L["27"].ZIndex = 1
+G2L["27"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke
+G2L["28"].Name = [[UIStroke]]
+G2L["28"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["28"].Color = Color3.fromRGB(255, 255, 255)
+G2L["28"].Enabled = true
+G2L["28"].Thickness = 3
+G2L["28"].Transparency = 0
+G2L["28"].Parent = G2L["27"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.UIStroke.UIGradient
+G2L["29"].Name = [[UIGradient]]
+G2L["29"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["29"].Enabled = true
+G2L["29"].Rotation = 0
+G2L["29"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["29"].Parent = G2L["28"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.Script
+G2L["30"].Name = [[Script]]
+G2L["30"].Parent = G2L["27"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["31"].Name = [[]]
+G2L["31"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["31"].Text = [[Hint]]
+G2L["31"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["31"].TextScaled = true
+G2L["31"].TextSize = 14
+G2L["31"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["31"].TextStrokeTransparency = 1
+G2L["31"].TextWrapped = true
+G2L["31"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["31"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["31"].Active = true
+G2L["31"].AnchorPoint = Vector2.new(0, 0)
+G2L["31"].BackgroundColor3 = Color3.fromRGB(220.00002, 220.00002, 0)
+G2L["31"].BackgroundTransparency = 0
+G2L["31"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["31"].BorderSizePixel = 0
+G2L["31"].ClipsDescendants = false
+G2L["31"].Draggable = false
+G2L["31"].Position = UDim2.new(-0.52968246, 0, 3.5415635, 0)
+G2L["31"].Rotation = 0
+G2L["31"].Selectable = true
+G2L["31"].SelectionOrder = 0
+G2L["31"].Size = UDim2.new(0, 125, 0, 42)
+G2L["31"].Visible = true
+G2L["31"].ZIndex = 1
+G2L["31"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["32"].Name = [[UIStroke]]
+G2L["32"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["32"].Color = Color3.fromRGB(255, 255, 255)
+G2L["32"].Enabled = true
+G2L["32"].Thickness = 3
+G2L["32"].Transparency = 0
+G2L["32"].Parent = G2L["31"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["33"].Name = [[UIGradient]]
+G2L["33"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["33"].Enabled = true
+G2L["33"].Rotation = 0
+G2L["33"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["33"].Parent = G2L["32"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["34"].Name = [[Script]]
+G2L["34"].Parent = G2L["31"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["35"].Name = [[]]
+G2L["35"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["35"].Text = [[Message]]
+G2L["35"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["35"].TextScaled = true
+G2L["35"].TextSize = 14
+G2L["35"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["35"].TextStrokeTransparency = 1
+G2L["35"].TextWrapped = true
+G2L["35"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["35"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["35"].Active = true
+G2L["35"].AnchorPoint = Vector2.new(0, 0)
+G2L["35"].BackgroundColor3 = Color3.fromRGB(220.00002, 220.00002, 0)
+G2L["35"].BackgroundTransparency = 0
+G2L["35"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["35"].BorderSizePixel = 0
+G2L["35"].ClipsDescendants = false
+G2L["35"].Draggable = false
+G2L["35"].Position = UDim2.new(0.1858731, 0, 3.5415635, 0)
+G2L["35"].Rotation = 0
+G2L["35"].Selectable = true
+G2L["35"].SelectionOrder = 0
+G2L["35"].Size = UDim2.new(0, 125, 0, 42)
+G2L["35"].Visible = true
+G2L["35"].ZIndex = 1
+G2L["35"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["36"].Name = [[UIStroke]]
+G2L["36"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["36"].Color = Color3.fromRGB(255, 255, 255)
+G2L["36"].Enabled = true
+G2L["36"].Thickness = 3
+G2L["36"].Transparency = 0
+G2L["36"].Parent = G2L["35"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["37"].Name = [[UIGradient]]
+G2L["37"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["37"].Enabled = true
+G2L["37"].Rotation = 0
+G2L["37"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["37"].Parent = G2L["36"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["38"].Name = [[Script]]
+G2L["38"].Parent = G2L["35"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["39"].Name = [[]]
+G2L["39"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["39"].Text = [[Chicken Arms]]
+G2L["39"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["39"].TextScaled = true
+G2L["39"].TextSize = 14
+G2L["39"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["39"].TextStrokeTransparency = 1
+G2L["39"].TextWrapped = true
+G2L["39"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["39"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["39"].Active = true
+G2L["39"].AnchorPoint = Vector2.new(0, 0)
+G2L["39"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["39"].BackgroundTransparency = 0
+G2L["39"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["39"].BorderSizePixel = 0
+G2L["39"].ClipsDescendants = false
+G2L["39"].Draggable = false
+G2L["39"].Position = UDim2.new(0.89928573, 0, 3.5415635, 0)
+G2L["39"].Rotation = 0
+G2L["39"].Selectable = true
+G2L["39"].SelectionOrder = 0
+G2L["39"].Size = UDim2.new(0, 105, 0, 42)
+G2L["39"].Visible = true
+G2L["39"].ZIndex = 1
+G2L["39"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["40"].Name = [[UIStroke]]
+G2L["40"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["40"].Color = Color3.fromRGB(255, 255, 255)
+G2L["40"].Enabled = true
+G2L["40"].Thickness = 3
+G2L["40"].Transparency = 0
+G2L["40"].Parent = G2L["39"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["41"].Name = [[UIGradient]]
+G2L["41"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["41"].Enabled = true
+G2L["41"].Rotation = 0
+G2L["41"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["41"].Parent = G2L["40"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["42"].Name = [[Script]]
+G2L["42"].Parent = G2L["39"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script.RemoteEvent
+G2L["43"].Name = [[RemoteEvent]]
+G2L["43"].Parent = G2L["42"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..LocalScript
+G2L["44"].Name = [[LocalScript]]
+G2L["44"].Parent = G2L["39"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["45"].Name = [[]]
+G2L["45"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["45"].Text = [[JO1TAR0 toadroast Remake!1!]]
+G2L["45"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["45"].TextScaled = true
+G2L["45"].TextSize = 14
+G2L["45"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["45"].TextStrokeTransparency = 1
+G2L["45"].TextWrapped = true
+G2L["45"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["45"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["45"].Active = true
+G2L["45"].AnchorPoint = Vector2.new(0, 0)
+G2L["45"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["45"].BackgroundTransparency = 0
+G2L["45"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["45"].BorderSizePixel = 0
+G2L["45"].ClipsDescendants = false
+G2L["45"].Draggable = false
+G2L["45"].Position = UDim2.new(-0.5341269, 0, 4.5461454, 0)
+G2L["45"].Rotation = 0
+G2L["45"].Selectable = true
+G2L["45"].SelectionOrder = 0
+G2L["45"].Size = UDim2.new(0, 125, 0, 42)
+G2L["45"].Visible = true
+G2L["45"].ZIndex = 1
+G2L["45"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["46"].Name = [[UIStroke]]
+G2L["46"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["46"].Color = Color3.fromRGB(255, 255, 255)
+G2L["46"].Enabled = true
+G2L["46"].Thickness = 3
+G2L["46"].Transparency = 0
+G2L["46"].Parent = G2L["45"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["47"].Name = [[UIGradient]]
+G2L["47"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["47"].Enabled = true
+G2L["47"].Rotation = 0
+G2L["47"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["47"].Parent = G2L["46"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["48"].Name = [[Script]]
+G2L["48"].Parent = G2L["45"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["49"].Name = [[]]
+G2L["49"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["49"].Text = [[Kill All]]
+G2L["49"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["49"].TextScaled = true
+G2L["49"].TextSize = 14
+G2L["49"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["49"].TextStrokeTransparency = 1
+G2L["49"].TextWrapped = true
+G2L["49"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["49"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["49"].Active = true
+G2L["49"].AnchorPoint = Vector2.new(0, 0)
+G2L["49"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["49"].BackgroundTransparency = 0
+G2L["49"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["49"].BorderSizePixel = 0
+G2L["49"].ClipsDescendants = false
+G2L["49"].Draggable = false
+G2L["49"].Position = UDim2.new(0.18031754, 0, 4.5498114, 0)
+G2L["49"].Rotation = 0
+G2L["49"].Selectable = true
+G2L["49"].SelectionOrder = 0
+G2L["49"].Size = UDim2.new(0, 126, 0, 42)
+G2L["49"].Visible = true
+G2L["49"].ZIndex = 1
+G2L["49"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["50"].Name = [[UIStroke]]
+G2L["50"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["50"].Color = Color3.fromRGB(255, 255, 255)
+G2L["50"].Enabled = true
+G2L["50"].Thickness = 3
+G2L["50"].Transparency = 0
+G2L["50"].Parent = G2L["49"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["51"].Name = [[UIGradient]]
+G2L["51"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["51"].Enabled = true
+G2L["51"].Rotation = 0
+G2L["51"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["51"].Parent = G2L["50"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["52"].Name = [[Script]]
+G2L["52"].Parent = G2L["49"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["53"].Name = [[]]
+G2L["53"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["53"].Text = [[k00pz hint]]
+G2L["53"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["53"].TextScaled = true
+G2L["53"].TextSize = 14
+G2L["53"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["53"].TextStrokeTransparency = 1
+G2L["53"].TextWrapped = true
+G2L["53"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["53"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["53"].Active = true
+G2L["53"].AnchorPoint = Vector2.new(0, 0)
+G2L["53"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["53"].BackgroundTransparency = 0
+G2L["53"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["53"].BorderSizePixel = 0
+G2L["53"].ClipsDescendants = false
+G2L["53"].Draggable = false
+G2L["53"].Position = UDim2.new(0.89587295, 0, 4.5498114, 0)
+G2L["53"].Rotation = 0
+G2L["53"].Selectable = true
+G2L["53"].SelectionOrder = 0
+G2L["53"].Size = UDim2.new(0, 105, 0, 42)
+G2L["53"].Visible = true
+G2L["53"].ZIndex = 1
+G2L["53"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["54"].Name = [[UIStroke]]
+G2L["54"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["54"].Color = Color3.fromRGB(255, 255, 255)
+G2L["54"].Enabled = true
+G2L["54"].Thickness = 3
+G2L["54"].Transparency = 0
+G2L["54"].Parent = G2L["53"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["55"].Name = [[UIGradient]]
+G2L["55"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["55"].Enabled = true
+G2L["55"].Rotation = 0
+G2L["55"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["55"].Parent = G2L["54"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["56"].Name = [[Script]]
+G2L["56"].Parent = G2L["53"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["57"].Name = [[]]
+G2L["57"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["57"].Text = [[c00lkidd toadroast remake]]
+G2L["57"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["57"].TextScaled = true
+G2L["57"].TextSize = 14
+G2L["57"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["57"].TextStrokeTransparency = 1
+G2L["57"].TextWrapped = true
+G2L["57"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["57"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["57"].Active = true
+G2L["57"].AnchorPoint = Vector2.new(0, 0)
+G2L["57"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["57"].BackgroundTransparency = 0
+G2L["57"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["57"].BorderSizePixel = 0
+G2L["57"].ClipsDescendants = false
+G2L["57"].Draggable = false
+G2L["57"].Position = UDim2.new(-0.53468245, 0, 5.706146, 0)
+G2L["57"].Rotation = 0
+G2L["57"].Selectable = true
+G2L["57"].SelectionOrder = 0
+G2L["57"].Size = UDim2.new(0, 125, 0, 42)
+G2L["57"].Visible = true
+G2L["57"].ZIndex = 1
+G2L["57"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["58"].Name = [[UIStroke]]
+G2L["58"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["58"].Color = Color3.fromRGB(255, 255, 255)
+G2L["58"].Enabled = true
+G2L["58"].Thickness = 3
+G2L["58"].Transparency = 0
+G2L["58"].Parent = G2L["57"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["59"].Name = [[UIGradient]]
+G2L["59"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["59"].Enabled = true
+G2L["59"].Rotation = 0
+G2L["59"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["59"].Parent = G2L["58"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["60"].Name = [[Script]]
+G2L["60"].Parent = G2L["57"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["61"].Name = [[]]
+G2L["61"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["61"].Text = [[Green Map[eyes warning]]]
+G2L["61"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["61"].TextScaled = true
+G2L["61"].TextSize = 14
+G2L["61"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["61"].TextStrokeTransparency = 1
+G2L["61"].TextWrapped = true
+G2L["61"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["61"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["61"].Active = true
+G2L["61"].AnchorPoint = Vector2.new(0, 0)
+G2L["61"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["61"].BackgroundTransparency = 0
+G2L["61"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["61"].BorderSizePixel = 0
+G2L["61"].ClipsDescendants = false
+G2L["61"].Draggable = false
+G2L["61"].Position = UDim2.new(0.17730163, 0, 5.689811, 0)
+G2L["61"].Rotation = 0
+G2L["61"].Selectable = true
+G2L["61"].SelectionOrder = 0
+G2L["61"].Size = UDim2.new(0, 125, 0, 42)
+G2L["61"].Visible = true
+G2L["61"].ZIndex = 1
+G2L["61"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["62"].Name = [[UIStroke]]
+G2L["62"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["62"].Color = Color3.fromRGB(255, 255, 255)
+G2L["62"].Enabled = true
+G2L["62"].Thickness = 3
+G2L["62"].Transparency = 0
+G2L["62"].Parent = G2L["61"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["63"].Name = [[UIGradient]]
+G2L["63"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["63"].Enabled = true
+G2L["63"].Rotation = 0
+G2L["63"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["63"].Parent = G2L["62"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["64"].Name = [[Script]]
+G2L["64"].Parent = G2L["61"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.
+G2L["65"].Name = [[]]
+G2L["65"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["65"].Text = [[PLAY JO1TAR0 EPIC THEME!]]
+G2L["65"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["65"].TextScaled = true
+G2L["65"].TextSize = 14
+G2L["65"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["65"].TextStrokeTransparency = 1
+G2L["65"].TextWrapped = true
+G2L["65"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["65"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["65"].Active = true
+G2L["65"].AnchorPoint = Vector2.new(0, 0)
+G2L["65"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["65"].BackgroundTransparency = 0
+G2L["65"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["65"].BorderSizePixel = 0
+G2L["65"].ClipsDescendants = false
+G2L["65"].Draggable = false
+G2L["65"].Position = UDim2.new(0.8960316, 0, 5.6868463, 0)
+G2L["65"].Rotation = 0
+G2L["65"].Selectable = true
+G2L["65"].SelectionOrder = 0
+G2L["65"].Size = UDim2.new(0, 105, 0, 42)
+G2L["65"].Visible = true
+G2L["65"].ZIndex = 1
+G2L["65"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke
+G2L["66"].Name = [[UIStroke]]
+G2L["66"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["66"].Color = Color3.fromRGB(255, 255, 255)
+G2L["66"].Enabled = true
+G2L["66"].Thickness = 3
+G2L["66"].Transparency = 0
+G2L["66"].Parent = G2L["65"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..UIStroke.UIGradient
+G2L["67"].Name = [[UIGradient]]
+G2L["67"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 0))};
+G2L["67"].Enabled = true
+G2L["67"].Rotation = 0
+G2L["67"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["67"].Parent = G2L["66"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..Script
+G2L["68"].Name = [[Script]]
+G2L["68"].Parent = G2L["65"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["69"].Name = [[TextButton]]
+G2L["69"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["69"].Text = [[Random Colors]]
+G2L["69"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["69"].TextScaled = true
+G2L["69"].TextSize = 14
+G2L["69"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["69"].TextStrokeTransparency = 1
+G2L["69"].TextWrapped = true
+G2L["69"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["69"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["69"].Active = true
+G2L["69"].AnchorPoint = Vector2.new(0, 0)
+G2L["69"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["69"].BackgroundTransparency = 0
+G2L["69"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["69"].BorderSizePixel = 0
+G2L["69"].ClipsDescendants = false
+G2L["69"].Draggable = false
+G2L["69"].Position = UDim2.new(-0.5314997, 0, 6.847376, 0)
+G2L["69"].Rotation = 0
+G2L["69"].Selectable = true
+G2L["69"].SelectionOrder = 0
+G2L["69"].Size = UDim2.new(0, 126, 0, 44)
+G2L["69"].Visible = true
+G2L["69"].ZIndex = 1
+G2L["69"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["70"].Name = [[UIStroke]]
+G2L["70"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["70"].Color = Color3.fromRGB(255, 255, 255)
+G2L["70"].Enabled = true
+G2L["70"].Thickness = 3
+G2L["70"].Transparency = 0
+G2L["70"].Parent = G2L["69"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["71"].Name = [[UIGradient]]
+G2L["71"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["71"].Enabled = true
+G2L["71"].Rotation = 0
+G2L["71"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["71"].Parent = G2L["70"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["72"].Name = [[Script]]
+G2L["72"].Parent = G2L["69"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["73"].Name = [[TextButton]]
+G2L["73"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["73"].Text = [[Meshes All]]
+G2L["73"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["73"].TextScaled = true
+G2L["73"].TextSize = 14
+G2L["73"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["73"].TextStrokeTransparency = 1
+G2L["73"].TextWrapped = true
+G2L["73"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["73"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["73"].Active = true
+G2L["73"].AnchorPoint = Vector2.new(0, 0)
+G2L["73"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["73"].BackgroundTransparency = 0
+G2L["73"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["73"].BorderSizePixel = 0
+G2L["73"].ClipsDescendants = false
+G2L["73"].Draggable = false
+G2L["73"].Position = UDim2.new(0.17350021, 0, 6.83168, 0)
+G2L["73"].Rotation = 0
+G2L["73"].Selectable = true
+G2L["73"].SelectionOrder = 0
+G2L["73"].Size = UDim2.new(0, 127, 0, 44)
+G2L["73"].Visible = true
+G2L["73"].ZIndex = 1
+G2L["73"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["74"].Name = [[UIStroke]]
+G2L["74"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["74"].Color = Color3.fromRGB(255, 255, 255)
+G2L["74"].Enabled = true
+G2L["74"].Thickness = 3
+G2L["74"].Transparency = 0
+G2L["74"].Parent = G2L["73"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["75"].Name = [[UIGradient]]
+G2L["75"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["75"].Enabled = true
+G2L["75"].Rotation = 0
+G2L["75"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["75"].Parent = G2L["74"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["76"].Name = [[Script]]
+G2L["76"].Parent = G2L["73"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["77"].Name = [[TextButton]]
+G2L["77"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["77"].Text = [[XRay]]
+G2L["77"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["77"].TextScaled = true
+G2L["77"].TextSize = 14
+G2L["77"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["77"].TextStrokeTransparency = 1
+G2L["77"].TextWrapped = true
+G2L["77"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["77"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["77"].Active = true
+G2L["77"].AnchorPoint = Vector2.new(0, 0)
+G2L["77"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["77"].BackgroundTransparency = 0
+G2L["77"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["77"].BorderSizePixel = 0
+G2L["77"].ClipsDescendants = false
+G2L["77"].Draggable = false
+G2L["77"].Position = UDim2.new(0.8985002, 0, 6.828642, 0)
+G2L["77"].Rotation = 0
+G2L["77"].Selectable = true
+G2L["77"].SelectionOrder = 0
+G2L["77"].Size = UDim2.new(0, 105, 0, 44)
+G2L["77"].Visible = true
+G2L["77"].ZIndex = 1
+G2L["77"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["78"].Name = [[UIStroke]]
+G2L["78"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["78"].Color = Color3.fromRGB(255, 255, 255)
+G2L["78"].Enabled = true
+G2L["78"].Thickness = 3
+G2L["78"].Transparency = 0
+G2L["78"].Parent = G2L["77"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["79"].Name = [[UIGradient]]
+G2L["79"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["79"].Enabled = true
+G2L["79"].Rotation = 0
+G2L["79"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["79"].Parent = G2L["78"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["80"].Name = [[Script]]
+G2L["80"].Parent = G2L["77"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["81"].Name = [[TextButton]]
+G2L["81"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["81"].Text = [[k00pz coffe map]]
+G2L["81"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["81"].TextScaled = true
+G2L["81"].TextSize = 14
+G2L["81"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["81"].TextStrokeTransparency = 1
+G2L["81"].TextWrapped = true
+G2L["81"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["81"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["81"].Active = true
+G2L["81"].AnchorPoint = Vector2.new(0, 0)
+G2L["81"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["81"].BackgroundTransparency = 0
+G2L["81"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["81"].BorderSizePixel = 0
+G2L["81"].ClipsDescendants = false
+G2L["81"].Draggable = false
+G2L["81"].Position = UDim2.new(-0.5264998, 0, 7.9529457, 0)
+G2L["81"].Rotation = 0
+G2L["81"].Selectable = true
+G2L["81"].SelectionOrder = 0
+G2L["81"].Size = UDim2.new(0, 125, 0, 44)
+G2L["81"].Visible = true
+G2L["81"].ZIndex = 1
+G2L["81"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["82"].Name = [[UIStroke]]
+G2L["82"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["82"].Color = Color3.fromRGB(255, 255, 255)
+G2L["82"].Enabled = true
+G2L["82"].Thickness = 3
+G2L["82"].Transparency = 0
+G2L["82"].Parent = G2L["81"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["83"].Name = [[UIGradient]]
+G2L["83"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["83"].Enabled = true
+G2L["83"].Rotation = 0
+G2L["83"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["83"].Parent = G2L["82"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["84"].Name = [[Script]]
+G2L["84"].Parent = G2L["81"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["85"].Name = [[LocalScript]]
+G2L["85"].Parent = G2L["81"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["86"].Name = [[RemoteEvent]]
+G2L["86"].Parent = G2L["81"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["87"].Name = [[TextButton]]
+G2L["87"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["87"].Text = [[Play Dance Potion Music]]
+G2L["87"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["87"].TextScaled = true
+G2L["87"].TextSize = 14
+G2L["87"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["87"].TextStrokeTransparency = 1
+G2L["87"].TextWrapped = true
+G2L["87"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["87"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["87"].Active = true
+G2L["87"].AnchorPoint = Vector2.new(0, 0)
+G2L["87"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["87"].BackgroundTransparency = 0
+G2L["87"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["87"].BorderSizePixel = 0
+G2L["87"].ClipsDescendants = false
+G2L["87"].Draggable = false
+G2L["87"].Position = UDim2.new(0.17350021, 0, 7.9423127, 0)
+G2L["87"].Rotation = 0
+G2L["87"].Selectable = true
+G2L["87"].SelectionOrder = 0
+G2L["87"].Size = UDim2.new(0, 127, 0, 44)
+G2L["87"].Visible = true
+G2L["87"].ZIndex = 1
+G2L["87"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["88"].Name = [[UIStroke]]
+G2L["88"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["88"].Color = Color3.fromRGB(255, 255, 255)
+G2L["88"].Enabled = true
+G2L["88"].Thickness = 3
+G2L["88"].Transparency = 0
+G2L["88"].Parent = G2L["87"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["89"].Name = [[UIGradient]]
+G2L["89"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["89"].Enabled = true
+G2L["89"].Rotation = 0
+G2L["89"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["89"].Parent = G2L["88"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["90"].Name = [[Script]]
+G2L["90"].Parent = G2L["87"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["91"].Name = [[TextButton]]
+G2L["91"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["91"].Text = [[Play G00by + Enstrio's Theme]]
+G2L["91"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["91"].TextScaled = true
+G2L["91"].TextSize = 14
+G2L["91"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["91"].TextStrokeTransparency = 1
+G2L["91"].TextWrapped = true
+G2L["91"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["91"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["91"].Active = true
+G2L["91"].AnchorPoint = Vector2.new(0, 0)
+G2L["91"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["91"].BackgroundTransparency = 0
+G2L["91"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["91"].BorderSizePixel = 0
+G2L["91"].ClipsDescendants = false
+G2L["91"].Draggable = false
+G2L["91"].Position = UDim2.new(0.8985005, 0, 7.9473763, 0)
+G2L["91"].Rotation = 0
+G2L["91"].Selectable = true
+G2L["91"].SelectionOrder = 0
+G2L["91"].Size = UDim2.new(0, 105, 0, 44)
+G2L["91"].Visible = true
+G2L["91"].ZIndex = 1
+G2L["91"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["92"].Name = [[UIStroke]]
+G2L["92"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["92"].Color = Color3.fromRGB(255, 255, 255)
+G2L["92"].Enabled = true
+G2L["92"].Thickness = 3
+G2L["92"].Transparency = 0
+G2L["92"].Parent = G2L["91"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["93"].Name = [[UIGradient]]
+G2L["93"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["93"].Enabled = true
+G2L["93"].Rotation = 0
+G2L["93"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["93"].Parent = G2L["92"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["94"].Name = [[Script]]
+G2L["94"].Parent = G2L["91"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["95"].Name = [[TextButton]]
+G2L["95"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["95"].Text = [[Spin All]]
+G2L["95"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["95"].TextScaled = true
+G2L["95"].TextSize = 14
+G2L["95"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["95"].TextStrokeTransparency = 1
+G2L["95"].TextWrapped = true
+G2L["95"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["95"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["95"].Active = true
+G2L["95"].AnchorPoint = Vector2.new(0, 0)
+G2L["95"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["95"].BackgroundTransparency = 0
+G2L["95"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["95"].BorderSizePixel = 0
+G2L["95"].ClipsDescendants = false
+G2L["95"].Draggable = false
+G2L["95"].Position = UDim2.new(-0.5314998, 0, 9.031679, 0)
+G2L["95"].Rotation = 0
+G2L["95"].Selectable = true
+G2L["95"].SelectionOrder = 0
+G2L["95"].Size = UDim2.new(0, 126, 0, 44)
+G2L["95"].Visible = true
+G2L["95"].ZIndex = 1
+G2L["95"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["96"].Name = [[UIStroke]]
+G2L["96"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["96"].Color = Color3.fromRGB(255, 255, 255)
+G2L["96"].Enabled = true
+G2L["96"].Thickness = 3
+G2L["96"].Transparency = 0
+G2L["96"].Parent = G2L["95"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["97"].Name = [[UIGradient]]
+G2L["97"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["97"].Enabled = true
+G2L["97"].Rotation = 0
+G2L["97"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["97"].Parent = G2L["96"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["98"].Name = [[Script]]
+G2L["98"].Parent = G2L["95"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["99"].Name = [[TextButton]]
+G2L["99"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["99"].Text = [[spin all but it has more rotation]]
+G2L["99"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["99"].TextScaled = true
+G2L["99"].TextSize = 14
+G2L["99"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["99"].TextStrokeTransparency = 1
+G2L["99"].TextWrapped = true
+G2L["99"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["99"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["99"].Active = true
+G2L["99"].AnchorPoint = Vector2.new(0, 0)
+G2L["99"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["99"].BackgroundTransparency = 0
+G2L["99"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["99"].BorderSizePixel = 0
+G2L["99"].ClipsDescendants = false
+G2L["99"].Draggable = false
+G2L["99"].Position = UDim2.new(0.17350021, 0, 9.028642, 0)
+G2L["99"].Rotation = 0
+G2L["99"].Selectable = true
+G2L["99"].SelectionOrder = 0
+G2L["99"].Size = UDim2.new(0, 131, 0, 44)
+G2L["99"].Visible = true
+G2L["99"].ZIndex = 1
+G2L["99"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["100"].Name = [[UIStroke]]
+G2L["100"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["100"].Color = Color3.fromRGB(255, 255, 255)
+G2L["100"].Enabled = true
+G2L["100"].Thickness = 3
+G2L["100"].Transparency = 0
+G2L["100"].Parent = G2L["99"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["101"].Name = [[UIGradient]]
+G2L["101"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["101"].Enabled = true
+G2L["101"].Rotation = 0
+G2L["101"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["101"].Parent = G2L["100"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["102"].Name = [[Script]]
+G2L["102"].Parent = G2L["99"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["103"].Name = [[TextButton]]
+G2L["103"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["103"].Text = [[JO1TAR0 Server Destroyer New]]
+G2L["103"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["103"].TextScaled = true
+G2L["103"].TextSize = 14
+G2L["103"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["103"].TextStrokeTransparency = 1
+G2L["103"].TextWrapped = true
+G2L["103"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["103"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["103"].Active = true
+G2L["103"].AnchorPoint = Vector2.new(0, 0)
+G2L["103"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["103"].BackgroundTransparency = 0
+G2L["103"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["103"].BorderSizePixel = 0
+G2L["103"].ClipsDescendants = false
+G2L["103"].Draggable = false
+G2L["103"].Position = UDim2.new(0.8935001, 0, 9.012947, 0)
+G2L["103"].Rotation = 0
+G2L["103"].Selectable = true
+G2L["103"].SelectionOrder = 0
+G2L["103"].Size = UDim2.new(0, 106, 0, 44)
+G2L["103"].Visible = true
+G2L["103"].ZIndex = 1
+G2L["103"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["104"].Name = [[UIStroke]]
+G2L["104"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["104"].Color = Color3.fromRGB(255, 255, 255)
+G2L["104"].Enabled = true
+G2L["104"].Thickness = 3
+G2L["104"].Transparency = 0
+G2L["104"].Parent = G2L["103"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["105"].Name = [[UIGradient]]
+G2L["105"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["105"].Enabled = true
+G2L["105"].Rotation = 0
+G2L["105"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["105"].Parent = G2L["104"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["106"].Name = [[Script]]
+G2L["106"].Parent = G2L["103"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["107"].Name = [[LocalScript]]
+G2L["107"].Parent = G2L["103"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["108"].Name = [[RemoteEvent]]
+G2L["108"].Parent = G2L["103"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["109"].Name = [[TextButton]]
+G2L["109"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["109"].Text = [[JO1TAR0 MAP 1]]
+G2L["109"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["109"].TextScaled = true
+G2L["109"].TextSize = 14
+G2L["109"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["109"].TextStrokeTransparency = 1
+G2L["109"].TextWrapped = true
+G2L["109"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["109"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["109"].Active = true
+G2L["109"].AnchorPoint = Vector2.new(0, 0)
+G2L["109"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["109"].BackgroundTransparency = 0
+G2L["109"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["109"].BorderSizePixel = 0
+G2L["109"].ClipsDescendants = false
+G2L["109"].Draggable = false
+G2L["109"].Position = UDim2.new(-0.5264998, 0, 10.162312, 0)
+G2L["109"].Rotation = 0
+G2L["109"].Selectable = true
+G2L["109"].SelectionOrder = 0
+G2L["109"].Size = UDim2.new(0, 125, 0, 44)
+G2L["109"].Visible = true
+G2L["109"].ZIndex = 1
+G2L["109"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["110"].Name = [[UIStroke]]
+G2L["110"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["110"].Color = Color3.fromRGB(255, 255, 255)
+G2L["110"].Enabled = true
+G2L["110"].Thickness = 3
+G2L["110"].Transparency = 0
+G2L["110"].Parent = G2L["109"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["111"].Name = [[UIGradient]]
+G2L["111"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["111"].Enabled = true
+G2L["111"].Rotation = 0
+G2L["111"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["111"].Parent = G2L["110"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["112"].Name = [[Script]]
+G2L["112"].Parent = G2L["109"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["113"].Name = [[LocalScript]]
+G2L["113"].Parent = G2L["109"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["114"].Name = [[RemoteEvent]]
+G2L["114"].Parent = G2L["109"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["115"].Name = [[TextButton]]
+G2L["115"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["115"].Text = [[JO1TAR0 MAP 2]]
+G2L["115"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["115"].TextScaled = true
+G2L["115"].TextSize = 14
+G2L["115"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["115"].TextStrokeTransparency = 1
+G2L["115"].TextWrapped = true
+G2L["115"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["115"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["115"].Active = true
+G2L["115"].AnchorPoint = Vector2.new(0, 0)
+G2L["115"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["115"].BackgroundTransparency = 0
+G2L["115"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["115"].BorderSizePixel = 0
+G2L["115"].ClipsDescendants = false
+G2L["115"].Draggable = false
+G2L["115"].Position = UDim2.new(0.17562073, 0, 10.142312, 0)
+G2L["115"].Rotation = 0
+G2L["115"].Selectable = true
+G2L["115"].SelectionOrder = 0
+G2L["115"].Size = UDim2.new(0, 130, 0, 44)
+G2L["115"].Visible = true
+G2L["115"].ZIndex = 1
+G2L["115"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["116"].Name = [[UIStroke]]
+G2L["116"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["116"].Color = Color3.fromRGB(255, 255, 255)
+G2L["116"].Enabled = true
+G2L["116"].Thickness = 3
+G2L["116"].Transparency = 0
+G2L["116"].Parent = G2L["115"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["117"].Name = [[UIGradient]]
+G2L["117"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["117"].Enabled = true
+G2L["117"].Rotation = 0
+G2L["117"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["117"].Parent = G2L["116"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["118"].Name = [[Script]]
+G2L["118"].Parent = G2L["115"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["119"].Name = [[LocalScript]]
+G2L["119"].Parent = G2L["115"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["120"].Name = [[RemoteEvent]]
+G2L["120"].Parent = G2L["115"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["121"].Name = [[TextButton]]
+G2L["121"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["121"].Text = [[JO1TAR0 Server Destroyer old]]
+G2L["121"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["121"].TextScaled = true
+G2L["121"].TextSize = 14
+G2L["121"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["121"].TextStrokeTransparency = 1
+G2L["121"].TextWrapped = true
+G2L["121"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["121"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["121"].Active = true
+G2L["121"].AnchorPoint = Vector2.new(0, 0)
+G2L["121"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["121"].BackgroundTransparency = 0
+G2L["121"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["121"].BorderSizePixel = 0
+G2L["121"].ClipsDescendants = false
+G2L["121"].Draggable = false
+G2L["121"].Position = UDim2.new(0.8884999, 0, 10.133707, 0)
+G2L["121"].Rotation = 0
+G2L["121"].Selectable = true
+G2L["121"].SelectionOrder = 0
+G2L["121"].Size = UDim2.new(0, 107, 0, 45)
+G2L["121"].Visible = true
+G2L["121"].ZIndex = 1
+G2L["121"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["122"].Name = [[UIStroke]]
+G2L["122"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["122"].Color = Color3.fromRGB(255, 255, 255)
+G2L["122"].Enabled = true
+G2L["122"].Thickness = 3
+G2L["122"].Transparency = 0
+G2L["122"].Parent = G2L["121"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["123"].Name = [[UIGradient]]
+G2L["123"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["123"].Enabled = true
+G2L["123"].Rotation = 0
+G2L["123"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["123"].Parent = G2L["122"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["124"].Name = [[LocalScript]]
+G2L["124"].Parent = G2L["121"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["125"].Name = [[Script]]
+G2L["125"].Parent = G2L["121"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["126"].Name = [[UIStroke]]
+G2L["126"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["126"].Color = Color3.fromRGB(255, 255, 255)
+G2L["126"].Enabled = true
+G2L["126"].Thickness = 3
+G2L["126"].Transparency = 0
+G2L["126"].Parent = G2L["121"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["127"].Name = [[UIGradient]]
+G2L["127"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["127"].Enabled = true
+G2L["127"].Rotation = 0
+G2L["127"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["127"].Parent = G2L["126"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["128"].Name = [[RemoteEvent]]
+G2L["128"].Parent = G2L["121"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["129"].Name = [[TextButton]]
+G2L["129"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["129"].Text = [[Smile Maze Map]]
+G2L["129"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["129"].TextScaled = true
+G2L["129"].TextSize = 14
+G2L["129"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["129"].TextStrokeTransparency = 1
+G2L["129"].TextWrapped = true
+G2L["129"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["129"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["129"].Active = true
+G2L["129"].AnchorPoint = Vector2.new(0, 0)
+G2L["129"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["129"].BackgroundTransparency = 0
+G2L["129"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["129"].BorderSizePixel = 0
+G2L["129"].ClipsDescendants = false
+G2L["129"].Draggable = false
+G2L["129"].Position = UDim2.new(-0.5314997, 0, 11.347376, 0)
+G2L["129"].Rotation = 0
+G2L["129"].Selectable = true
+G2L["129"].SelectionOrder = 0
+G2L["129"].Size = UDim2.new(0, 126, 0, 44)
+G2L["129"].Visible = true
+G2L["129"].ZIndex = 1
+G2L["129"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["130"].Name = [[UIStroke]]
+G2L["130"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["130"].Color = Color3.fromRGB(255, 255, 255)
+G2L["130"].Enabled = true
+G2L["130"].Thickness = 3
+G2L["130"].Transparency = 0
+G2L["130"].Parent = G2L["129"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["131"].Name = [[UIGradient]]
+G2L["131"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["131"].Enabled = true
+G2L["131"].Rotation = 0
+G2L["131"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["131"].Parent = G2L["130"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["132"].Name = [[Script]]
+G2L["132"].Parent = G2L["129"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["133"].Name = [[LocalScript]]
+G2L["133"].Parent = G2L["129"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["134"].Name = [[RemoteEvent]]
+G2L["134"].Parent = G2L["129"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["135"].Name = [[TextButton]]
+G2L["135"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["135"].Text = [[Remove Backdoor]]
+G2L["135"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["135"].TextScaled = true
+G2L["135"].TextSize = 14
+G2L["135"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["135"].TextStrokeTransparency = 1
+G2L["135"].TextWrapped = true
+G2L["135"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["135"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["135"].Active = true
+G2L["135"].AnchorPoint = Vector2.new(0, 0)
+G2L["135"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["135"].BackgroundTransparency = 0
+G2L["135"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["135"].BorderSizePixel = 0
+G2L["135"].ClipsDescendants = false
+G2L["135"].Draggable = false
+G2L["135"].Position = UDim2.new(0.17350021, 0, 11.343579, 0)
+G2L["135"].Rotation = 0
+G2L["135"].Selectable = true
+G2L["135"].SelectionOrder = 0
+G2L["135"].Size = UDim2.new(0, 131, 0, 44)
+G2L["135"].Visible = true
+G2L["135"].ZIndex = 1
+G2L["135"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["136"].Name = [[UIStroke]]
+G2L["136"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["136"].Color = Color3.fromRGB(255, 255, 255)
+G2L["136"].Enabled = true
+G2L["136"].Thickness = 3
+G2L["136"].Transparency = 0
+G2L["136"].Parent = G2L["135"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["137"].Name = [[UIGradient]]
+G2L["137"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["137"].Enabled = true
+G2L["137"].Rotation = 0
+G2L["137"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["137"].Parent = G2L["136"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["138"].Name = [[Script]]
+G2L["138"].Parent = G2L["135"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["139"].Name = [[TextButton]]
+G2L["139"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["139"].Text = [[Troll Face All]]
+G2L["139"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["139"].TextScaled = true
+G2L["139"].TextSize = 14
+G2L["139"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["139"].TextStrokeTransparency = 1
+G2L["139"].TextWrapped = true
+G2L["139"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["139"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["139"].Active = true
+G2L["139"].AnchorPoint = Vector2.new(0, 0)
+G2L["139"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["139"].BackgroundTransparency = 0
+G2L["139"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["139"].BorderSizePixel = 0
+G2L["139"].ClipsDescendants = false
+G2L["139"].Draggable = false
+G2L["139"].Position = UDim2.new(0.88850003, 0, 11.342312, 0)
+G2L["139"].Rotation = 0
+G2L["139"].Selectable = true
+G2L["139"].SelectionOrder = 0
+G2L["139"].Size = UDim2.new(0, 107, 0, 44)
+G2L["139"].Visible = true
+G2L["139"].ZIndex = 1
+G2L["139"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["140"].Name = [[UIStroke]]
+G2L["140"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["140"].Color = Color3.fromRGB(255, 255, 255)
+G2L["140"].Enabled = true
+G2L["140"].Thickness = 3
+G2L["140"].Transparency = 0
+G2L["140"].Parent = G2L["139"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["141"].Name = [[UIGradient]]
+G2L["141"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["141"].Enabled = true
+G2L["141"].Rotation = 0
+G2L["141"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["141"].Parent = G2L["140"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["142"].Name = [[Script]]
+G2L["142"].Parent = G2L["139"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["143"].Name = [[TextButton]]
+G2L["143"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["143"].Text = [[Old Meme Particles]]
+G2L["143"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["143"].TextScaled = true
+G2L["143"].TextSize = 14
+G2L["143"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["143"].TextStrokeTransparency = 1
+G2L["143"].TextWrapped = true
+G2L["143"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["143"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["143"].Active = true
+G2L["143"].AnchorPoint = Vector2.new(0, 0)
+G2L["143"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["143"].BackgroundTransparency = 0
+G2L["143"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["143"].BorderSizePixel = 0
+G2L["143"].ClipsDescendants = false
+G2L["143"].Draggable = false
+G2L["143"].Position = UDim2.new(-0.5264998, 0, 12.492946, 0)
+G2L["143"].Rotation = 0
+G2L["143"].Selectable = true
+G2L["143"].SelectionOrder = 0
+G2L["143"].Size = UDim2.new(0, 125, 0, 44)
+G2L["143"].Visible = true
+G2L["143"].ZIndex = 1
+G2L["143"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["144"].Name = [[UIStroke]]
+G2L["144"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["144"].Color = Color3.fromRGB(255, 255, 255)
+G2L["144"].Enabled = true
+G2L["144"].Thickness = 3
+G2L["144"].Transparency = 0
+G2L["144"].Parent = G2L["143"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["145"].Name = [[UIGradient]]
+G2L["145"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["145"].Enabled = true
+G2L["145"].Rotation = 0
+G2L["145"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["145"].Parent = G2L["144"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["146"].Name = [[LocalScript]]
+G2L["146"].Parent = G2L["143"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["147"].Name = [[RemoteEvent]]
+G2L["147"].Parent = G2L["143"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["148"].Name = [[Script]]
+G2L["148"].Parent = G2L["143"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Rainbow
+G2L["149"].Name = [[Rainbow]]
+G2L["149"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["150"].Name = [[TextButton]]
+G2L["150"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["150"].Text = [[G00by Gui]]
+G2L["150"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["150"].TextScaled = true
+G2L["150"].TextSize = 14
+G2L["150"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["150"].TextStrokeTransparency = 1
+G2L["150"].TextWrapped = true
+G2L["150"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["150"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["150"].Active = true
+G2L["150"].AnchorPoint = Vector2.new(0, 0)
+G2L["150"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["150"].BackgroundTransparency = 0
+G2L["150"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["150"].BorderSizePixel = 0
+G2L["150"].ClipsDescendants = false
+G2L["150"].Draggable = false
+G2L["150"].Position = UDim2.new(0.17350021, 0, 12.483579, 0)
+G2L["150"].Rotation = 0
+G2L["150"].Selectable = true
+G2L["150"].SelectionOrder = 0
+G2L["150"].Size = UDim2.new(0, 131, 0, 44)
+G2L["150"].Visible = true
+G2L["150"].ZIndex = 1
+G2L["150"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["151"].Name = [[UIStroke]]
+G2L["151"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["151"].Color = Color3.fromRGB(255, 255, 255)
+G2L["151"].Enabled = true
+G2L["151"].Thickness = 3
+G2L["151"].Transparency = 0
+G2L["151"].Parent = G2L["150"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["152"].Name = [[UIGradient]]
+G2L["152"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["152"].Enabled = true
+G2L["152"].Rotation = 0
+G2L["152"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["152"].Parent = G2L["151"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["153"].Name = [[LocalScript]]
+G2L["153"].Parent = G2L["150"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["154"].Name = [[RemoteEvent]]
+G2L["154"].Parent = G2L["150"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["155"].Name = [[Script]]
+G2L["155"].Parent = G2L["150"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["156"].Name = [[TextButton]]
+G2L["156"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["156"].Text = [[Team Fat Jumpscare]]
+G2L["156"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["156"].TextScaled = true
+G2L["156"].TextSize = 14
+G2L["156"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["156"].TextStrokeTransparency = 1
+G2L["156"].TextWrapped = true
+G2L["156"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["156"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["156"].Active = true
+G2L["156"].AnchorPoint = Vector2.new(0, 0)
+G2L["156"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["156"].BackgroundTransparency = 0
+G2L["156"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["156"].BorderSizePixel = 0
+G2L["156"].ClipsDescendants = false
+G2L["156"].Draggable = false
+G2L["156"].Position = UDim2.new(0.8984999, 0, 12.482312, 0)
+G2L["156"].Rotation = 0
+G2L["156"].Selectable = true
+G2L["156"].SelectionOrder = 0
+G2L["156"].Size = UDim2.new(0, 107, 0, 44)
+G2L["156"].Visible = true
+G2L["156"].ZIndex = 1
+G2L["156"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["157"].Name = [[UIStroke]]
+G2L["157"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["157"].Color = Color3.fromRGB(255, 255, 255)
+G2L["157"].Enabled = true
+G2L["157"].Thickness = 3
+G2L["157"].Transparency = 0
+G2L["157"].Parent = G2L["156"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["158"].Name = [[UIGradient]]
+G2L["158"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["158"].Enabled = true
+G2L["158"].Rotation = 0
+G2L["158"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["158"].Parent = G2L["157"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["159"].Name = [[Script]]
+G2L["159"].Parent = G2L["156"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["160"].Name = [[TextButton]]
+G2L["160"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["160"].Text = [[Fix Lighting]]
+G2L["160"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["160"].TextScaled = true
+G2L["160"].TextSize = 14
+G2L["160"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["160"].TextStrokeTransparency = 1
+G2L["160"].TextWrapped = true
+G2L["160"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["160"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["160"].Active = true
+G2L["160"].AnchorPoint = Vector2.new(0, 0)
+G2L["160"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["160"].BackgroundTransparency = 0
+G2L["160"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["160"].BorderSizePixel = 0
+G2L["160"].ClipsDescendants = false
+G2L["160"].Draggable = false
+G2L["160"].Position = UDim2.new(-0.5264998, 0, 13.6529455, 0)
+G2L["160"].Rotation = 0
+G2L["160"].Selectable = true
+G2L["160"].SelectionOrder = 0
+G2L["160"].Size = UDim2.new(0, 125, 0, 44)
+G2L["160"].Visible = true
+G2L["160"].ZIndex = 1
+G2L["160"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["161"].Name = [[UIStroke]]
+G2L["161"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["161"].Color = Color3.fromRGB(255, 255, 255)
+G2L["161"].Enabled = true
+G2L["161"].Thickness = 3
+G2L["161"].Transparency = 0
+G2L["161"].Parent = G2L["160"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["162"].Name = [[UIGradient]]
+G2L["162"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["162"].Enabled = true
+G2L["162"].Rotation = 0
+G2L["162"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["162"].Parent = G2L["161"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["163"].Name = [[LocalScript]]
+G2L["163"].Parent = G2L["160"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["164"].Name = [[RemoteEvent]]
+G2L["164"].Parent = G2L["160"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["165"].Name = [[Script]]
+G2L["165"].Parent = G2L["160"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["166"].Name = [[TextButton]]
+G2L["166"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["166"].Text = [[WhenTheTimeEnd's Skybox]]
+G2L["166"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["166"].TextScaled = true
+G2L["166"].TextSize = 14
+G2L["166"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["166"].TextStrokeTransparency = 1
+G2L["166"].TextWrapped = true
+G2L["166"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["166"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["166"].Active = true
+G2L["166"].AnchorPoint = Vector2.new(0, 0)
+G2L["166"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["166"].BackgroundTransparency = 0
+G2L["166"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["166"].BorderSizePixel = 0
+G2L["166"].ClipsDescendants = false
+G2L["166"].Draggable = false
+G2L["166"].Position = UDim2.new(0.17350021, 0, 13.6529455, 0)
+G2L["166"].Rotation = 0
+G2L["166"].Selectable = true
+G2L["166"].SelectionOrder = 0
+G2L["166"].Size = UDim2.new(0, 131, 0, 44)
+G2L["166"].Visible = true
+G2L["166"].ZIndex = 1
+G2L["166"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["167"].Name = [[UIStroke]]
+G2L["167"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["167"].Color = Color3.fromRGB(255, 255, 255)
+G2L["167"].Enabled = true
+G2L["167"].Thickness = 3
+G2L["167"].Transparency = 0
+G2L["167"].Parent = G2L["166"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["168"].Name = [[UIGradient]]
+G2L["168"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["168"].Enabled = true
+G2L["168"].Rotation = 0
+G2L["168"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["168"].Parent = G2L["167"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["169"].Name = [[LocalScript]]
+G2L["169"].Parent = G2L["166"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["170"].Name = [[RemoteEvent]]
+G2L["170"].Parent = G2L["166"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["171"].Name = [[Script]]
+G2L["171"].Parent = G2L["166"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["172"].Name = [[TextButton]]
+G2L["172"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["172"].Text = [[Funny Animated Hint]]
+G2L["172"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["172"].TextScaled = true
+G2L["172"].TextSize = 14
+G2L["172"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["172"].TextStrokeTransparency = 1
+G2L["172"].TextWrapped = true
+G2L["172"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["172"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["172"].Active = true
+G2L["172"].AnchorPoint = Vector2.new(0, 0)
+G2L["172"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["172"].BackgroundTransparency = 0
+G2L["172"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["172"].BorderSizePixel = 0
+G2L["172"].ClipsDescendants = false
+G2L["172"].Draggable = false
+G2L["172"].Position = UDim2.new(0.8984999, 0, 13.642312, 0)
+G2L["172"].Rotation = 0
+G2L["172"].Selectable = true
+G2L["172"].SelectionOrder = 0
+G2L["172"].Size = UDim2.new(0, 107, 0, 44)
+G2L["172"].Visible = true
+G2L["172"].ZIndex = 1
+G2L["172"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["173"].Name = [[UIStroke]]
+G2L["173"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["173"].Color = Color3.fromRGB(255, 255, 255)
+G2L["173"].Enabled = true
+G2L["173"].Thickness = 3
+G2L["173"].Transparency = 0
+G2L["173"].Parent = G2L["172"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["174"].Name = [[UIGradient]]
+G2L["174"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["174"].Enabled = true
+G2L["174"].Rotation = 0
+G2L["174"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["174"].Parent = G2L["173"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["175"].Name = [[Script]]
+G2L["175"].Parent = G2L["172"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["176"].Name = [[TextButton]]
+G2L["176"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["176"].Text = [[Funny Lorax Skybox]]
+G2L["176"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["176"].TextScaled = true
+G2L["176"].TextSize = 14
+G2L["176"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["176"].TextStrokeTransparency = 1
+G2L["176"].TextWrapped = true
+G2L["176"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["176"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["176"].Active = true
+G2L["176"].AnchorPoint = Vector2.new(0, 0)
+G2L["176"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["176"].BackgroundTransparency = 0
+G2L["176"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["176"].BorderSizePixel = 0
+G2L["176"].ClipsDescendants = false
+G2L["176"].Draggable = false
+G2L["176"].Position = UDim2.new(-0.5264998, 0, 14.712946, 0)
+G2L["176"].Rotation = 0
+G2L["176"].Selectable = true
+G2L["176"].SelectionOrder = 0
+G2L["176"].Size = UDim2.new(0, 125, 0, 44)
+G2L["176"].Visible = true
+G2L["176"].ZIndex = 1
+G2L["176"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["177"].Name = [[UIStroke]]
+G2L["177"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["177"].Color = Color3.fromRGB(255, 255, 255)
+G2L["177"].Enabled = true
+G2L["177"].Thickness = 3
+G2L["177"].Transparency = 0
+G2L["177"].Parent = G2L["176"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["178"].Name = [[UIGradient]]
+G2L["178"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["178"].Enabled = true
+G2L["178"].Rotation = 0
+G2L["178"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["178"].Parent = G2L["177"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["179"].Name = [[LocalScript]]
+G2L["179"].Parent = G2L["176"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["180"].Name = [[RemoteEvent]]
+G2L["180"].Parent = G2L["176"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["181"].Name = [[Script]]
+G2L["181"].Parent = G2L["176"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["182"].Name = [[TextButton]]
+G2L["182"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["182"].Text = [[Opkidd's Jumpscare]]
+G2L["182"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["182"].TextScaled = true
+G2L["182"].TextSize = 14
+G2L["182"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["182"].TextStrokeTransparency = 1
+G2L["182"].TextWrapped = true
+G2L["182"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["182"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["182"].Active = true
+G2L["182"].AnchorPoint = Vector2.new(0, 0)
+G2L["182"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["182"].BackgroundTransparency = 0
+G2L["182"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["182"].BorderSizePixel = 0
+G2L["182"].ClipsDescendants = false
+G2L["182"].Draggable = false
+G2L["182"].Position = UDim2.new(0.17350021, 0, 14.712946, 0)
+G2L["182"].Rotation = 0
+G2L["182"].Selectable = true
+G2L["182"].SelectionOrder = 0
+G2L["182"].Size = UDim2.new(0, 131, 0, 44)
+G2L["182"].Visible = true
+G2L["182"].ZIndex = 1
+G2L["182"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["183"].Name = [[UIStroke]]
+G2L["183"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["183"].Color = Color3.fromRGB(255, 255, 255)
+G2L["183"].Enabled = true
+G2L["183"].Thickness = 3
+G2L["183"].Transparency = 0
+G2L["183"].Parent = G2L["182"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["184"].Name = [[UIGradient]]
+G2L["184"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["184"].Enabled = true
+G2L["184"].Rotation = 0
+G2L["184"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["184"].Parent = G2L["183"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["185"].Name = [[LocalScript]]
+G2L["185"].Parent = G2L["182"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["186"].Name = [[RemoteEvent]]
+G2L["186"].Parent = G2L["182"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["187"].Name = [[Script]]
+G2L["187"].Parent = G2L["182"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["188"].Name = [[TextButton]]
+G2L["188"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["188"].Text = [[Dancing Skeleton Skybox]]
+G2L["188"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["188"].TextScaled = true
+G2L["188"].TextSize = 14
+G2L["188"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["188"].TextStrokeTransparency = 1
+G2L["188"].TextWrapped = true
+G2L["188"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["188"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["188"].Active = true
+G2L["188"].AnchorPoint = Vector2.new(0, 0)
+G2L["188"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["188"].BackgroundTransparency = 0
+G2L["188"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["188"].BorderSizePixel = 0
+G2L["188"].ClipsDescendants = false
+G2L["188"].Draggable = false
+G2L["188"].Position = UDim2.new(0.8884999, 0, 14.702312, 0)
+G2L["188"].Rotation = 0
+G2L["188"].Selectable = true
+G2L["188"].SelectionOrder = 0
+G2L["188"].Size = UDim2.new(0, 107, 0, 44)
+G2L["188"].Visible = true
+G2L["188"].ZIndex = 1
+G2L["188"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["189"].Name = [[UIStroke]]
+G2L["189"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["189"].Color = Color3.fromRGB(255, 255, 255)
+G2L["189"].Enabled = true
+G2L["189"].Thickness = 3
+G2L["189"].Transparency = 0
+G2L["189"].Parent = G2L["188"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["190"].Name = [[UIGradient]]
+G2L["190"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["190"].Enabled = true
+G2L["190"].Rotation = 0
+G2L["190"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["190"].Parent = G2L["189"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["191"].Name = [[Script]]
+G2L["191"].Parent = G2L["188"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["192"].Name = [[TextButton]]
+G2L["192"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["192"].Text = [[Black And White Screen]]
+G2L["192"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["192"].TextScaled = true
+G2L["192"].TextSize = 14
+G2L["192"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["192"].TextStrokeTransparency = 1
+G2L["192"].TextWrapped = true
+G2L["192"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["192"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["192"].Active = true
+G2L["192"].AnchorPoint = Vector2.new(0, 0)
+G2L["192"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["192"].BackgroundTransparency = 0
+G2L["192"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["192"].BorderSizePixel = 0
+G2L["192"].ClipsDescendants = false
+G2L["192"].Draggable = false
+G2L["192"].Position = UDim2.new(-0.5264998, 0, 15.772945, 0)
+G2L["192"].Rotation = 0
+G2L["192"].Selectable = true
+G2L["192"].SelectionOrder = 0
+G2L["192"].Size = UDim2.new(0, 125, 0, 44)
+G2L["192"].Visible = true
+G2L["192"].ZIndex = 1
+G2L["192"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["193"].Name = [[UIStroke]]
+G2L["193"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["193"].Color = Color3.fromRGB(255, 255, 255)
+G2L["193"].Enabled = true
+G2L["193"].Thickness = 3
+G2L["193"].Transparency = 0
+G2L["193"].Parent = G2L["192"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["194"].Name = [[UIGradient]]
+G2L["194"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["194"].Enabled = true
+G2L["194"].Rotation = 0
+G2L["194"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["194"].Parent = G2L["193"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["195"].Name = [[LocalScript]]
+G2L["195"].Parent = G2L["192"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["196"].Name = [[RemoteEvent]]
+G2L["196"].Parent = G2L["192"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["197"].Name = [[Script]]
+G2L["197"].Parent = G2L["192"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["198"].Name = [[TextButton]]
+G2L["198"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["198"].Text = [[JO1TAR0 GUI V8]]
+G2L["198"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["198"].TextScaled = true
+G2L["198"].TextSize = 14
+G2L["198"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["198"].TextStrokeTransparency = 1
+G2L["198"].TextWrapped = true
+G2L["198"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["198"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["198"].Active = true
+G2L["198"].AnchorPoint = Vector2.new(0, 0)
+G2L["198"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["198"].BackgroundTransparency = 0
+G2L["198"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["198"].BorderSizePixel = 0
+G2L["198"].ClipsDescendants = false
+G2L["198"].Draggable = false
+G2L["198"].Position = UDim2.new(0.18350022, 0, 15.783579, 0)
+G2L["198"].Rotation = 0
+G2L["198"].Selectable = true
+G2L["198"].SelectionOrder = 0
+G2L["198"].Size = UDim2.new(0, 131, 0, 44)
+G2L["198"].Visible = true
+G2L["198"].ZIndex = 1
+G2L["198"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["199"].Name = [[UIStroke]]
+G2L["199"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["199"].Color = Color3.fromRGB(255, 255, 255)
+G2L["199"].Enabled = true
+G2L["199"].Thickness = 3
+G2L["199"].Transparency = 0
+G2L["199"].Parent = G2L["198"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["200"].Name = [[UIGradient]]
+G2L["200"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["200"].Enabled = true
+G2L["200"].Rotation = 0
+G2L["200"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["200"].Parent = G2L["199"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["201"].Name = [[RemoteEvent]]
+G2L["201"].Parent = G2L["198"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["202"].Name = [[Script]]
+G2L["202"].Parent = G2L["198"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["203"].Name = [[LocalScript]]
+G2L["203"].Parent = G2L["198"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["204"].Name = [[TextButton]]
+G2L["204"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["204"].Text = [[Opgui V6]]
+G2L["204"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["204"].TextScaled = true
+G2L["204"].TextSize = 14
+G2L["204"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["204"].TextStrokeTransparency = 1
+G2L["204"].TextWrapped = true
+G2L["204"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["204"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["204"].Active = true
+G2L["204"].AnchorPoint = Vector2.new(0, 0)
+G2L["204"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["204"].BackgroundTransparency = 0
+G2L["204"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["204"].BorderSizePixel = 0
+G2L["204"].ClipsDescendants = false
+G2L["204"].Draggable = false
+G2L["204"].Position = UDim2.new(0.8984999, 0, 15.782312, 0)
+G2L["204"].Rotation = 0
+G2L["204"].Selectable = true
+G2L["204"].SelectionOrder = 0
+G2L["204"].Size = UDim2.new(0, 107, 0, 44)
+G2L["204"].Visible = true
+G2L["204"].ZIndex = 1
+G2L["204"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["205"].Name = [[UIStroke]]
+G2L["205"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["205"].Color = Color3.fromRGB(255, 255, 255)
+G2L["205"].Enabled = true
+G2L["205"].Thickness = 3
+G2L["205"].Transparency = 0
+G2L["205"].Parent = G2L["204"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["206"].Name = [[UIGradient]]
+G2L["206"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["206"].Enabled = true
+G2L["206"].Rotation = 0
+G2L["206"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["206"].Parent = G2L["205"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["207"].Name = [[RemoteEvent]]
+G2L["207"].Parent = G2L["204"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["208"].Name = [[LocalScript]]
+G2L["208"].Parent = G2L["204"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["209"].Name = [[Script]]
+G2L["209"].Parent = G2L["204"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["210"].Name = [[TextButton]]
+G2L["210"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["210"].Text = [[Floating Pad (R6)]]
+G2L["210"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["210"].TextScaled = true
+G2L["210"].TextSize = 14
+G2L["210"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["210"].TextStrokeTransparency = 1
+G2L["210"].TextWrapped = true
+G2L["210"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["210"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["210"].Active = true
+G2L["210"].AnchorPoint = Vector2.new(0, 0)
+G2L["210"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["210"].BackgroundTransparency = 0
+G2L["210"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["210"].BorderSizePixel = 0
+G2L["210"].ClipsDescendants = false
+G2L["210"].Draggable = false
+G2L["210"].Position = UDim2.new(-0.5314998, 0, 16.952946, 0)
+G2L["210"].Rotation = 0
+G2L["210"].Selectable = true
+G2L["210"].SelectionOrder = 0
+G2L["210"].Size = UDim2.new(0, 201, 0, 44)
+G2L["210"].Visible = true
+G2L["210"].ZIndex = 1
+G2L["210"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["211"].Name = [[UIStroke]]
+G2L["211"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["211"].Color = Color3.fromRGB(255, 255, 255)
+G2L["211"].Enabled = true
+G2L["211"].Thickness = 3
+G2L["211"].Transparency = 0
+G2L["211"].Parent = G2L["210"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["212"].Name = [[UIGradient]]
+G2L["212"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["212"].Enabled = true
+G2L["212"].Rotation = 0
+G2L["212"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["212"].Parent = G2L["211"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["213"].Name = [[LocalScript]]
+G2L["213"].Parent = G2L["210"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["214"].Name = [[RemoteEvent]]
+G2L["214"].Parent = G2L["210"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["215"].Name = [[LocalScript]]
+G2L["215"].Parent = G2L["210"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["216"].Name = [[TextButton]]
+G2L["216"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["216"].Text = [[JO1TAR0 GUI V11]]
+G2L["216"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["216"].TextScaled = true
+G2L["216"].TextSize = 14
+G2L["216"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["216"].TextStrokeTransparency = 1
+G2L["216"].TextWrapped = true
+G2L["216"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["216"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["216"].Active = true
+G2L["216"].AnchorPoint = Vector2.new(0, 0)
+G2L["216"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["216"].BackgroundTransparency = 0
+G2L["216"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["216"].BorderSizePixel = 0
+G2L["216"].ClipsDescendants = false
+G2L["216"].Draggable = false
+G2L["216"].Position = UDim2.new(0.5085002, 0, 16.932947, 0)
+G2L["216"].Rotation = 0
+G2L["216"].Selectable = true
+G2L["216"].SelectionOrder = 0
+G2L["216"].Size = UDim2.new(0, 184, 0, 44)
+G2L["216"].Visible = true
+G2L["216"].ZIndex = 1
+G2L["216"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["217"].Name = [[UIStroke]]
+G2L["217"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["217"].Color = Color3.fromRGB(255, 255, 255)
+G2L["217"].Enabled = true
+G2L["217"].Thickness = 3
+G2L["217"].Transparency = 0
+G2L["217"].Parent = G2L["216"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["218"].Name = [[UIGradient]]
+G2L["218"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["218"].Enabled = true
+G2L["218"].Rotation = 0
+G2L["218"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["218"].Parent = G2L["217"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["219"].Name = [[LocalScript]]
+G2L["219"].Parent = G2L["216"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["220"].Name = [[RemoteEvent]]
+G2L["220"].Parent = G2L["216"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["221"].Name = [[Script]]
+G2L["221"].Parent = G2L["216"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["222"].Name = [[TextButton]]
+G2L["222"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["222"].Text = [[L0ckgui V6]]
+G2L["222"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["222"].TextScaled = true
+G2L["222"].TextSize = 14
+G2L["222"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["222"].TextStrokeTransparency = 1
+G2L["222"].TextWrapped = true
+G2L["222"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["222"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["222"].Active = true
+G2L["222"].AnchorPoint = Vector2.new(0, 0)
+G2L["222"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["222"].BackgroundTransparency = 0
+G2L["222"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["222"].BorderSizePixel = 0
+G2L["222"].ClipsDescendants = false
+G2L["222"].Draggable = false
+G2L["222"].Position = UDim2.new(-0.5314998, 0, 18.112947, 0)
+G2L["222"].Rotation = 0
+G2L["222"].Selectable = true
+G2L["222"].SelectionOrder = 0
+G2L["222"].Size = UDim2.new(0, 399, 0, 44)
+G2L["222"].Visible = true
+G2L["222"].ZIndex = 1
+G2L["222"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["223"].Name = [[UIStroke]]
+G2L["223"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["223"].Color = Color3.fromRGB(255, 255, 255)
+G2L["223"].Enabled = true
+G2L["223"].Thickness = 3
+G2L["223"].Transparency = 0
+G2L["223"].Parent = G2L["222"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["224"].Name = [[UIGradient]]
+G2L["224"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["224"].Enabled = true
+G2L["224"].Rotation = 0
+G2L["224"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["224"].Parent = G2L["223"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["225"].Name = [[LocalScript]]
+G2L["225"].Parent = G2L["222"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["226"].Name = [[RemoteEvent]]
+G2L["226"].Parent = G2L["222"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["227"].Name = [[Script]]
+G2L["227"].Parent = G2L["222"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton
+G2L["228"].Name = [[TextButton]]
+G2L["228"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["228"].Text = [[L0ckgui V2]]
+G2L["228"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["228"].TextScaled = true
+G2L["228"].TextSize = 14
+G2L["228"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["228"].TextStrokeTransparency = 1
+G2L["228"].TextWrapped = true
+G2L["228"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["228"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["228"].Active = true
+G2L["228"].AnchorPoint = Vector2.new(0, 0)
+G2L["228"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["228"].BackgroundTransparency = 0
+G2L["228"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["228"].BorderSizePixel = 0
+G2L["228"].ClipsDescendants = false
+G2L["228"].Draggable = false
+G2L["228"].Position = UDim2.new(-0.5264998, 0, 19.212948, 0)
+G2L["228"].Rotation = 0
+G2L["228"].Selectable = true
+G2L["228"].SelectionOrder = 0
+G2L["228"].Size = UDim2.new(0, 399, 0, 44)
+G2L["228"].Visible = true
+G2L["228"].ZIndex = 1
+G2L["228"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke
+G2L["229"].Name = [[UIStroke]]
+G2L["229"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["229"].Color = Color3.fromRGB(255, 255, 255)
+G2L["229"].Enabled = true
+G2L["229"].Thickness = 3
+G2L["229"].Transparency = 0
+G2L["229"].Parent = G2L["228"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.UIStroke.UIGradient
+G2L["230"].Name = [[UIGradient]]
+G2L["230"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["230"].Enabled = true
+G2L["230"].Rotation = 0
+G2L["230"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["230"].Parent = G2L["229"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+G2L["231"].Name = [[LocalScript]]
+G2L["231"].Parent = G2L["228"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.RemoteEvent
+G2L["232"].Name = [[RemoteEvent]]
+G2L["232"].Parent = G2L["228"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.Script
+G2L["233"].Name = [[Script]]
+G2L["233"].Parent = G2L["228"]
+
+--ScreenGui.Frame.ScrollingFrame.Smooth GUI Dragging
+G2L["234"].Name = [[Smooth GUI Dragging]]
+G2L["234"].Parent = G2L["2"]
+
+--ScreenGui.Frame.TextButton
+G2L["235"].Name = [[TextButton]]
+G2L["235"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["235"].Text = [[Guards[R6]]]
+G2L["235"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["235"].TextScaled = true
+G2L["235"].TextSize = 14
+G2L["235"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["235"].TextStrokeTransparency = 1
+G2L["235"].TextWrapped = true
+G2L["235"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["235"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["235"].Active = true
+G2L["235"].AnchorPoint = Vector2.new(0, 0)
+G2L["235"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["235"].BackgroundTransparency = 0
+G2L["235"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["235"].BorderSizePixel = 0
+G2L["235"].ClipsDescendants = false
+G2L["235"].Draggable = false
+G2L["235"].Position = UDim2.new(-0.2742877, 0, -0.0011628086, 0)
+G2L["235"].Rotation = 20
+G2L["235"].Selectable = true
+G2L["235"].SelectionOrder = 0
+G2L["235"].Size = UDim2.new(0, 125, 0, 44)
+G2L["235"].Visible = true
+G2L["235"].ZIndex = 1
+G2L["235"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["236"].Name = [[UIStroke]]
+G2L["236"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["236"].Color = Color3.fromRGB(255, 255, 255)
+G2L["236"].Enabled = true
+G2L["236"].Thickness = 3
+G2L["236"].Transparency = 0
+G2L["236"].Parent = G2L["235"]
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["237"].Name = [[UIGradient]]
+G2L["237"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["237"].Enabled = true
+G2L["237"].Rotation = 0
+G2L["237"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["237"].Parent = G2L["236"]
+
+--ScreenGui.Frame.TextButton.Script
+G2L["238"].Name = [[Script]]
+G2L["238"].Parent = G2L["235"]
+
+--ScreenGui.Frame.TextButton.LocalScript
+G2L["239"].Name = [[LocalScript]]
+G2L["239"].Parent = G2L["235"]
+
+--ScreenGui.Frame.TextButton.RemoteEvent
+G2L["240"].Name = [[RemoteEvent]]
+G2L["240"].Parent = G2L["235"]
+
+--ScreenGui.Frame.TextButton
+G2L["241"].Name = [[TextButton]]
+G2L["241"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["241"].Text = [[Ball Rain]]
+G2L["241"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["241"].TextScaled = true
+G2L["241"].TextSize = 14
+G2L["241"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["241"].TextStrokeTransparency = 1
+G2L["241"].TextWrapped = true
+G2L["241"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["241"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["241"].Active = true
+G2L["241"].AnchorPoint = Vector2.new(0, 0)
+G2L["241"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["241"].BackgroundTransparency = 0
+G2L["241"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["241"].BorderSizePixel = 0
+G2L["241"].ClipsDescendants = false
+G2L["241"].Draggable = false
+G2L["241"].Position = UDim2.new(-0.2742877, 0, 0.11384515, 0)
+G2L["241"].Rotation = 20
+G2L["241"].Selectable = true
+G2L["241"].SelectionOrder = 0
+G2L["241"].Size = UDim2.new(0, 125, 0, 44)
+G2L["241"].Visible = true
+G2L["241"].ZIndex = 1
+G2L["241"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["242"].Name = [[UIStroke]]
+G2L["242"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["242"].Color = Color3.fromRGB(255, 255, 255)
+G2L["242"].Enabled = true
+G2L["242"].Thickness = 3
+G2L["242"].Transparency = 0
+G2L["242"].Parent = G2L["241"]
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["243"].Name = [[UIGradient]]
+G2L["243"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["243"].Enabled = true
+G2L["243"].Rotation = 0
+G2L["243"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["243"].Parent = G2L["242"]
+
+--ScreenGui.Frame.TextButton.Script
+G2L["244"].Name = [[Script]]
+G2L["244"].Parent = G2L["241"]
+
+--ScreenGui.Frame.TextButton
+G2L["245"].Name = [[TextButton]]
+G2L["245"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["245"].Text = [[Random Speed]]
+G2L["245"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["245"].TextScaled = true
+G2L["245"].TextSize = 14
+G2L["245"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["245"].TextStrokeTransparency = 1
+G2L["245"].TextWrapped = true
+G2L["245"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["245"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["245"].Active = true
+G2L["245"].AnchorPoint = Vector2.new(0, 0)
+G2L["245"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["245"].BackgroundTransparency = 0
+G2L["245"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["245"].BorderSizePixel = 0
+G2L["245"].ClipsDescendants = false
+G2L["245"].Draggable = false
+G2L["245"].Position = UDim2.new(-0.2742877, 0, 0.22949159, 0)
+G2L["245"].Rotation = 20
+G2L["245"].Selectable = true
+G2L["245"].SelectionOrder = 0
+G2L["245"].Size = UDim2.new(0, 125, 0, 44)
+G2L["245"].Visible = true
+G2L["245"].ZIndex = 1
+G2L["245"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["246"].Name = [[UIStroke]]
+G2L["246"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["246"].Color = Color3.fromRGB(255, 255, 255)
+G2L["246"].Enabled = true
+G2L["246"].Thickness = 3
+G2L["246"].Transparency = 0
+G2L["246"].Parent = G2L["245"]
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["247"].Name = [[UIGradient]]
+G2L["247"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["247"].Enabled = true
+G2L["247"].Rotation = 0
+G2L["247"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["247"].Parent = G2L["246"]
+
+--ScreenGui.Frame.TextButton.Script
+G2L["248"].Name = [[Script]]
+G2L["248"].Parent = G2L["245"]
+
+--ScreenGui.Frame.TextButton
+G2L["249"].Name = [[TextButton]]
+G2L["249"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["249"].Text = [[Ambatukam Skybox]]
+G2L["249"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["249"].TextScaled = true
+G2L["249"].TextSize = 14
+G2L["249"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["249"].TextStrokeTransparency = 1
+G2L["249"].TextWrapped = true
+G2L["249"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["249"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["249"].Active = true
+G2L["249"].AnchorPoint = Vector2.new(0, 0)
+G2L["249"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["249"].BackgroundTransparency = 0
+G2L["249"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["249"].BorderSizePixel = 0
+G2L["249"].ClipsDescendants = false
+G2L["249"].Draggable = false
+G2L["249"].Position = UDim2.new(-0.27439168, 0, 0.35626006, 0)
+G2L["249"].Rotation = 20
+G2L["249"].Selectable = true
+G2L["249"].SelectionOrder = 0
+G2L["249"].Size = UDim2.new(0, 125, 0, 44)
+G2L["249"].Visible = true
+G2L["249"].ZIndex = 1
+G2L["249"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["250"].Name = [[UIStroke]]
+G2L["250"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["250"].Color = Color3.fromRGB(255, 255, 255)
+G2L["250"].Enabled = true
+G2L["250"].Thickness = 3
+G2L["250"].Transparency = 0
+G2L["250"].Parent = G2L["249"]
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["251"].Name = [[UIGradient]]
+G2L["251"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["251"].Enabled = true
+G2L["251"].Rotation = 0
+G2L["251"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["251"].Parent = G2L["250"]
+
+--ScreenGui.Frame.TextButton.Script
+G2L["252"].Name = [[Script]]
+G2L["252"].Parent = G2L["249"]
+
+--ScreenGui.Frame.TextButton
+G2L["253"].Name = [[TextButton]]
+G2L["253"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["253"].Text = [[Disco]]
+G2L["253"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["253"].TextScaled = true
+G2L["253"].TextSize = 14
+G2L["253"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["253"].TextStrokeTransparency = 1
+G2L["253"].TextWrapped = true
+G2L["253"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["253"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["253"].Active = true
+G2L["253"].AnchorPoint = Vector2.new(0, 0)
+G2L["253"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["253"].BackgroundTransparency = 0
+G2L["253"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["253"].BorderSizePixel = 0
+G2L["253"].ClipsDescendants = false
+G2L["253"].Draggable = false
+G2L["253"].Position = UDim2.new(-0.2774922, 0, 0.47557586, 0)
+G2L["253"].Rotation = 20
+G2L["253"].Selectable = true
+G2L["253"].SelectionOrder = 0
+G2L["253"].Size = UDim2.new(0, 126, 0, 50)
+G2L["253"].Visible = true
+G2L["253"].ZIndex = 1
+G2L["253"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["254"].Name = [[UIStroke]]
+G2L["254"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["254"].Color = Color3.fromRGB(255, 255, 255)
+G2L["254"].Enabled = true
+G2L["254"].Thickness = 3
+G2L["254"].Transparency = 0
+G2L["254"].Parent = G2L["253"]
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["255"].Name = [[UIGradient]]
+G2L["255"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["255"].Enabled = true
+G2L["255"].Rotation = 0
+G2L["255"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["255"].Parent = G2L["254"]
+
+--ScreenGui.Frame.TextButton.Script
+G2L["256"].Name = [[Script]]
+G2L["256"].Parent = G2L["253"]
+
+--ScreenGui.Frame.TextButton
+G2L["257"].Name = [[TextButton]]
+G2L["257"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["257"].Text = [[c00lgui reborn v1]]
+G2L["257"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["257"].TextScaled = true
+G2L["257"].TextSize = 14
+G2L["257"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["257"].TextStrokeTransparency = 1
+G2L["257"].TextWrapped = true
+G2L["257"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["257"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["257"].Active = true
+G2L["257"].AnchorPoint = Vector2.new(0, 0)
+G2L["257"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["257"].BackgroundTransparency = 0
+G2L["257"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["257"].BorderSizePixel = 0
+G2L["257"].ClipsDescendants = false
+G2L["257"].Draggable = false
+G2L["257"].Position = UDim2.new(-0.27471963, 0, 0.61735475, 0)
+G2L["257"].Rotation = 20
+G2L["257"].Selectable = true
+G2L["257"].SelectionOrder = 0
+G2L["257"].Size = UDim2.new(0, 126, 0, 50)
+G2L["257"].Visible = true
+G2L["257"].ZIndex = 1
+G2L["257"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["258"].Name = [[UIStroke]]
+G2L["258"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["258"].Color = Color3.fromRGB(255, 255, 255)
+G2L["258"].Enabled = true
+G2L["258"].Thickness = 3
+G2L["258"].Transparency = 0
+G2L["258"].Parent = G2L["257"]
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["259"].Name = [[UIGradient]]
+G2L["259"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["259"].Enabled = true
+G2L["259"].Rotation = 0
+G2L["259"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["259"].Parent = G2L["258"]
+
+--ScreenGui.Frame.TextButton.Script
+G2L["260"].Name = [[Script]]
+G2L["260"].Parent = G2L["257"]
+
+--ScreenGui.Frame.TextButton.LocalScript
+G2L["261"].Name = [[LocalScript]]
+G2L["261"].Parent = G2L["257"]
+
+--ScreenGui.Frame.TextButton.RemoteEvent
+G2L["262"].Name = [[RemoteEvent]]
+G2L["262"].Parent = G2L["257"]
+
+--ScreenGui.Frame.TextButton
+G2L["263"].Name = [[TextButton]]
+G2L["263"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["263"].Text = [[Ghost]]
+G2L["263"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["263"].TextScaled = true
+G2L["263"].TextSize = 14
+G2L["263"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["263"].TextStrokeTransparency = 1
+G2L["263"].TextWrapped = true
+G2L["263"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["263"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["263"].Active = true
+G2L["263"].AnchorPoint = Vector2.new(0, 0)
+G2L["263"].BackgroundColor3 = Color3.fromRGB(220, 220, 0)
+G2L["263"].BackgroundTransparency = 0
+G2L["263"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["263"].BorderSizePixel = 0
+G2L["263"].ClipsDescendants = false
+G2L["263"].Draggable = false
+G2L["263"].Position = UDim2.new(-0.27908644, 0, 0.74389815, 0)
+G2L["263"].Rotation = 20
+G2L["263"].Selectable = true
+G2L["263"].SelectionOrder = 0
+G2L["263"].Size = UDim2.new(0, 126, 0, 50)
+G2L["263"].Visible = true
+G2L["263"].ZIndex = 1
+G2L["263"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton.UIStroke
+G2L["264"].Name = [[UIStroke]]
+G2L["264"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+G2L["264"].Color = Color3.fromRGB(255, 255, 255)
+G2L["264"].Enabled = true
+G2L["264"].Thickness = 3
+G2L["264"].Transparency = 0
+G2L["264"].Parent = G2L["263"]
+
+--ScreenGui.Frame.TextButton.UIStroke.UIGradient
+G2L["265"].Name = [[UIGradient]]
+G2L["265"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(207, 207, 207))};
+G2L["265"].Enabled = true
+G2L["265"].Rotation = 0
+G2L["265"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["265"].Parent = G2L["264"]
+
+--ScreenGui.Frame.TextButton.Script
+G2L["266"].Name = [[Script]]
+G2L["266"].Parent = G2L["263"]
+
+--ScreenGui.Frame.TextButton.Script.FakeMouse
+G2L["267"].Name = [[FakeMouse]]
+G2L["267"].Parent = G2L["266"]
+
+--ScreenGui.Frame.TextButton.Script.FakeMouse.Client
+G2L["268"].Name = [[Client]]
+G2L["268"].Parent = G2L["267"]
+
+--ScreenGui.Frame.TextButton.Script.FakeMouse.GetPlr
+G2L["269"].Name = [[GetPlr]]
+G2L["269"].Parent = G2L["267"]
+
+--ScreenGui.Frame.TextButton.Script.FakeMouse.GetPlrE
+G2L["270"].Name = [[GetPlrE]]
+G2L["270"].Parent = G2L["267"]
+
+--ScreenGui.Frame.ImageLabel
+G2L["271"].Name = [[ImageLabel]]
+G2L["271"].Image = [[http://www.roblox.com/asset/?id=14916988619]]
+G2L["271"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["271"].ScaleType = Enum.ScaleType.Stretch
+G2L["271"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["271"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["271"].Active = false
+G2L["271"].AnchorPoint = Vector2.new(0, 0)
+G2L["271"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["271"].BackgroundTransparency = 0
+G2L["271"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["271"].BorderSizePixel = 0
+G2L["271"].ClipsDescendants = false
+G2L["271"].Draggable = false
+G2L["271"].Position = UDim2.new(0.008283091, 0, 1, 0)
+G2L["271"].Rotation = 0
+G2L["271"].Selectable = false
+G2L["271"].SelectionOrder = 0
+G2L["271"].Size = UDim2.new(0, 120, 0, 100)
+G2L["271"].Visible = true
+G2L["271"].ZIndex = 1
+G2L["271"].Parent = G2L["1"]
+
+--ScreenGui.Frame.ImageLabel
+G2L["272"].Name = [[ImageLabel]]
+G2L["272"].Image = [[http://www.roblox.com/asset/?id=14922542352]]
+G2L["272"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["272"].ScaleType = Enum.ScaleType.Stretch
+G2L["272"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["272"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["272"].Active = false
+G2L["272"].AnchorPoint = Vector2.new(0, 0)
+G2L["272"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["272"].BackgroundTransparency = 0
+G2L["272"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["272"].BorderSizePixel = 0
+G2L["272"].ClipsDescendants = false
+G2L["272"].Draggable = false
+G2L["272"].Position = UDim2.new(0.7363364, 0, 1, 0)
+G2L["272"].Rotation = 0
+G2L["272"].Selectable = false
+G2L["272"].SelectionOrder = 0
+G2L["272"].Size = UDim2.new(0, 120, 0, 100)
+G2L["272"].Visible = true
+G2L["272"].ZIndex = 1
+G2L["272"].Parent = G2L["1"]
+
+--[[
+    Scripts
+--]]
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ju.LocalScript
+local function C_G2L_13()
+local script = G2L["13"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_13)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel..LocalScript
+local function C_G2L_44()
+local script = G2L["44"]
+script.Parent.MouseButton1Down:Connect(function()
+	script.Parent.Script.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_44)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_85()
+local script = G2L["85"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_85)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_107()
+local script = G2L["107"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_107)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_113()
+local script = G2L["113"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_113)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_119()
+local script = G2L["119"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_119)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_124()
+local script = G2L["124"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_124)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_133()
+local script = G2L["133"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_133)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_146()
+local script = G2L["146"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_146)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Rainbow
+local function C_G2L_149()
+local script = G2L["149"]
+function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+counter = 0
+
+while wait(0.1)do
+	script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+	counter = counter + 0.01
+end
+end
+task.spawn(C_G2L_149)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_153()
+local script = G2L["153"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_153)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_163()
+local script = G2L["163"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_163)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_169()
+local script = G2L["169"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_169)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_179()
+local script = G2L["179"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_179)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_185()
+local script = G2L["185"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_185)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_195()
+local script = G2L["195"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_195)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_203()
+local script = G2L["203"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_203)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_208()
+local script = G2L["208"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_208)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_213()
+local script = G2L["213"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_213)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_215()
+local script = G2L["215"]
+function click()
+	local name = game.Players.LocalPlayer.Name
+
+	local p = Instance.new("Part")
+	p.Parent = workspace
+	p.Locked = true
+	p.BrickColor = BrickColor.new("White")
+	p.BrickColor = BrickColor.new(104)
+	p.Size = Vector3.new(8, 1.2, 8)
+	p.Anchored = true
+	local m = Instance.new("CylinderMesh")
+	m.Scale = Vector3.new(1, 0.5, 1)
+	m.Parent = p
+	while true do
+		p.CFrame = CFrame.new(game.Players:findFirstChild(name).Character.Torso.CFrame.x, game.Players:findFirstChild(name).Character.Torso.CFrame.y - 4, game.Players:findFirstChild(name).Character.Torso.CFrame.z)
+		wait()
+	end
+end
+
+script.Parent.MouseButton1Down:connect(click)
+end
+task.spawn(C_G2L_215)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_219()
+local script = G2L["219"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_219)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_225()
+local script = G2L["225"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_225)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextButton.LocalScript
+local function C_G2L_231()
+local script = G2L["231"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_231)
+
+
+--ScreenGui.Frame.ScrollingFrame.Smooth GUI Dragging
+local function C_G2L_234()
+local script = G2L["234"]
+local UserInputService = game:GetService("UserInputService")
+local runService = (game:GetService("RunService"));
+
+local gui = script.Parent
+
+local dragging
+local dragInput
+local dragStart
+local startPos
+
+function Lerp(a, b, m)
+	return a + (b - a) * m
+end;
+
+local lastMousePos
+local lastGoalPos
+local DRAG_SPEED = (8); -- // The speed of the UI darg.
+function Update(dt)
+	if not (startPos) then return end;
+	if not (dragging) and (lastGoalPos) then
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+		return 
+	end;
+
+	local delta = (lastMousePos - UserInputService:GetMouseLocation())
+	local xGoal = (startPos.X.Offset - delta.X);
+	local yGoal = (startPos.Y.Offset - delta.Y);
+	lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+	gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+end;
+
+gui.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = gui.Position
+		lastMousePos = UserInputService:GetMouseLocation()
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+gui.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+runService.Heartbeat:Connect(Update)
+end
+task.spawn(C_G2L_234)
+
+
+--ScreenGui.Frame.TextButton.LocalScript
+local function C_G2L_239()
+local script = G2L["239"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_239)
+
+
+--ScreenGui.Frame.TextButton.LocalScript
+local function C_G2L_261()
+local script = G2L["261"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_261)
+
+
+--ScreenGui.Frame.TextButton.Script.FakeMouse
+G2L_MODULES[G2L["267"]] = {
+Closure = function()
+local script = G2L["267"]
+local Converter = {}
+script.Client.Disabled = false -- enables the client
+
+
+Converter.LocalPlayer = nil
+local Plr = nil -- temp
+
+
+script.GetPlr.OnServerEvent:Connect(function(Plrr)
+	Plr = Plrr
+end)
+
+
+
+-- A LIST OF ALL FUNCTIONS / EVENTS / PROPERTIES --
+
+repeat wait() until Plr
+
+function Converter:GetPlr()
+	return script.GetPlrE:InvokeClient(Plr)
+end
+
+
+Converter.LocalPlayer = Plr
+
+return Converter
+end
+}
+--ScreenGui.Frame.TextButton.Script.FakeMouse.Client
+local function C_G2L_268()
+local script = G2L["268"]
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+script.Parent:WaitForChild('GetPlr'):FireServer()
+
+local player = game.Players.LocalPlayer
+
+script.Parent.GetPlrE.OnClientInvoke = function()
+	return game.Players.LocalPlayer
+end
+
+
+end
+task.spawn(C_G2L_268)
+
+
+
+return G2L["0"], require;
