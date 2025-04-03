@@ -1,0 +1,1685 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER FROM MorrisBr
+]=]
+
+
+-- Instances: 101 | Scripts: ?? | Modules: ??
+
+local G2L = {}
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+
+--[[
+    Instances:
+--]]
+
+--ScreenGui
+G2L["0"] = Instance.new("ScreenGui")
+
+--ScreenGui.Frame
+G2L["1"] = Instance.new("Frame")
+
+--ScreenGui.Frame.ScrollingFrame
+G2L["2"] = Instance.new("ScrollingFrame")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel
+G2L["3"] = Instance.new("TextLabel")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ImageLabel
+G2L["4"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ImageLabel
+G2L["5"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.UIGradient
+G2L["6"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ImageLabel
+G2L["7"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.UICorner
+G2L["8"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Music
+G2L["9"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Music.UICorner
+G2L["10"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Music.UIGradient
+G2L["11"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Music.Script
+G2L["12"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Decal
+G2L["13"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Decal.UICorner
+G2L["14"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Decal.UIGradient
+G2L["15"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Decal.Script
+G2L["16"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Hint
+G2L["17"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Hint.UICorner
+G2L["18"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Hint.UIGradient
+G2L["19"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Hint.Script
+G2L["20"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Sky
+G2L["21"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Sky.UICorner
+G2L["22"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Sky.UIGradient
+G2L["23"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Sky.Script
+G2L["24"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Disco
+G2L["25"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Disco.UICorner
+G2L["26"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Disco.UIGradient
+G2L["27"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Disco.Script
+G2L["28"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Particles
+G2L["29"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Particles.UICorner
+G2L["30"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Particles.UIGradient
+G2L["31"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Particles.Script
+G2L["32"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Particles.Script
+G2L["33"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Jumpscare
+G2L["34"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Jumpscare.UICorner
+G2L["35"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Jumpscare.UIGradient
+G2L["36"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Jumpscare.Script
+G2L["37"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser
+G2L["38"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.UICorner
+G2L["39"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.UIGradient
+G2L["40"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.Script
+G2L["41"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.LocalScript
+G2L["42"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.RemoteEvent
+G2L["43"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel
+G2L["44"] = Instance.new("TextLabel")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel.UICorner
+G2L["45"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel.UIGradient
+G2L["46"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ImageLabel
+G2L["47"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ImageLabel
+G2L["48"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.idk
+G2L["49"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.idk.UICorner
+G2L["50"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.idk.UIGradient
+G2L["51"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.idk.Script
+G2L["52"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.cyin
+G2L["53"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.cyin.UICorner
+G2L["54"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.cyin.UIGradient
+G2L["55"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.cyin.Script
+G2L["56"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.rizz music
+G2L["57"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.rizz music.UICorner
+G2L["58"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.rizz music.UIGradient
+G2L["59"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.rizz music.Script
+G2L["60"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset
+G2L["61"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.UICorner
+G2L["62"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.UIGradient
+G2L["63"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.Script
+G2L["64"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.LocalScript
+G2L["65"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.RemoteEvent
+G2L["66"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6
+G2L["67"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.UICorner
+G2L["68"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.UIGradient
+G2L["69"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.Script
+G2L["70"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.LocalScript
+G2L["71"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.RemoteEvent
+G2L["72"] = Instance.new("RemoteEvent")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.mlg music
+G2L["73"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.mlg music.UICorner
+G2L["74"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.mlg music.UIGradient
+G2L["75"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.mlg music.Script
+G2L["76"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.br/zil phonk
+G2L["77"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.br/zil phonk.UICorner
+G2L["78"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.br/zil phonk.UIGradient
+G2L["79"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.br/zil phonk.Script
+G2L["80"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.phonk loop
+G2L["81"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.phonk loop.UICorner
+G2L["82"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.phonk loop.UIGradient
+G2L["83"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.phonk loop.Script
+G2L["84"] = Instance.new("Script")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.stop music
+G2L["85"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.stop music.UICorner
+G2L["86"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.stop music.UIGradient
+G2L["87"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.Drag Gui Script
+G2L["88"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.UICorner
+G2L["89"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.UIStroke
+G2L["90"] = Instance.new("UIStroke")
+
+--ScreenGui.Frame.UIStroke.UIGradient
+G2L["91"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.UIStroke.UIGradient.LocalScript
+G2L["92"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ImageLabel
+G2L["93"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+G2L["94"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ImageLabel
+G2L["95"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+G2L["96"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ImageLabel
+G2L["97"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+G2L["98"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame.ImageLabel
+G2L["99"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+G2L["100"] = Instance.new("LocalScript")
+
+
+
+--[[
+    Properties:
+--]]
+--ScreenGui
+G2L["0"].Name = [[ScreenGui]]
+G2L["0"].Enabled = true
+G2L["0"].ZIndexBehavior = Enum.ZIndexBehavior.Global
+G2L["0"].Parent = game.Players.LocalPlayer.PlayerGui
+
+--ScreenGui.Frame
+G2L["1"].Name = [[Frame]]
+G2L["1"].Active = false
+G2L["1"].AnchorPoint = Vector2.new(0, 0)
+G2L["1"].BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+G2L["1"].BackgroundTransparency = 0
+G2L["1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["1"].BorderSizePixel = 0
+G2L["1"].ClipsDescendants = false
+G2L["1"].Draggable = false
+G2L["1"].Position = UDim2.new(0.4712171, 0, 0.33461538, 0)
+G2L["1"].Rotation = 0
+G2L["1"].Selectable = false
+G2L["1"].SelectionOrder = 0
+G2L["1"].Size = UDim2.new(0, 384, 0, 258)
+G2L["1"].Visible = true
+G2L["1"].ZIndex = 1
+G2L["1"].Parent = G2L["0"]
+
+--ScreenGui.Frame.ScrollingFrame
+G2L["2"].Name = [[ScrollingFrame]]
+G2L["2"].BottomImage = [[rbxasset://textures/ui/Scroll/scroll-bottom.png]]
+G2L["2"].CanvasSize = UDim2.new(0, 0, 2, 0)
+G2L["2"].HorizontalScrollBarInset = Enum.ScrollBarInset.None
+G2L["2"].ScrollBarThickness = 12
+G2L["2"].TopImage = [[rbxasset://textures/ui/Scroll/scroll-top.png]]
+G2L["2"].Active = true
+G2L["2"].AnchorPoint = Vector2.new(0, 0)
+G2L["2"].BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+G2L["2"].BackgroundTransparency = 0
+G2L["2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["2"].BorderSizePixel = 0
+G2L["2"].ClipsDescendants = true
+G2L["2"].Draggable = false
+G2L["2"].Position = UDim2.new(0.042220753, 0, 0.03875969, 0)
+G2L["2"].Rotation = 0
+G2L["2"].Selectable = true
+G2L["2"].SelectionOrder = 0
+G2L["2"].Size = UDim2.new(0, 351, 0, 237)
+G2L["2"].Visible = true
+G2L["2"].ZIndex = 1
+G2L["2"].Parent = G2L["1"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel
+G2L["3"].Name = [[TextLabel]]
+G2L["3"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["3"].Text = [[OR4NGEGUI V1 (fan made by l33k1dd)]]
+G2L["3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["3"].TextScaled = true
+G2L["3"].TextSize = 14
+G2L["3"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["3"].TextStrokeTransparency = 1
+G2L["3"].TextWrapped = true
+G2L["3"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["3"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["3"].Active = false
+G2L["3"].AnchorPoint = Vector2.new(0, 0)
+G2L["3"].BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+G2L["3"].BackgroundTransparency = 0
+G2L["3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["3"].BorderSizePixel = 0
+G2L["3"].ClipsDescendants = false
+G2L["3"].Draggable = false
+G2L["3"].Position = UDim2.new(0.27920228, 0, -0.0020221437, 0)
+G2L["3"].Rotation = 0
+G2L["3"].Selectable = false
+G2L["3"].SelectionOrder = 0
+G2L["3"].Size = UDim2.new(0, 137, 0, 39)
+G2L["3"].Visible = true
+G2L["3"].ZIndex = 1
+G2L["3"].Parent = G2L["2"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ImageLabel
+G2L["4"].Name = [[ImageLabel]]
+G2L["4"].Image = [[rbxassetid://15866093321]]
+G2L["4"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["4"].ScaleType = Enum.ScaleType.Stretch
+G2L["4"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["4"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["4"].Active = false
+G2L["4"].AnchorPoint = Vector2.new(0, 0)
+G2L["4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["4"].BackgroundTransparency = 0
+G2L["4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["4"].BorderSizePixel = 0
+G2L["4"].ClipsDescendants = false
+G2L["4"].Draggable = false
+G2L["4"].Position = UDim2.new(-0.7422779, 0, -0.10256645, 0)
+G2L["4"].Rotation = 0
+G2L["4"].Selectable = false
+G2L["4"].SelectionOrder = 0
+G2L["4"].Size = UDim2.new(0, 39, 0, 56)
+G2L["4"].Visible = true
+G2L["4"].ZIndex = 1
+G2L["4"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ImageLabel
+G2L["5"].Name = [[ImageLabel]]
+G2L["5"].Image = [[rbxassetid://15866093321]]
+G2L["5"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["5"].ScaleType = Enum.ScaleType.Stretch
+G2L["5"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["5"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["5"].Active = false
+G2L["5"].AnchorPoint = Vector2.new(0, 0)
+G2L["5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["5"].BackgroundTransparency = 0
+G2L["5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["5"].BorderSizePixel = 0
+G2L["5"].ClipsDescendants = false
+G2L["5"].Draggable = false
+G2L["5"].Position = UDim2.new(1.4563363, 0, -0.025641026, 0)
+G2L["5"].Rotation = 0
+G2L["5"].Selectable = false
+G2L["5"].SelectionOrder = 0
+G2L["5"].Size = UDim2.new(0, 39, 0, 52)
+G2L["5"].Visible = true
+G2L["5"].ZIndex = 1
+G2L["5"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.UIGradient
+G2L["6"].Name = [[UIGradient]]
+G2L["6"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 170, 0))};
+G2L["6"].Enabled = true
+G2L["6"].Rotation = 0
+G2L["6"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["6"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ImageLabel
+G2L["7"].Name = [[ImageLabel]]
+G2L["7"].Image = [[rbxassetid://15865788530]]
+G2L["7"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["7"].ScaleType = Enum.ScaleType.Stretch
+G2L["7"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["7"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["7"].Active = false
+G2L["7"].AnchorPoint = Vector2.new(0, 0)
+G2L["7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["7"].BackgroundTransparency = 1
+G2L["7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["7"].BorderSizePixel = 0
+G2L["7"].ClipsDescendants = false
+G2L["7"].Draggable = false
+G2L["7"].Position = UDim2.new(-0.64897877, 0, 6.5344033, 0)
+G2L["7"].Rotation = 0
+G2L["7"].Selectable = false
+G2L["7"].SelectionOrder = 0
+G2L["7"].Size = UDim2.new(0, 110, 0, 69)
+G2L["7"].Visible = true
+G2L["7"].ZIndex = 1
+G2L["7"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.UICorner
+G2L["8"].Name = [[UICorner]]
+G2L["8"].CornerRadius = UDim.new(0, 8)
+G2L["8"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Music
+G2L["9"].Name = [[Music]]
+G2L["9"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["9"].Text = [[Music]]
+G2L["9"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].TextScaled = true
+G2L["9"].TextSize = 14
+G2L["9"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].TextStrokeTransparency = 1
+G2L["9"].TextWrapped = true
+G2L["9"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["9"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["9"].Active = true
+G2L["9"].AnchorPoint = Vector2.new(0, 0)
+G2L["9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["9"].BackgroundTransparency = 0
+G2L["9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].BorderSizePixel = 0
+G2L["9"].ClipsDescendants = false
+G2L["9"].Draggable = false
+G2L["9"].Position = UDim2.new(-0.30656934, 0, 1.5384616, 0)
+G2L["9"].Rotation = 0
+G2L["9"].Selectable = true
+G2L["9"].SelectionOrder = 0
+G2L["9"].Size = UDim2.new(0, 102, 0, 27)
+G2L["9"].Visible = true
+G2L["9"].ZIndex = 1
+G2L["9"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Music.UICorner
+G2L["10"].Name = [[UICorner]]
+G2L["10"].CornerRadius = UDim.new(0, 8)
+G2L["10"].Parent = G2L["9"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Music.UIGradient
+G2L["11"].Name = [[UIGradient]]
+G2L["11"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["11"].Enabled = true
+G2L["11"].Rotation = 0
+G2L["11"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["11"].Parent = G2L["9"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Music.Script
+G2L["12"].Name = [[Script]]
+G2L["12"].Parent = G2L["9"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Decal
+G2L["13"].Name = [[Decal]]
+G2L["13"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["13"].Text = [[Decal ]]
+G2L["13"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].TextScaled = true
+G2L["13"].TextSize = 14
+G2L["13"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].TextStrokeTransparency = 1
+G2L["13"].TextWrapped = true
+G2L["13"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["13"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["13"].Active = true
+G2L["13"].AnchorPoint = Vector2.new(0, 0)
+G2L["13"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["13"].BackgroundTransparency = 0
+G2L["13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].BorderSizePixel = 0
+G2L["13"].ClipsDescendants = false
+G2L["13"].Draggable = false
+G2L["13"].Position = UDim2.new(0.67153287, 0, 1.5384616, 0)
+G2L["13"].Rotation = 0
+G2L["13"].Selectable = true
+G2L["13"].SelectionOrder = 0
+G2L["13"].Size = UDim2.new(0, 115, 0, 27)
+G2L["13"].Visible = true
+G2L["13"].ZIndex = 1
+G2L["13"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Decal.UICorner
+G2L["14"].Name = [[UICorner]]
+G2L["14"].CornerRadius = UDim.new(0, 8)
+G2L["14"].Parent = G2L["13"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Decal.UIGradient
+G2L["15"].Name = [[UIGradient]]
+G2L["15"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["15"].Enabled = true
+G2L["15"].Rotation = 0
+G2L["15"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["15"].Parent = G2L["13"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Decal.Script
+G2L["16"].Name = [[Script]]
+G2L["16"].Parent = G2L["13"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Hint
+G2L["17"].Name = [[Hint]]
+G2L["17"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["17"].Text = [[Hint]]
+G2L["17"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["17"].TextScaled = true
+G2L["17"].TextSize = 14
+G2L["17"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["17"].TextStrokeTransparency = 1
+G2L["17"].TextWrapped = true
+G2L["17"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["17"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["17"].Active = true
+G2L["17"].AnchorPoint = Vector2.new(0, 0)
+G2L["17"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["17"].BackgroundTransparency = 0
+G2L["17"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["17"].BorderSizePixel = 0
+G2L["17"].ClipsDescendants = false
+G2L["17"].Draggable = false
+G2L["17"].Position = UDim2.new(-0.30656934, 0, 2.7179487, 0)
+G2L["17"].Rotation = 0
+G2L["17"].Selectable = true
+G2L["17"].SelectionOrder = 0
+G2L["17"].Size = UDim2.new(0, 102, 0, 27)
+G2L["17"].Visible = true
+G2L["17"].ZIndex = 1
+G2L["17"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Hint.UICorner
+G2L["18"].Name = [[UICorner]]
+G2L["18"].CornerRadius = UDim.new(0, 8)
+G2L["18"].Parent = G2L["17"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Hint.UIGradient
+G2L["19"].Name = [[UIGradient]]
+G2L["19"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["19"].Enabled = true
+G2L["19"].Rotation = 0
+G2L["19"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["19"].Parent = G2L["17"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Hint.Script
+G2L["20"].Name = [[Script]]
+G2L["20"].Parent = G2L["17"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Sky
+G2L["21"].Name = [[Sky]]
+G2L["21"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["21"].Text = [[Sky]]
+G2L["21"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["21"].TextScaled = true
+G2L["21"].TextSize = 14
+G2L["21"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["21"].TextStrokeTransparency = 1
+G2L["21"].TextWrapped = true
+G2L["21"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["21"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["21"].Active = true
+G2L["21"].AnchorPoint = Vector2.new(0, 0)
+G2L["21"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["21"].BackgroundTransparency = 0
+G2L["21"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["21"].BorderSizePixel = 0
+G2L["21"].ClipsDescendants = false
+G2L["21"].Draggable = false
+G2L["21"].Position = UDim2.new(0.71532845, 0, 2.7179487, 0)
+G2L["21"].Rotation = 0
+G2L["21"].Selectable = true
+G2L["21"].SelectionOrder = 0
+G2L["21"].Size = UDim2.new(0, 102, 0, 27)
+G2L["21"].Visible = true
+G2L["21"].ZIndex = 1
+G2L["21"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Sky.UICorner
+G2L["22"].Name = [[UICorner]]
+G2L["22"].CornerRadius = UDim.new(0, 8)
+G2L["22"].Parent = G2L["21"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Sky.UIGradient
+G2L["23"].Name = [[UIGradient]]
+G2L["23"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["23"].Enabled = true
+G2L["23"].Rotation = 0
+G2L["23"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["23"].Parent = G2L["21"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Sky.Script
+G2L["24"].Name = [[Script]]
+G2L["24"].Parent = G2L["21"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Disco
+G2L["25"].Name = [[Disco]]
+G2L["25"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["25"].Text = [[disco]]
+G2L["25"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["25"].TextScaled = true
+G2L["25"].TextSize = 14
+G2L["25"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["25"].TextStrokeTransparency = 1
+G2L["25"].TextWrapped = true
+G2L["25"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["25"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["25"].Active = true
+G2L["25"].AnchorPoint = Vector2.new(0, 0)
+G2L["25"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["25"].BackgroundTransparency = 0
+G2L["25"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["25"].BorderSizePixel = 0
+G2L["25"].ClipsDescendants = false
+G2L["25"].Draggable = false
+G2L["25"].Position = UDim2.new(-0.30656934, 0, 4.076923, 0)
+G2L["25"].Rotation = 0
+G2L["25"].Selectable = true
+G2L["25"].SelectionOrder = 0
+G2L["25"].Size = UDim2.new(0, 102, 0, 27)
+G2L["25"].Visible = true
+G2L["25"].ZIndex = 1
+G2L["25"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Disco.UICorner
+G2L["26"].Name = [[UICorner]]
+G2L["26"].CornerRadius = UDim.new(0, 8)
+G2L["26"].Parent = G2L["25"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Disco.UIGradient
+G2L["27"].Name = [[UIGradient]]
+G2L["27"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["27"].Enabled = true
+G2L["27"].Rotation = 0
+G2L["27"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["27"].Parent = G2L["25"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Disco.Script
+G2L["28"].Name = [[Script]]
+G2L["28"].Parent = G2L["25"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Particles
+G2L["29"].Name = [[Particles]]
+G2L["29"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["29"].Text = [[particles]]
+G2L["29"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["29"].TextScaled = true
+G2L["29"].TextSize = 14
+G2L["29"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["29"].TextStrokeTransparency = 1
+G2L["29"].TextWrapped = true
+G2L["29"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["29"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["29"].Active = true
+G2L["29"].AnchorPoint = Vector2.new(0, 0)
+G2L["29"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["29"].BackgroundTransparency = 0
+G2L["29"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["29"].BorderSizePixel = 0
+G2L["29"].ClipsDescendants = false
+G2L["29"].Draggable = false
+G2L["29"].Position = UDim2.new(0.71532845, 0, 4.076923, 0)
+G2L["29"].Rotation = 0
+G2L["29"].Selectable = true
+G2L["29"].SelectionOrder = 0
+G2L["29"].Size = UDim2.new(0, 102, 0, 27)
+G2L["29"].Visible = true
+G2L["29"].ZIndex = 1
+G2L["29"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Particles.UICorner
+G2L["30"].Name = [[UICorner]]
+G2L["30"].CornerRadius = UDim.new(0, 8)
+G2L["30"].Parent = G2L["29"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Particles.UIGradient
+G2L["31"].Name = [[UIGradient]]
+G2L["31"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["31"].Enabled = true
+G2L["31"].Rotation = 0
+G2L["31"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["31"].Parent = G2L["29"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Particles.Script
+G2L["32"].Name = [[Script]]
+G2L["32"].Parent = G2L["29"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Particles.Script
+G2L["33"].Name = [[Script]]
+G2L["33"].Parent = G2L["29"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Jumpscare
+G2L["34"].Name = [[Jumpscare]]
+G2L["34"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["34"].Text = [[jumpscare]]
+G2L["34"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["34"].TextScaled = true
+G2L["34"].TextSize = 14
+G2L["34"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["34"].TextStrokeTransparency = 1
+G2L["34"].TextWrapped = true
+G2L["34"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["34"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["34"].Active = true
+G2L["34"].AnchorPoint = Vector2.new(0, 0)
+G2L["34"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["34"].BackgroundTransparency = 0
+G2L["34"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["34"].BorderSizePixel = 0
+G2L["34"].ClipsDescendants = false
+G2L["34"].Draggable = false
+G2L["34"].Position = UDim2.new(-0.30656934, 0, 5.487179, 0)
+G2L["34"].Rotation = 0
+G2L["34"].Selectable = true
+G2L["34"].SelectionOrder = 0
+G2L["34"].Size = UDim2.new(0, 102, 0, 27)
+G2L["34"].Visible = true
+G2L["34"].ZIndex = 1
+G2L["34"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Jumpscare.UICorner
+G2L["35"].Name = [[UICorner]]
+G2L["35"].CornerRadius = UDim.new(0, 8)
+G2L["35"].Parent = G2L["34"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Jumpscare.UIGradient
+G2L["36"].Name = [[UIGradient]]
+G2L["36"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["36"].Enabled = true
+G2L["36"].Rotation = 0
+G2L["36"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["36"].Parent = G2L["34"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Jumpscare.Script
+G2L["37"].Name = [[Script]]
+G2L["37"].Parent = G2L["34"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser
+G2L["38"].Name = [[exser]]
+G2L["38"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["38"].Text = [[exser]]
+G2L["38"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["38"].TextScaled = true
+G2L["38"].TextSize = 14
+G2L["38"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["38"].TextStrokeTransparency = 1
+G2L["38"].TextWrapped = true
+G2L["38"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["38"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["38"].Active = true
+G2L["38"].AnchorPoint = Vector2.new(0, 0)
+G2L["38"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["38"].BackgroundTransparency = 0
+G2L["38"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["38"].BorderSizePixel = 0
+G2L["38"].ClipsDescendants = false
+G2L["38"].Draggable = false
+G2L["38"].Position = UDim2.new(0.71532845, 0, 5.487179, 0)
+G2L["38"].Rotation = 0
+G2L["38"].Selectable = true
+G2L["38"].SelectionOrder = 0
+G2L["38"].Size = UDim2.new(0, 102, 0, 27)
+G2L["38"].Visible = true
+G2L["38"].ZIndex = 1
+G2L["38"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.UICorner
+G2L["39"].Name = [[UICorner]]
+G2L["39"].CornerRadius = UDim.new(0, 8)
+G2L["39"].Parent = G2L["38"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.UIGradient
+G2L["40"].Name = [[UIGradient]]
+G2L["40"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["40"].Enabled = true
+G2L["40"].Rotation = 0
+G2L["40"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["40"].Parent = G2L["38"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.Script
+G2L["41"].Name = [[Script]]
+G2L["41"].Parent = G2L["38"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.LocalScript
+G2L["42"].Name = [[LocalScript]]
+G2L["42"].Parent = G2L["38"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.RemoteEvent
+G2L["43"].Name = [[RemoteEvent]]
+G2L["43"].Parent = G2L["38"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel
+G2L["44"].Name = [[TextLabel]]
+G2L["44"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["44"].Text = [[--------------byppased songs--------------]]
+G2L["44"].TextColor3 = Color3.fromRGB(255, 85, 0)
+G2L["44"].TextScaled = true
+G2L["44"].TextSize = 14
+G2L["44"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["44"].TextStrokeTransparency = 1
+G2L["44"].TextWrapped = true
+G2L["44"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["44"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["44"].Active = false
+G2L["44"].AnchorPoint = Vector2.new(0, 0)
+G2L["44"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["44"].BackgroundTransparency = 0
+G2L["44"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["44"].BorderSizePixel = 0
+G2L["44"].ClipsDescendants = false
+G2L["44"].Draggable = false
+G2L["44"].Position = UDim2.new(-0.55979574, 0, 8.410255, 0)
+G2L["44"].Rotation = 0
+G2L["44"].Selectable = false
+G2L["44"].SelectionOrder = 0
+G2L["44"].Size = UDim2.new(0, 308, 0, 43)
+G2L["44"].Visible = true
+G2L["44"].ZIndex = 1
+G2L["44"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel.UICorner
+G2L["45"].Name = [[UICorner]]
+G2L["45"].CornerRadius = UDim.new(0, 8)
+G2L["45"].Parent = G2L["44"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.TextLabel.UIGradient
+G2L["46"].Name = [[UIGradient]]
+G2L["46"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 170, 0))};
+G2L["46"].Enabled = true
+G2L["46"].Rotation = 0
+G2L["46"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["46"].Parent = G2L["44"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ImageLabel
+G2L["47"].Name = [[ImageLabel]]
+G2L["47"].Image = [[rbxassetid://15865788530]]
+G2L["47"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["47"].ScaleType = Enum.ScaleType.Stretch
+G2L["47"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["47"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["47"].Active = false
+G2L["47"].AnchorPoint = Vector2.new(0, 0)
+G2L["47"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["47"].BackgroundTransparency = 1
+G2L["47"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["47"].BorderSizePixel = 0
+G2L["47"].ClipsDescendants = false
+G2L["47"].Draggable = false
+G2L["47"].Position = UDim2.new(0.09554675, 0, 6.5344033, 0)
+G2L["47"].Rotation = 0
+G2L["47"].Selectable = false
+G2L["47"].SelectionOrder = 0
+G2L["47"].Size = UDim2.new(0, 110, 0, 69)
+G2L["47"].Visible = true
+G2L["47"].ZIndex = 1
+G2L["47"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.ImageLabel
+G2L["48"].Name = [[ImageLabel]]
+G2L["48"].Image = [[rbxassetid://15865788530]]
+G2L["48"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["48"].ScaleType = Enum.ScaleType.Stretch
+G2L["48"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["48"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["48"].Active = false
+G2L["48"].AnchorPoint = Vector2.new(0, 0)
+G2L["48"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["48"].BackgroundTransparency = 1
+G2L["48"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["48"].BorderSizePixel = 0
+G2L["48"].ClipsDescendants = false
+G2L["48"].Draggable = false
+G2L["48"].Position = UDim2.new(0.8254738, 0, 6.5344033, 0)
+G2L["48"].Rotation = 0
+G2L["48"].Selectable = false
+G2L["48"].SelectionOrder = 0
+G2L["48"].Size = UDim2.new(0, 110, 0, 69)
+G2L["48"].Visible = true
+G2L["48"].ZIndex = 1
+G2L["48"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.idk
+G2L["49"].Name = [[idk]]
+G2L["49"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["49"].Text = [[idk]]
+G2L["49"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["49"].TextScaled = true
+G2L["49"].TextSize = 14
+G2L["49"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["49"].TextStrokeTransparency = 1
+G2L["49"].TextWrapped = true
+G2L["49"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["49"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["49"].Active = true
+G2L["49"].AnchorPoint = Vector2.new(0, 0)
+G2L["49"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["49"].BackgroundTransparency = 0
+G2L["49"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["49"].BorderSizePixel = 0
+G2L["49"].ClipsDescendants = false
+G2L["49"].Draggable = false
+G2L["49"].Position = UDim2.new(-0.45255473, 0, 10.076922, 0)
+G2L["49"].Rotation = 0
+G2L["49"].Selectable = true
+G2L["49"].SelectionOrder = 0
+G2L["49"].Size = UDim2.new(0, 83, 0, 27)
+G2L["49"].Visible = true
+G2L["49"].ZIndex = 1
+G2L["49"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.idk.UICorner
+G2L["50"].Name = [[UICorner]]
+G2L["50"].CornerRadius = UDim.new(0, 8)
+G2L["50"].Parent = G2L["49"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.idk.UIGradient
+G2L["51"].Name = [[UIGradient]]
+G2L["51"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["51"].Enabled = true
+G2L["51"].Rotation = 0
+G2L["51"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["51"].Parent = G2L["49"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.idk.Script
+G2L["52"].Name = [[Script]]
+G2L["52"].Parent = G2L["49"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.cyin
+G2L["53"].Name = [[cyin]]
+G2L["53"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["53"].Text = [[cyin]]
+G2L["53"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["53"].TextScaled = true
+G2L["53"].TextSize = 14
+G2L["53"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["53"].TextStrokeTransparency = 1
+G2L["53"].TextWrapped = true
+G2L["53"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["53"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["53"].Active = true
+G2L["53"].AnchorPoint = Vector2.new(0, 0)
+G2L["53"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["53"].BackgroundTransparency = 0
+G2L["53"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["53"].BorderSizePixel = 0
+G2L["53"].ClipsDescendants = false
+G2L["53"].Draggable = false
+G2L["53"].Position = UDim2.new(0.2919708, 0, 10.076922, 0)
+G2L["53"].Rotation = 0
+G2L["53"].Selectable = true
+G2L["53"].SelectionOrder = 0
+G2L["53"].Size = UDim2.new(0, 83, 0, 27)
+G2L["53"].Visible = true
+G2L["53"].ZIndex = 1
+G2L["53"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.cyin.UICorner
+G2L["54"].Name = [[UICorner]]
+G2L["54"].CornerRadius = UDim.new(0, 8)
+G2L["54"].Parent = G2L["53"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.cyin.UIGradient
+G2L["55"].Name = [[UIGradient]]
+G2L["55"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["55"].Enabled = true
+G2L["55"].Rotation = 0
+G2L["55"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["55"].Parent = G2L["53"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.cyin.Script
+G2L["56"].Name = [[Script]]
+G2L["56"].Parent = G2L["53"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.rizz music
+G2L["57"].Name = [[rizz music]]
+G2L["57"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["57"].Text = [[rizz music]]
+G2L["57"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["57"].TextScaled = true
+G2L["57"].TextSize = 14
+G2L["57"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["57"].TextStrokeTransparency = 1
+G2L["57"].TextWrapped = true
+G2L["57"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["57"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["57"].Active = true
+G2L["57"].AnchorPoint = Vector2.new(0, 0)
+G2L["57"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["57"].BackgroundTransparency = 0
+G2L["57"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["57"].BorderSizePixel = 0
+G2L["57"].ClipsDescendants = false
+G2L["57"].Draggable = false
+G2L["57"].Position = UDim2.new(1, 0, 10.076922, 0)
+G2L["57"].Rotation = 0
+G2L["57"].Selectable = true
+G2L["57"].SelectionOrder = 0
+G2L["57"].Size = UDim2.new(0, 83, 0, 27)
+G2L["57"].Visible = true
+G2L["57"].ZIndex = 1
+G2L["57"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.rizz music.UICorner
+G2L["58"].Name = [[UICorner]]
+G2L["58"].CornerRadius = UDim.new(0, 8)
+G2L["58"].Parent = G2L["57"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.rizz music.UIGradient
+G2L["59"].Name = [[UIGradient]]
+G2L["59"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["59"].Enabled = true
+G2L["59"].Rotation = 0
+G2L["59"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["59"].Parent = G2L["57"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.rizz music.Script
+G2L["60"].Name = [[Script]]
+G2L["60"].Parent = G2L["57"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset
+G2L["61"].Name = [[Reset]]
+G2L["61"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["61"].Text = [[Re]]
+G2L["61"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["61"].TextScaled = true
+G2L["61"].TextSize = 14
+G2L["61"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["61"].TextStrokeTransparency = 1
+G2L["61"].TextWrapped = true
+G2L["61"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["61"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["61"].Active = true
+G2L["61"].AnchorPoint = Vector2.new(0, 0)
+G2L["61"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["61"].BackgroundTransparency = 0
+G2L["61"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["61"].BorderSizePixel = 0
+G2L["61"].ClipsDescendants = false
+G2L["61"].Draggable = false
+G2L["61"].Position = UDim2.new(-0.30656934, 0, 0.15384616, 0)
+G2L["61"].Rotation = 0
+G2L["61"].Selectable = true
+G2L["61"].SelectionOrder = 0
+G2L["61"].Size = UDim2.new(0, 27, 0, 27)
+G2L["61"].Visible = true
+G2L["61"].ZIndex = 1
+G2L["61"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.UICorner
+G2L["62"].Name = [[UICorner]]
+G2L["62"].CornerRadius = UDim.new(0, 8)
+G2L["62"].Parent = G2L["61"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.UIGradient
+G2L["63"].Name = [[UIGradient]]
+G2L["63"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["63"].Enabled = true
+G2L["63"].Rotation = 0
+G2L["63"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["63"].Parent = G2L["61"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.Script
+G2L["64"].Name = [[Script]]
+G2L["64"].Parent = G2L["61"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.LocalScript
+G2L["65"].Name = [[LocalScript]]
+G2L["65"].Parent = G2L["61"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.RemoteEvent
+G2L["66"].Name = [[RemoteEvent]]
+G2L["66"].Parent = G2L["61"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6
+G2L["67"].Name = [[R6]]
+G2L["67"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["67"].Text = [[R6]]
+G2L["67"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["67"].TextScaled = true
+G2L["67"].TextSize = 14
+G2L["67"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["67"].TextStrokeTransparency = 1
+G2L["67"].TextWrapped = true
+G2L["67"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["67"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["67"].Active = true
+G2L["67"].AnchorPoint = Vector2.new(0, 0)
+G2L["67"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["67"].BackgroundTransparency = 0
+G2L["67"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["67"].BorderSizePixel = 0
+G2L["67"].ClipsDescendants = false
+G2L["67"].Draggable = false
+G2L["67"].Position = UDim2.new(1.1240876, 0, 0.15384616, 0)
+G2L["67"].Rotation = 0
+G2L["67"].Selectable = true
+G2L["67"].SelectionOrder = 0
+G2L["67"].Size = UDim2.new(0, 27, 0, 27)
+G2L["67"].Visible = true
+G2L["67"].ZIndex = 1
+G2L["67"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.UICorner
+G2L["68"].Name = [[UICorner]]
+G2L["68"].CornerRadius = UDim.new(0, 8)
+G2L["68"].Parent = G2L["67"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.UIGradient
+G2L["69"].Name = [[UIGradient]]
+G2L["69"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["69"].Enabled = true
+G2L["69"].Rotation = 0
+G2L["69"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["69"].Parent = G2L["67"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.Script
+G2L["70"].Name = [[Script]]
+G2L["70"].Parent = G2L["67"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.LocalScript
+G2L["71"].Name = [[LocalScript]]
+G2L["71"].Parent = G2L["67"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.RemoteEvent
+G2L["72"].Name = [[RemoteEvent]]
+G2L["72"].Parent = G2L["67"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.mlg music
+G2L["73"].Name = [[mlg music]]
+G2L["73"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["73"].Text = [[mlg music]]
+G2L["73"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["73"].TextScaled = true
+G2L["73"].TextSize = 14
+G2L["73"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["73"].TextStrokeTransparency = 1
+G2L["73"].TextWrapped = true
+G2L["73"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["73"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["73"].Active = true
+G2L["73"].AnchorPoint = Vector2.new(0, 0)
+G2L["73"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["73"].BackgroundTransparency = 0
+G2L["73"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["73"].BorderSizePixel = 0
+G2L["73"].ClipsDescendants = false
+G2L["73"].Draggable = false
+G2L["73"].Position = UDim2.new(-0.45255473, 0, 11.28205, 0)
+G2L["73"].Rotation = 0
+G2L["73"].Selectable = true
+G2L["73"].SelectionOrder = 0
+G2L["73"].Size = UDim2.new(0, 83, 0, 27)
+G2L["73"].Visible = true
+G2L["73"].ZIndex = 1
+G2L["73"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.mlg music.UICorner
+G2L["74"].Name = [[UICorner]]
+G2L["74"].CornerRadius = UDim.new(0, 8)
+G2L["74"].Parent = G2L["73"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.mlg music.UIGradient
+G2L["75"].Name = [[UIGradient]]
+G2L["75"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["75"].Enabled = true
+G2L["75"].Rotation = 0
+G2L["75"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["75"].Parent = G2L["73"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.mlg music.Script
+G2L["76"].Name = [[Script]]
+G2L["76"].Parent = G2L["73"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.br/zil phonk
+G2L["77"].Name = [[br/zil phonk]]
+G2L["77"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["77"].Text = [[br/zil funk]]
+G2L["77"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["77"].TextScaled = true
+G2L["77"].TextSize = 14
+G2L["77"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["77"].TextStrokeTransparency = 1
+G2L["77"].TextWrapped = true
+G2L["77"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["77"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["77"].Active = true
+G2L["77"].AnchorPoint = Vector2.new(0, 0)
+G2L["77"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["77"].BackgroundTransparency = 0
+G2L["77"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["77"].BorderSizePixel = 0
+G2L["77"].ClipsDescendants = false
+G2L["77"].Draggable = false
+G2L["77"].Position = UDim2.new(0.2919708, 0, 11.28205, 0)
+G2L["77"].Rotation = 0
+G2L["77"].Selectable = true
+G2L["77"].SelectionOrder = 0
+G2L["77"].Size = UDim2.new(0, 83, 0, 27)
+G2L["77"].Visible = true
+G2L["77"].ZIndex = 1
+G2L["77"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.br/zil phonk.UICorner
+G2L["78"].Name = [[UICorner]]
+G2L["78"].CornerRadius = UDim.new(0, 8)
+G2L["78"].Parent = G2L["77"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.br/zil phonk.UIGradient
+G2L["79"].Name = [[UIGradient]]
+G2L["79"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["79"].Enabled = true
+G2L["79"].Rotation = 0
+G2L["79"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["79"].Parent = G2L["77"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.br/zil phonk.Script
+G2L["80"].Name = [[Script]]
+G2L["80"].Parent = G2L["77"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.phonk loop
+G2L["81"].Name = [[phonk loop]]
+G2L["81"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["81"].Text = [[phonk loop]]
+G2L["81"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["81"].TextScaled = true
+G2L["81"].TextSize = 14
+G2L["81"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["81"].TextStrokeTransparency = 1
+G2L["81"].TextWrapped = true
+G2L["81"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["81"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["81"].Active = true
+G2L["81"].AnchorPoint = Vector2.new(0, 0)
+G2L["81"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["81"].BackgroundTransparency = 0
+G2L["81"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["81"].BorderSizePixel = 0
+G2L["81"].ClipsDescendants = false
+G2L["81"].Draggable = false
+G2L["81"].Position = UDim2.new(1, 0, 11.28205, 0)
+G2L["81"].Rotation = 0
+G2L["81"].Selectable = true
+G2L["81"].SelectionOrder = 0
+G2L["81"].Size = UDim2.new(0, 83, 0, 27)
+G2L["81"].Visible = true
+G2L["81"].ZIndex = 1
+G2L["81"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.phonk loop.UICorner
+G2L["82"].Name = [[UICorner]]
+G2L["82"].CornerRadius = UDim.new(0, 8)
+G2L["82"].Parent = G2L["81"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.phonk loop.UIGradient
+G2L["83"].Name = [[UIGradient]]
+G2L["83"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["83"].Enabled = true
+G2L["83"].Rotation = 0
+G2L["83"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["83"].Parent = G2L["81"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.phonk loop.Script
+G2L["84"].Name = [[Script]]
+G2L["84"].Parent = G2L["81"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.stop music
+G2L["85"].Name = [[stop music]]
+G2L["85"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["85"].Text = [[stop music]]
+G2L["85"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["85"].TextScaled = true
+G2L["85"].TextSize = 14
+G2L["85"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["85"].TextStrokeTransparency = 1
+G2L["85"].TextWrapped = true
+G2L["85"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["85"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["85"].Active = true
+G2L["85"].AnchorPoint = Vector2.new(0, 0)
+G2L["85"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["85"].BackgroundTransparency = 0
+G2L["85"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["85"].BorderSizePixel = 0
+G2L["85"].ClipsDescendants = false
+G2L["85"].Draggable = false
+G2L["85"].Position = UDim2.new(0.2919708, 0, 12.564102, 0)
+G2L["85"].Rotation = 0
+G2L["85"].Selectable = true
+G2L["85"].SelectionOrder = 0
+G2L["85"].Size = UDim2.new(0, 83, 0, 27)
+G2L["85"].Visible = true
+G2L["85"].ZIndex = 1
+G2L["85"].Parent = G2L["3"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.stop music.UICorner
+G2L["86"].Name = [[UICorner]]
+G2L["86"].CornerRadius = UDim.new(0, 8)
+G2L["86"].Parent = G2L["85"]
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.stop music.UIGradient
+G2L["87"].Name = [[UIGradient]]
+G2L["87"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))};
+G2L["87"].Enabled = true
+G2L["87"].Rotation = 0
+G2L["87"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["87"].Parent = G2L["85"]
+
+--ScreenGui.Frame.Drag Gui Script
+G2L["88"].Name = [[Drag Gui Script]]
+G2L["88"].Parent = G2L["1"]
+
+--ScreenGui.Frame.UICorner
+G2L["89"].Name = [[UICorner]]
+G2L["89"].CornerRadius = UDim.new(0.1, 8)
+G2L["89"].Parent = G2L["1"]
+
+--ScreenGui.Frame.UIStroke
+G2L["90"].Name = [[UIStroke]]
+G2L["90"].ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+G2L["90"].Color = Color3.fromRGB(255, 255, 255)
+G2L["90"].Enabled = true
+G2L["90"].Thickness = 5
+G2L["90"].Transparency = 0
+G2L["90"].Parent = G2L["1"]
+
+--ScreenGui.Frame.UIStroke.UIGradient
+G2L["91"].Name = [[UIGradient]]
+G2L["91"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 170, 0))};
+G2L["91"].Enabled = true
+G2L["91"].Rotation = 0
+G2L["91"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["91"].Parent = G2L["90"]
+
+--ScreenGui.Frame.UIStroke.UIGradient.LocalScript
+G2L["92"].Name = [[LocalScript]]
+G2L["92"].Parent = G2L["91"]
+
+--ScreenGui.Frame.ImageLabel
+G2L["93"].Name = [[ImageLabel]]
+G2L["93"].Image = [[rbxassetid://6869120302]]
+G2L["93"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["93"].ScaleType = Enum.ScaleType.Stretch
+G2L["93"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["93"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["93"].Active = false
+G2L["93"].AnchorPoint = Vector2.new(0, 0)
+G2L["93"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["93"].BackgroundTransparency = 0
+G2L["93"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["93"].BorderSizePixel = 0
+G2L["93"].ClipsDescendants = false
+G2L["93"].Draggable = false
+G2L["93"].Position = UDim2.new(-0.10300255, 0, -0.1124031, 0)
+G2L["93"].Rotation = 0
+G2L["93"].Selectable = false
+G2L["93"].SelectionOrder = 0
+G2L["93"].Size = UDim2.new(0, 39, 0, 52)
+G2L["93"].Visible = true
+G2L["93"].ZIndex = 1
+G2L["93"].Parent = G2L["1"]
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+G2L["94"].Name = [[LocalScript]]
+G2L["94"].Parent = G2L["93"]
+
+--ScreenGui.Frame.ImageLabel
+G2L["95"].Name = [[ImageLabel]]
+G2L["95"].Image = [[rbxassetid://6869120302]]
+G2L["95"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["95"].ScaleType = Enum.ScaleType.Stretch
+G2L["95"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["95"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["95"].Active = false
+G2L["95"].AnchorPoint = Vector2.new(0, 0)
+G2L["95"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["95"].BackgroundTransparency = 0
+G2L["95"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["95"].BorderSizePixel = 0
+G2L["95"].ClipsDescendants = false
+G2L["95"].Draggable = false
+G2L["95"].Position = UDim2.new(-0.10300255, 0, 0.9573643, 0)
+G2L["95"].Rotation = 0
+G2L["95"].Selectable = false
+G2L["95"].SelectionOrder = 0
+G2L["95"].Size = UDim2.new(0, 39, 0, 52)
+G2L["95"].Visible = true
+G2L["95"].ZIndex = 1
+G2L["95"].Parent = G2L["1"]
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+G2L["96"].Name = [[LocalScript]]
+G2L["96"].Parent = G2L["95"]
+
+--ScreenGui.Frame.ImageLabel
+G2L["97"].Name = [[ImageLabel]]
+G2L["97"].Image = [[rbxassetid://6869120302]]
+G2L["97"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["97"].ScaleType = Enum.ScaleType.Stretch
+G2L["97"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["97"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["97"].Active = false
+G2L["97"].AnchorPoint = Vector2.new(0, 0)
+G2L["97"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["97"].BackgroundTransparency = 0
+G2L["97"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["97"].BorderSizePixel = 0
+G2L["97"].ClipsDescendants = false
+G2L["97"].Draggable = false
+G2L["97"].Position = UDim2.new(0.99855995, 0, 0.9573643, 0)
+G2L["97"].Rotation = 0
+G2L["97"].Selectable = false
+G2L["97"].SelectionOrder = 0
+G2L["97"].Size = UDim2.new(0, 39, 0, 52)
+G2L["97"].Visible = true
+G2L["97"].ZIndex = 1
+G2L["97"].Parent = G2L["1"]
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+G2L["98"].Name = [[LocalScript]]
+G2L["98"].Parent = G2L["97"]
+
+--ScreenGui.Frame.ImageLabel
+G2L["99"].Name = [[ImageLabel]]
+G2L["99"].Image = [[rbxassetid://6869120302]]
+G2L["99"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["99"].ScaleType = Enum.ScaleType.Stretch
+G2L["99"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["99"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["99"].Active = false
+G2L["99"].AnchorPoint = Vector2.new(0, 0)
+G2L["99"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["99"].BackgroundTransparency = 0
+G2L["99"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["99"].BorderSizePixel = 0
+G2L["99"].ClipsDescendants = false
+G2L["99"].Draggable = false
+G2L["99"].Position = UDim2.new(0.99855995, 0, -0.1124031, 0)
+G2L["99"].Rotation = 0
+G2L["99"].Selectable = false
+G2L["99"].SelectionOrder = 0
+G2L["99"].Size = UDim2.new(0, 39, 0, 52)
+G2L["99"].Visible = true
+G2L["99"].ZIndex = 1
+G2L["99"].Parent = G2L["1"]
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+G2L["100"].Name = [[LocalScript]]
+G2L["100"].Parent = G2L["99"]
+
+--[[
+    Scripts
+--]]
+--ScreenGui.Frame.ScrollingFrame.TextLabel.exser.LocalScript
+local function C_G2L_42()
+local script = G2L["42"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_42)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.Reset.LocalScript
+local function C_G2L_65()
+local script = G2L["65"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_65)
+
+
+--ScreenGui.Frame.ScrollingFrame.TextLabel.R6.LocalScript
+local function C_G2L_71()
+local script = G2L["71"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_71)
+
+
+--ScreenGui.Frame.Drag Gui Script
+local function C_G2L_88()
+local script = G2L["88"]
+function dragify(Main)
+dragToggle = nil
+dragSpeed = 0.95 -- You can edit this.
+dragInput = nil
+dragStart = nil
+dragPos = nil
+
+function updateInput(input)
+Delta = input.Position - dragStart
+Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+game:GetService("TweenService"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()
+end
+
+Main.InputBegan:Connect(function(input)
+if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+dragToggle = true
+dragStart = input.Position
+startPos = Main.Position
+input.Changed:Connect(function()
+if (input.UserInputState == Enum.UserInputState.End) then
+dragToggle = false
+end
+end)
+end
+end)
+
+Main.InputChanged:Connect(function(input)
+if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+dragInput = input
+end
+end)
+
+game:GetService("UserInputService").InputChanged:Connect(function(input)
+if (input == dragInput and dragToggle) then
+updateInput(input)
+end
+end)
+end
+
+dragify(script.Parent)
+end
+task.spawn(C_G2L_88)
+
+
+--ScreenGui.Frame.UIStroke.UIGradient.LocalScript
+local function C_G2L_92()
+local script = G2L["92"]
+local UIGradient = script.parent
+while true do
+	UIGradient.Rotation += 1
+	wait()
+end
+end
+task.spawn(C_G2L_92)
+
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+local function C_G2L_94()
+local script = G2L["94"]
+local UIGradient = script.parent
+while true do
+	UIGradient.Rotation += 1
+	wait()
+end
+end
+task.spawn(C_G2L_94)
+
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+local function C_G2L_96()
+local script = G2L["96"]
+local UIGradient = script.parent
+while true do
+	UIGradient.Rotation += 1
+	wait()
+end
+end
+task.spawn(C_G2L_96)
+
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+local function C_G2L_98()
+local script = G2L["98"]
+local UIGradient = script.parent
+while true do
+	UIGradient.Rotation += 1
+	wait()
+end
+end
+task.spawn(C_G2L_98)
+
+
+--ScreenGui.Frame.ImageLabel.LocalScript
+local function C_G2L_100()
+local script = G2L["100"]
+local UIGradient = script.parent
+while true do
+	UIGradient.Rotation += 1
+	wait()
+end
+end
+task.spawn(C_G2L_100)
+
+
+
+return G2L["0"], require;
