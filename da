@@ -1,0 +1,921 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER FROM MorrisBr
+]=]
+
+
+-- Instances: 47 | Scripts: ?? | Modules: ??
+
+local G2L = {}
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+
+--[[
+    Instances:
+--]]
+
+--DA GUIS
+G2L["0"] = Instance.new("Folder")
+
+--DA GUIS.GUI 101PKIDD INCIDENT
+G2L["1"] = Instance.new("ScreenGui")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel
+G2L["2"] = Instance.new("ImageLabel")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["3"] = Instance.new("TextButton")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.ClientHandler
+G2L["4"] = Instance.new("LocalScript")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.ClientHandler.ServerEvent
+G2L["5"] = Instance.new("RemoteEvent")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.ClientHandler.ServerEvent.ServerEventHandler
+G2L["6"] = Instance.new("Script")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["7"] = Instance.new("TextButton")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.Script
+G2L["8"] = Instance.new("Script")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["9"] = Instance.new("TextButton")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.Script
+G2L["10"] = Instance.new("Script")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["11"] = Instance.new("TextButton")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.Script
+G2L["12"] = Instance.new("Script")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["13"] = Instance.new("TextButton")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.Script
+G2L["14"] = Instance.new("Script")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["15"] = Instance.new("TextButton")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.Script
+G2L["16"] = Instance.new("Script")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.Frame
+G2L["17"] = Instance.new("Frame")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextLabel
+G2L["18"] = Instance.new("TextLabel")
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.LocalScript
+G2L["19"] = Instance.new("LocalScript")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE
+G2L["20"] = Instance.new("ScreenGui")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame
+G2L["21"] = Instance.new("Frame")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.LocalScript
+G2L["22"] = Instance.new("LocalScript")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.Frame
+G2L["23"] = Instance.new("Frame")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["24"] = Instance.new("TextButton")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["25"] = Instance.new("Script")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["26"] = Instance.new("TextButton")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["27"] = Instance.new("Script")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["28"] = Instance.new("TextButton")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["29"] = Instance.new("Script")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.RemoteEvent
+G2L["30"] = Instance.new("RemoteEvent")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.LocalScript
+G2L["31"] = Instance.new("LocalScript")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["32"] = Instance.new("TextButton")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.RemoteEvent
+G2L["33"] = Instance.new("RemoteEvent")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.LocalScript
+G2L["34"] = Instance.new("LocalScript")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["35"] = Instance.new("Script")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["36"] = Instance.new("TextButton")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["37"] = Instance.new("Script")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["38"] = Instance.new("TextButton")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["39"] = Instance.new("Script")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["40"] = Instance.new("TextButton")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["41"] = Instance.new("Script")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["42"] = Instance.new("TextButton")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["43"] = Instance.new("Script")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script.ok(2)
+G2L["44"] = Instance.new("Decal")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextLabel
+G2L["45"] = Instance.new("TextLabel")
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextLabel
+G2L["46"] = Instance.new("TextLabel")
+
+
+
+--[[
+    Properties:
+--]]
+--DA GUIS
+G2L["0"].Name = [[DA GUIS]]
+G2L["0"].Parent = game.Players.LocalPlayer.PlayerGui
+
+--DA GUIS.GUI 101PKIDD INCIDENT
+G2L["1"].Name = [[GUI 101PKIDD INCIDENT]]
+G2L["1"].Enabled = true
+G2L["1"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+G2L["1"].Parent = G2L["0"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel
+G2L["2"].Name = [[ImageLabel]]
+G2L["2"].Image = [[rbxassetid://17540986817]]
+G2L["2"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["2"].ScaleType = Enum.ScaleType.Stretch
+G2L["2"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["2"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["2"].Active = false
+G2L["2"].AnchorPoint = Vector2.new(0, 0)
+G2L["2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["2"].BackgroundTransparency = 0
+G2L["2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["2"].BorderSizePixel = 4
+G2L["2"].ClipsDescendants = false
+G2L["2"].Draggable = false
+G2L["2"].Position = UDim2.new(0.20777528, 0, 0.54593, 0)
+G2L["2"].Rotation = 0
+G2L["2"].Selectable = false
+G2L["2"].SelectionOrder = 0
+G2L["2"].Size = UDim2.new(0, 231, 0, 166)
+G2L["2"].Visible = true
+G2L["2"].ZIndex = 1
+G2L["2"].Parent = G2L["1"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["3"].Name = [[TextButton]]
+G2L["3"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["3"].Text = [[WORLD 101PKIDD]]
+G2L["3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["3"].TextScaled = false
+G2L["3"].TextSize = 14
+G2L["3"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["3"].TextStrokeTransparency = 1
+G2L["3"].TextWrapped = false
+G2L["3"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["3"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["3"].Active = true
+G2L["3"].AnchorPoint = Vector2.new(0, 0)
+G2L["3"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["3"].BackgroundTransparency = 0
+G2L["3"].BorderColor3 = Color3.fromRGB(255, 255, 255)
+G2L["3"].BorderSizePixel = 3
+G2L["3"].ClipsDescendants = false
+G2L["3"].Draggable = false
+G2L["3"].Position = UDim2.new(0.030303031, 0, 0.18674698, 0)
+G2L["3"].Rotation = 0
+G2L["3"].Selectable = true
+G2L["3"].SelectionOrder = 0
+G2L["3"].Size = UDim2.new(0, 96, 0, 36)
+G2L["3"].Visible = true
+G2L["3"].ZIndex = 1
+G2L["3"].Parent = G2L["2"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.ClientHandler
+G2L["4"].Name = [[ClientHandler]]
+G2L["4"].Parent = G2L["3"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.ClientHandler.ServerEvent
+G2L["5"].Name = [[ServerEvent]]
+G2L["5"].Parent = G2L["4"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.ClientHandler.ServerEvent.ServerEventHandler
+G2L["6"].Name = [[ServerEventHandler]]
+G2L["6"].Parent = G2L["5"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["7"].Name = [[TextButton]]
+G2L["7"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["7"].Text = [[PARTICLES]]
+G2L["7"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["7"].TextScaled = false
+G2L["7"].TextSize = 14
+G2L["7"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["7"].TextStrokeTransparency = 1
+G2L["7"].TextWrapped = false
+G2L["7"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["7"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["7"].Active = true
+G2L["7"].AnchorPoint = Vector2.new(0, 0)
+G2L["7"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["7"].BackgroundTransparency = 0
+G2L["7"].BorderColor3 = Color3.fromRGB(255, 255, 255)
+G2L["7"].BorderSizePixel = 3
+G2L["7"].ClipsDescendants = false
+G2L["7"].Draggable = false
+G2L["7"].Position = UDim2.new(0.5367965, 0, 0.18674698, 0)
+G2L["7"].Rotation = 0
+G2L["7"].Selectable = true
+G2L["7"].SelectionOrder = 0
+G2L["7"].Size = UDim2.new(0, 96, 0, 36)
+G2L["7"].Visible = true
+G2L["7"].ZIndex = 1
+G2L["7"].Parent = G2L["2"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.Script
+G2L["8"].Name = [[Script]]
+G2L["8"].Parent = G2L["7"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["9"].Name = [[TextButton]]
+G2L["9"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["9"].Text = [[REALM 101PKIDD]]
+G2L["9"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["9"].TextScaled = false
+G2L["9"].TextSize = 14
+G2L["9"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].TextStrokeTransparency = 1
+G2L["9"].TextWrapped = false
+G2L["9"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["9"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["9"].Active = true
+G2L["9"].AnchorPoint = Vector2.new(0, 0)
+G2L["9"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].BackgroundTransparency = 0
+G2L["9"].BorderColor3 = Color3.fromRGB(255, 255, 255)
+G2L["9"].BorderSizePixel = 3
+G2L["9"].ClipsDescendants = false
+G2L["9"].Draggable = false
+G2L["9"].Position = UDim2.new(0.5367965, 0, 0.46385542, 0)
+G2L["9"].Rotation = 0
+G2L["9"].Selectable = true
+G2L["9"].SelectionOrder = 0
+G2L["9"].Size = UDim2.new(0, 96, 0, 36)
+G2L["9"].Visible = true
+G2L["9"].ZIndex = 1
+G2L["9"].Parent = G2L["2"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.Script
+G2L["10"].Name = [[Script]]
+G2L["10"].Parent = G2L["9"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["11"].Name = [[TextButton]]
+G2L["11"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["11"].Text = [[ALL 101PKIDD]]
+G2L["11"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["11"].TextScaled = false
+G2L["11"].TextSize = 14
+G2L["11"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["11"].TextStrokeTransparency = 1
+G2L["11"].TextWrapped = false
+G2L["11"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["11"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["11"].Active = true
+G2L["11"].AnchorPoint = Vector2.new(0, 0)
+G2L["11"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["11"].BackgroundTransparency = 0
+G2L["11"].BorderColor3 = Color3.fromRGB(255, 255, 255)
+G2L["11"].BorderSizePixel = 3
+G2L["11"].ClipsDescendants = false
+G2L["11"].Draggable = false
+G2L["11"].Position = UDim2.new(0.030303031, 0, 0.46385542, 0)
+G2L["11"].Rotation = 0
+G2L["11"].Selectable = true
+G2L["11"].SelectionOrder = 0
+G2L["11"].Size = UDim2.new(0, 96, 0, 36)
+G2L["11"].Visible = true
+G2L["11"].ZIndex = 1
+G2L["11"].Parent = G2L["2"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.Script
+G2L["12"].Name = [[Script]]
+G2L["12"].Parent = G2L["11"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["13"].Name = [[TextButton]]
+G2L["13"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["13"].Text = [[HINT]]
+G2L["13"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["13"].TextScaled = false
+G2L["13"].TextSize = 14
+G2L["13"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].TextStrokeTransparency = 1
+G2L["13"].TextWrapped = false
+G2L["13"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["13"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["13"].Active = true
+G2L["13"].AnchorPoint = Vector2.new(0, 0)
+G2L["13"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].BackgroundTransparency = 0
+G2L["13"].BorderColor3 = Color3.fromRGB(255, 255, 255)
+G2L["13"].BorderSizePixel = 3
+G2L["13"].ClipsDescendants = false
+G2L["13"].Draggable = false
+G2L["13"].Position = UDim2.new(0.030303031, 0, 0.74698794, 0)
+G2L["13"].Rotation = 0
+G2L["13"].Selectable = true
+G2L["13"].SelectionOrder = 0
+G2L["13"].Size = UDim2.new(0, 96, 0, 36)
+G2L["13"].Visible = true
+G2L["13"].ZIndex = 1
+G2L["13"].Parent = G2L["2"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.Script
+G2L["14"].Name = [[Script]]
+G2L["14"].Parent = G2L["13"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton
+G2L["15"].Name = [[TextButton]]
+G2L["15"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["15"].Text = [[MUSIC]]
+G2L["15"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["15"].TextScaled = false
+G2L["15"].TextSize = 14
+G2L["15"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["15"].TextStrokeTransparency = 1
+G2L["15"].TextWrapped = false
+G2L["15"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["15"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["15"].Active = true
+G2L["15"].AnchorPoint = Vector2.new(0, 0)
+G2L["15"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["15"].BackgroundTransparency = 0
+G2L["15"].BorderColor3 = Color3.fromRGB(255, 255, 255)
+G2L["15"].BorderSizePixel = 3
+G2L["15"].ClipsDescendants = false
+G2L["15"].Draggable = false
+G2L["15"].Position = UDim2.new(0.5367965, 0, 0.74698794, 0)
+G2L["15"].Rotation = 0
+G2L["15"].Selectable = true
+G2L["15"].SelectionOrder = 0
+G2L["15"].Size = UDim2.new(0, 96, 0, 36)
+G2L["15"].Visible = true
+G2L["15"].ZIndex = 1
+G2L["15"].Parent = G2L["2"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.Script
+G2L["16"].Name = [[Script]]
+G2L["16"].Parent = G2L["15"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.Frame
+G2L["17"].Name = [[Frame]]
+G2L["17"].Active = false
+G2L["17"].AnchorPoint = Vector2.new(0, 0)
+G2L["17"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["17"].BackgroundTransparency = 0
+G2L["17"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["17"].BorderSizePixel = 0
+G2L["17"].ClipsDescendants = false
+G2L["17"].Draggable = false
+G2L["17"].Position = UDim2.new(0, 0, 0.084337346, 0)
+G2L["17"].Rotation = 0
+G2L["17"].Selectable = false
+G2L["17"].SelectionOrder = 0
+G2L["17"].Size = UDim2.new(0, 231, 0, 4)
+G2L["17"].Visible = true
+G2L["17"].ZIndex = 1
+G2L["17"].Parent = G2L["2"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextLabel
+G2L["18"].Name = [[TextLabel]]
+G2L["18"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["18"].Text = [[101PKIDDALT GUI INCIDENT V2]]
+G2L["18"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["18"].TextScaled = false
+G2L["18"].TextSize = 14
+G2L["18"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["18"].TextStrokeTransparency = 1
+G2L["18"].TextWrapped = false
+G2L["18"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["18"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["18"].Active = false
+G2L["18"].AnchorPoint = Vector2.new(0, 0)
+G2L["18"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["18"].BackgroundTransparency = 1
+G2L["18"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["18"].BorderSizePixel = 0
+G2L["18"].ClipsDescendants = false
+G2L["18"].Draggable = false
+G2L["18"].Position = UDim2.new(0.030303031, 0, -0.11445783, 0)
+G2L["18"].Rotation = 0
+G2L["18"].Selectable = false
+G2L["18"].SelectionOrder = 0
+G2L["18"].Size = UDim2.new(0, 200, 0, 50)
+G2L["18"].Visible = true
+G2L["18"].ZIndex = 1
+G2L["18"].Parent = G2L["2"]
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.LocalScript
+G2L["19"].Name = [[LocalScript]]
+G2L["19"].Parent = G2L["2"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE
+G2L["20"].Name = [[M00PGUI V3 SUPER POCKET EDITION PRIVATE]]
+G2L["20"].Enabled = true
+G2L["20"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+G2L["20"].Parent = G2L["0"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame
+G2L["21"].Name = [[Frame]]
+G2L["21"].Active = false
+G2L["21"].AnchorPoint = Vector2.new(0, 0)
+G2L["21"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["21"].BackgroundTransparency = 0
+G2L["21"].BorderColor3 = Color3.fromRGB(0, 29, 158)
+G2L["21"].BorderSizePixel = 4
+G2L["21"].ClipsDescendants = false
+G2L["21"].Draggable = false
+G2L["21"].Position = UDim2.new(0.39391834, 0, 0.51348716, 0)
+G2L["21"].Rotation = 0
+G2L["21"].Selectable = false
+G2L["21"].SelectionOrder = 0
+G2L["21"].Size = UDim2.new(0, 233, 0, 203)
+G2L["21"].Visible = true
+G2L["21"].ZIndex = 1
+G2L["21"].Parent = G2L["20"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.LocalScript
+G2L["22"].Name = [[LocalScript]]
+G2L["22"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.Frame
+G2L["23"].Name = [[Frame]]
+G2L["23"].Active = false
+G2L["23"].AnchorPoint = Vector2.new(0, 0)
+G2L["23"].BackgroundColor3 = Color3.fromRGB(0, 29, 158)
+G2L["23"].BackgroundTransparency = 0
+G2L["23"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["23"].BorderSizePixel = 0
+G2L["23"].ClipsDescendants = false
+G2L["23"].Draggable = false
+G2L["23"].Position = UDim2.new(0, 0, 0.12315271, 0)
+G2L["23"].Rotation = 0
+G2L["23"].Selectable = false
+G2L["23"].SelectionOrder = 0
+G2L["23"].Size = UDim2.new(0, 233, 0, 6)
+G2L["23"].Visible = true
+G2L["23"].ZIndex = 1
+G2L["23"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["24"].Name = [[TextButton]]
+G2L["24"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["24"].Text = [[ JUMPSCARE]]
+G2L["24"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["24"].TextScaled = false
+G2L["24"].TextSize = 14
+G2L["24"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["24"].TextStrokeTransparency = 1
+G2L["24"].TextWrapped = false
+G2L["24"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["24"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["24"].Active = true
+G2L["24"].AnchorPoint = Vector2.new(0, 0)
+G2L["24"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["24"].BackgroundTransparency = 0
+G2L["24"].BorderColor3 = Color3.fromRGB(0, 29, 158)
+G2L["24"].BorderSizePixel = 4
+G2L["24"].ClipsDescendants = false
+G2L["24"].Draggable = false
+G2L["24"].Position = UDim2.new(0.051502146, 0, 0.3448276, 0)
+G2L["24"].Rotation = 0
+G2L["24"].Selectable = true
+G2L["24"].SelectionOrder = 0
+G2L["24"].Size = UDim2.new(0, 125, 0, 43)
+G2L["24"].Visible = true
+G2L["24"].ZIndex = 1
+G2L["24"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["25"].Name = [[Script]]
+G2L["25"].Parent = G2L["24"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["26"].Name = [[TextButton]]
+G2L["26"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["26"].Text = [[HINT]]
+G2L["26"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["26"].TextScaled = false
+G2L["26"].TextSize = 14
+G2L["26"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["26"].TextStrokeTransparency = 1
+G2L["26"].TextWrapped = false
+G2L["26"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["26"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["26"].Active = true
+G2L["26"].AnchorPoint = Vector2.new(0, 0)
+G2L["26"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["26"].BackgroundTransparency = 0
+G2L["26"].BorderColor3 = Color3.fromRGB(0, 29, 158)
+G2L["26"].BorderSizePixel = 4
+G2L["26"].ClipsDescendants = false
+G2L["26"].Draggable = false
+G2L["26"].Position = UDim2.new(0.051502146, 0, 0.6502463, 0)
+G2L["26"].Rotation = 0
+G2L["26"].Selectable = true
+G2L["26"].SelectionOrder = 0
+G2L["26"].Size = UDim2.new(0, 125, 0, 43)
+G2L["26"].Visible = true
+G2L["26"].ZIndex = 1
+G2L["26"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["27"].Name = [[Script]]
+G2L["27"].Parent = G2L["26"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["28"].Name = [[TextButton]]
+G2L["28"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["28"].Text = [[R6]]
+G2L["28"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["28"].TextScaled = false
+G2L["28"].TextSize = 14
+G2L["28"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["28"].TextStrokeTransparency = 1
+G2L["28"].TextWrapped = false
+G2L["28"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["28"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["28"].Active = true
+G2L["28"].AnchorPoint = Vector2.new(0, 0)
+G2L["28"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["28"].BackgroundTransparency = 0
+G2L["28"].BorderColor3 = Color3.fromRGB(0, 29, 158)
+G2L["28"].BorderSizePixel = 4
+G2L["28"].ClipsDescendants = false
+G2L["28"].Draggable = false
+G2L["28"].Position = UDim2.new(0.6523605, 0, 0.3448276, 0)
+G2L["28"].Rotation = 0
+G2L["28"].Selectable = true
+G2L["28"].SelectionOrder = 0
+G2L["28"].Size = UDim2.new(0, 28, 0, 32)
+G2L["28"].Visible = true
+G2L["28"].ZIndex = 1
+G2L["28"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["29"].Name = [[Script]]
+G2L["29"].Parent = G2L["28"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.RemoteEvent
+G2L["30"].Name = [[RemoteEvent]]
+G2L["30"].Parent = G2L["28"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.LocalScript
+G2L["31"].Name = [[LocalScript]]
+G2L["31"].Parent = G2L["28"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["32"].Name = [[TextButton]]
+G2L["32"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["32"].Text = [[RE]]
+G2L["32"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["32"].TextScaled = false
+G2L["32"].TextSize = 14
+G2L["32"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["32"].TextStrokeTransparency = 1
+G2L["32"].TextWrapped = false
+G2L["32"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["32"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["32"].Active = true
+G2L["32"].AnchorPoint = Vector2.new(0, 0)
+G2L["32"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["32"].BackgroundTransparency = 0
+G2L["32"].BorderColor3 = Color3.fromRGB(0, 29, 158)
+G2L["32"].BorderSizePixel = 4
+G2L["32"].ClipsDescendants = false
+G2L["32"].Draggable = false
+G2L["32"].Position = UDim2.new(0.832618, 0, 0.3448276, 0)
+G2L["32"].Rotation = 0
+G2L["32"].Selectable = true
+G2L["32"].SelectionOrder = 0
+G2L["32"].Size = UDim2.new(0, 28, 0, 32)
+G2L["32"].Visible = true
+G2L["32"].ZIndex = 1
+G2L["32"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.RemoteEvent
+G2L["33"].Name = [[RemoteEvent]]
+G2L["33"].Parent = G2L["32"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.LocalScript
+G2L["34"].Name = [[LocalScript]]
+G2L["34"].Parent = G2L["32"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["35"].Name = [[Script]]
+G2L["35"].Parent = G2L["32"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["36"].Name = [[TextButton]]
+G2L["36"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["36"].Text = [[AVT]]
+G2L["36"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["36"].TextScaled = false
+G2L["36"].TextSize = 14
+G2L["36"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["36"].TextStrokeTransparency = 1
+G2L["36"].TextWrapped = false
+G2L["36"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["36"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["36"].Active = true
+G2L["36"].AnchorPoint = Vector2.new(0, 0)
+G2L["36"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["36"].BackgroundTransparency = 0
+G2L["36"].BorderColor3 = Color3.fromRGB(0, 29, 158)
+G2L["36"].BorderSizePixel = 4
+G2L["36"].ClipsDescendants = false
+G2L["36"].Draggable = false
+G2L["36"].Position = UDim2.new(0.832618, 0, 0.5566502, 0)
+G2L["36"].Rotation = 0
+G2L["36"].Selectable = true
+G2L["36"].SelectionOrder = 0
+G2L["36"].Size = UDim2.new(0, 28, 0, 32)
+G2L["36"].Visible = true
+G2L["36"].ZIndex = 1
+G2L["36"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["37"].Name = [[Script]]
+G2L["37"].Parent = G2L["36"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["38"].Name = [[TextButton]]
+G2L["38"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["38"].Text = [[TEAM]]
+G2L["38"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["38"].TextScaled = false
+G2L["38"].TextSize = 14
+G2L["38"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["38"].TextStrokeTransparency = 1
+G2L["38"].TextWrapped = false
+G2L["38"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["38"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["38"].Active = true
+G2L["38"].AnchorPoint = Vector2.new(0, 0)
+G2L["38"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["38"].BackgroundTransparency = 0
+G2L["38"].BorderColor3 = Color3.fromRGB(0, 29, 158)
+G2L["38"].BorderSizePixel = 4
+G2L["38"].ClipsDescendants = false
+G2L["38"].Draggable = false
+G2L["38"].Position = UDim2.new(0.6523605, 0, 0.5566502, 0)
+G2L["38"].Rotation = 0
+G2L["38"].Selectable = true
+G2L["38"].SelectionOrder = 0
+G2L["38"].Size = UDim2.new(0, 28, 0, 32)
+G2L["38"].Visible = true
+G2L["38"].ZIndex = 1
+G2L["38"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["39"].Name = [[Script]]
+G2L["39"].Parent = G2L["38"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["40"].Name = [[TextButton]]
+G2L["40"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["40"].Text = [[PTC]]
+G2L["40"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["40"].TextScaled = false
+G2L["40"].TextSize = 14
+G2L["40"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["40"].TextStrokeTransparency = 1
+G2L["40"].TextWrapped = false
+G2L["40"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["40"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["40"].Active = true
+G2L["40"].AnchorPoint = Vector2.new(0, 0)
+G2L["40"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["40"].BackgroundTransparency = 0
+G2L["40"].BorderColor3 = Color3.fromRGB(0, 29, 158)
+G2L["40"].BorderSizePixel = 4
+G2L["40"].ClipsDescendants = false
+G2L["40"].Draggable = false
+G2L["40"].Position = UDim2.new(0.6523605, 0, 0.77832514, 0)
+G2L["40"].Rotation = 0
+G2L["40"].Selectable = true
+G2L["40"].SelectionOrder = 0
+G2L["40"].Size = UDim2.new(0, 28, 0, 32)
+G2L["40"].Visible = true
+G2L["40"].ZIndex = 1
+G2L["40"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["41"].Name = [[Script]]
+G2L["41"].Parent = G2L["40"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton
+G2L["42"].Name = [[TextButton]]
+G2L["42"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["42"].Text = [[MSJ]]
+G2L["42"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["42"].TextScaled = false
+G2L["42"].TextSize = 14
+G2L["42"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["42"].TextStrokeTransparency = 1
+G2L["42"].TextWrapped = false
+G2L["42"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["42"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["42"].Active = true
+G2L["42"].AnchorPoint = Vector2.new(0, 0)
+G2L["42"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["42"].BackgroundTransparency = 0
+G2L["42"].BorderColor3 = Color3.fromRGB(0, 29, 158)
+G2L["42"].BorderSizePixel = 4
+G2L["42"].ClipsDescendants = false
+G2L["42"].Draggable = false
+G2L["42"].Position = UDim2.new(0.832618, 0, 0.77832514, 0)
+G2L["42"].Rotation = 0
+G2L["42"].Selectable = true
+G2L["42"].SelectionOrder = 0
+G2L["42"].Size = UDim2.new(0, 28, 0, 32)
+G2L["42"].Visible = true
+G2L["42"].ZIndex = 1
+G2L["42"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script
+G2L["43"].Name = [[Script]]
+G2L["43"].Parent = G2L["42"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.Script.ok(2)
+G2L["44"].Name = [[ok(2)]]
+G2L["44"].Transparency = 0
+G2L["44"].ZIndex = 1
+G2L["44"].Parent = G2L["43"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextLabel
+G2L["45"].Name = [[TextLabel]]
+G2L["45"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["45"].Text = [[M00PGUI V3  POCKET EDITION OP]]
+G2L["45"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["45"].TextScaled = false
+G2L["45"].TextSize = 14
+G2L["45"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["45"].TextStrokeTransparency = 1
+G2L["45"].TextWrapped = false
+G2L["45"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["45"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["45"].Active = false
+G2L["45"].AnchorPoint = Vector2.new(0, 0)
+G2L["45"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["45"].BackgroundTransparency = 1
+G2L["45"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["45"].BorderSizePixel = 0
+G2L["45"].ClipsDescendants = false
+G2L["45"].Draggable = false
+G2L["45"].Position = UDim2.new(0.051502146, 0, -0.06403941, 0)
+G2L["45"].Rotation = 0
+G2L["45"].Selectable = false
+G2L["45"].SelectionOrder = 0
+G2L["45"].Size = UDim2.new(0, 200, 0, 50)
+G2L["45"].Visible = true
+G2L["45"].ZIndex = 1
+G2L["45"].Parent = G2L["21"]
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextLabel
+G2L["46"].Name = [[TextLabel]]
+G2L["46"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["46"].Text = [[BY:M00PKIDD AND 101PKIDDALT AND ¿?]]
+G2L["46"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["46"].TextScaled = false
+G2L["46"].TextSize = 14
+G2L["46"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["46"].TextStrokeTransparency = 1
+G2L["46"].TextWrapped = false
+G2L["46"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["46"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["46"].Active = false
+G2L["46"].AnchorPoint = Vector2.new(0, 0)
+G2L["46"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["46"].BackgroundTransparency = 1
+G2L["46"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["46"].BorderSizePixel = 0
+G2L["46"].ClipsDescendants = false
+G2L["46"].Draggable = false
+G2L["46"].Position = UDim2.new(0.051502146, 0, 0.098522164, 0)
+G2L["46"].Rotation = 0
+G2L["46"].Selectable = false
+G2L["46"].SelectionOrder = 0
+G2L["46"].Size = UDim2.new(0, 200, 0, 50)
+G2L["46"].Visible = true
+G2L["46"].ZIndex = 1
+G2L["46"].Parent = G2L["21"]
+
+--[[
+    Scripts
+--]]
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.TextButton.ClientHandler
+local function C_G2L_4()
+local script = G2L["4"]
+script.Parent.MouseButton1Click:connect(function()
+	script.ServerEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_4)
+
+
+--DA GUIS.GUI 101PKIDD INCIDENT.ImageLabel.LocalScript
+local function C_G2L_19()
+local script = G2L["19"]
+test = script.Parent.Parent.Frame
+test.Draggable = true 
+test.Active = true 
+test.Archivable = true
+end
+task.spawn(C_G2L_19)
+
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.LocalScript
+local function C_G2L_22()
+local script = G2L["22"]
+test = script.Parent.Parent.Frame
+test.Draggable = true 
+test.Active = true 
+test.Archivable = true
+end
+task.spawn(C_G2L_22)
+
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.LocalScript
+local function C_G2L_31()
+local script = G2L["31"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_31)
+
+
+--DA GUIS.M00PGUI V3 SUPER POCKET EDITION PRIVATE.Frame.TextButton.LocalScript
+local function C_G2L_34()
+local script = G2L["34"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_34)
+
+
+
+return G2L["0"], require;
