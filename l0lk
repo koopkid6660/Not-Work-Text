@@ -1,0 +1,762 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER FROM MorrisBr
+]=]
+
+
+-- Instances: 36 | Scripts: ?? | Modules: ??
+
+local G2L = {}
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+
+--[[
+    Instances:
+--]]
+
+--ScreenGui
+G2L["0"] = Instance.new("ScreenGui")
+
+--ScreenGui.Frame1
+G2L["1"] = Instance.new("Frame")
+
+--ScreenGui.Frame1.TextLabel
+G2L["2"] = Instance.new("TextLabel")
+
+--ScreenGui.Frame1.TextLabel.LocalScript
+G2L["3"] = Instance.new("LocalScript")
+
+--ScreenGui.Frame1.TextButton
+G2L["4"] = Instance.new("TextButton")
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["5"] = Instance.new("UICorner")
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["6"] = Instance.new("Script")
+
+--ScreenGui.Frame1.TextButton
+G2L["7"] = Instance.new("TextButton")
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["8"] = Instance.new("UICorner")
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["9"] = Instance.new("Script")
+
+--ScreenGui.Frame1.TextButton
+G2L["10"] = Instance.new("TextButton")
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["11"] = Instance.new("UICorner")
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["12"] = Instance.new("Script")
+
+--ScreenGui.Frame1.TextButton
+G2L["13"] = Instance.new("TextButton")
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["14"] = Instance.new("UICorner")
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["15"] = Instance.new("Script")
+
+--ScreenGui.Frame1.TextButton
+G2L["16"] = Instance.new("TextButton")
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["17"] = Instance.new("UICorner")
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["18"] = Instance.new("Script")
+
+--ScreenGui.Frame1.TextButton
+G2L["19"] = Instance.new("TextButton")
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["20"] = Instance.new("UICorner")
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["21"] = Instance.new("Script")
+
+--ScreenGui.Frame1.TextBox
+G2L["22"] = Instance.new("TextBox")
+
+--ScreenGui.Frame1.TextLabel
+G2L["23"] = Instance.new("TextLabel")
+
+--ScreenGui.Frame1.TextButton
+G2L["24"] = Instance.new("TextButton")
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["25"] = Instance.new("Script")
+
+--ScreenGui.Frame1.TextLabel
+G2L["26"] = Instance.new("TextLabel")
+
+--ScreenGui.Frame
+G2L["27"] = Instance.new("Frame")
+
+--ScreenGui.Frame.UICorner
+G2L["28"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.TextBox
+G2L["29"] = Instance.new("TextBox")
+
+--ScreenGui.Frame.TextBox.UIGradient
+G2L["30"] = Instance.new("UIGradient")
+
+--ScreenGui.Frame.TextBox.UICorner
+G2L["31"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.TextLabel
+G2L["32"] = Instance.new("TextLabel")
+
+--ScreenGui.Frame.TextButton
+G2L["33"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UICorner
+G2L["34"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.TextButton.LocalScript
+G2L["35"] = Instance.new("LocalScript")
+
+
+
+--[[
+    Properties:
+--]]
+--ScreenGui
+G2L["0"].Name = [[ScreenGui]]
+G2L["0"].Enabled = true
+G2L["0"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+G2L["0"].Parent = game.Players.LocalPlayer.PlayerGui
+
+--ScreenGui.Frame1
+G2L["1"].Name = [[Frame1]]
+G2L["1"].Active = false
+G2L["1"].AnchorPoint = Vector2.new(0, 0)
+G2L["1"].BackgroundColor3 = Color3.fromRGB(140, 152, 255)
+G2L["1"].BackgroundTransparency = 0
+G2L["1"].BorderColor3 = Color3.fromRGB(161, 96.00001, 96.00001)
+G2L["1"].BorderSizePixel = 6
+G2L["1"].ClipsDescendants = false
+G2L["1"].Draggable = false
+G2L["1"].Position = UDim2.new(0.12316716, 0, 0.12561983, 0)
+G2L["1"].Rotation = 0
+G2L["1"].Selectable = false
+G2L["1"].SelectionOrder = 0
+G2L["1"].Size = UDim2.new(0, 513, 0, 353)
+G2L["1"].Visible = false
+G2L["1"].ZIndex = 1
+G2L["1"].Parent = G2L["0"]
+
+--ScreenGui.Frame1.TextLabel
+G2L["2"].Name = [[TextLabel]]
+G2L["2"].FontFace = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["2"].Text = [[L0LGUI REBORN PRIVATE]]
+G2L["2"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["2"].TextScaled = false
+G2L["2"].TextSize = 40
+G2L["2"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["2"].TextStrokeTransparency = 1
+G2L["2"].TextWrapped = false
+G2L["2"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["2"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["2"].Active = false
+G2L["2"].AnchorPoint = Vector2.new(0, 0)
+G2L["2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["2"].BackgroundTransparency = 1
+G2L["2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["2"].BorderSizePixel = 0
+G2L["2"].ClipsDescendants = false
+G2L["2"].Draggable = false
+G2L["2"].Position = UDim2.new(0, 0, 0, 0)
+G2L["2"].Rotation = 0
+G2L["2"].Selectable = false
+G2L["2"].SelectionOrder = 0
+G2L["2"].Size = UDim2.new(0, 513, 0, 50)
+G2L["2"].Visible = true
+G2L["2"].ZIndex = 1
+G2L["2"].Parent = G2L["1"]
+
+--ScreenGui.Frame1.TextLabel.LocalScript
+G2L["3"].Name = [[LocalScript]]
+G2L["3"].Parent = G2L["2"]
+
+--ScreenGui.Frame1.TextButton
+G2L["4"].Name = [[TextButton]]
+G2L["4"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["4"].Text = [[HINT]]
+G2L["4"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["4"].TextScaled = false
+G2L["4"].TextSize = 14
+G2L["4"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["4"].TextStrokeTransparency = 1
+G2L["4"].TextWrapped = false
+G2L["4"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["4"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["4"].Active = true
+G2L["4"].AnchorPoint = Vector2.new(0, 0)
+G2L["4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["4"].BackgroundTransparency = 0
+G2L["4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["4"].BorderSizePixel = 0
+G2L["4"].ClipsDescendants = false
+G2L["4"].Draggable = false
+G2L["4"].Position = UDim2.new(0.040935673, 0, 0.28328612, 0)
+G2L["4"].Rotation = 0
+G2L["4"].Selectable = true
+G2L["4"].SelectionOrder = 0
+G2L["4"].Size = UDim2.new(0, 128, 0, 32)
+G2L["4"].Visible = true
+G2L["4"].ZIndex = 1
+G2L["4"].Parent = G2L["1"]
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["5"].Name = [[UICorner]]
+G2L["5"].CornerRadius = UDim.new(0, 8)
+G2L["5"].Parent = G2L["4"]
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["6"].Name = [[Script]]
+G2L["6"].Parent = G2L["4"]
+
+--ScreenGui.Frame1.TextButton
+G2L["7"].Name = [[TextButton]]
+G2L["7"].FontFace = Font.new([[rbxasset://fonts/families/AccanthisADFStd.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["7"].Text = [[666]]
+G2L["7"].TextColor3 = Color3.fromRGB(255, 0, 0)
+G2L["7"].TextScaled = false
+G2L["7"].TextSize = 30
+G2L["7"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["7"].TextStrokeTransparency = 1
+G2L["7"].TextWrapped = false
+G2L["7"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["7"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["7"].Active = true
+G2L["7"].AnchorPoint = Vector2.new(0, 0)
+G2L["7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["7"].BackgroundTransparency = 0
+G2L["7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["7"].BorderSizePixel = 0
+G2L["7"].ClipsDescendants = false
+G2L["7"].Draggable = false
+G2L["7"].Position = UDim2.new(0.3528265, 0, 0.28611898, 0)
+G2L["7"].Rotation = 0
+G2L["7"].Selectable = true
+G2L["7"].SelectionOrder = 0
+G2L["7"].Size = UDim2.new(0, 125, 0, 31)
+G2L["7"].Visible = true
+G2L["7"].ZIndex = 1
+G2L["7"].Parent = G2L["1"]
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["8"].Name = [[UICorner]]
+G2L["8"].CornerRadius = UDim.new(0, 8)
+G2L["8"].Parent = G2L["7"]
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["9"].Name = [[Script]]
+G2L["9"].Parent = G2L["7"]
+
+--ScreenGui.Frame1.TextButton
+G2L["10"].Name = [[TextButton]]
+G2L["10"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["10"].Text = [[Skybox]]
+G2L["10"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["10"].TextScaled = false
+G2L["10"].TextSize = 14
+G2L["10"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["10"].TextStrokeTransparency = 1
+G2L["10"].TextWrapped = false
+G2L["10"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["10"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["10"].Active = true
+G2L["10"].AnchorPoint = Vector2.new(0, 0)
+G2L["10"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["10"].BackgroundTransparency = 0
+G2L["10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["10"].BorderSizePixel = 0
+G2L["10"].ClipsDescendants = false
+G2L["10"].Draggable = false
+G2L["10"].Position = UDim2.new(0.6393762, 0, 0.28611898, 0)
+G2L["10"].Rotation = 0
+G2L["10"].Selectable = true
+G2L["10"].SelectionOrder = 0
+G2L["10"].Size = UDim2.new(0, 116, 0, 31)
+G2L["10"].Visible = true
+G2L["10"].ZIndex = 1
+G2L["10"].Parent = G2L["1"]
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["11"].Name = [[UICorner]]
+G2L["11"].CornerRadius = UDim.new(0, 8)
+G2L["11"].Parent = G2L["10"]
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["12"].Name = [[Script]]
+G2L["12"].Parent = G2L["10"]
+
+--ScreenGui.Frame1.TextButton
+G2L["13"].Name = [[TextButton]]
+G2L["13"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["13"].Text = [[Decal spam]]
+G2L["13"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].TextScaled = false
+G2L["13"].TextSize = 14
+G2L["13"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].TextStrokeTransparency = 1
+G2L["13"].TextWrapped = false
+G2L["13"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["13"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["13"].Active = true
+G2L["13"].AnchorPoint = Vector2.new(0, 0)
+G2L["13"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["13"].BackgroundTransparency = 0
+G2L["13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].BorderSizePixel = 0
+G2L["13"].ClipsDescendants = false
+G2L["13"].Draggable = false
+G2L["13"].Position = UDim2.new(0.040935673, 0, 0.49858356, 0)
+G2L["13"].Rotation = 0
+G2L["13"].Selectable = true
+G2L["13"].SelectionOrder = 0
+G2L["13"].Size = UDim2.new(0, 128, 0, 41)
+G2L["13"].Visible = true
+G2L["13"].ZIndex = 1
+G2L["13"].Parent = G2L["1"]
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["14"].Name = [[UICorner]]
+G2L["14"].CornerRadius = UDim.new(0, 8)
+G2L["14"].Parent = G2L["13"]
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["15"].Name = [[Script]]
+G2L["15"].Parent = G2L["13"]
+
+--ScreenGui.Frame1.TextButton
+G2L["16"].Name = [[TextButton]]
+G2L["16"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["16"].Text = [[Disco]]
+G2L["16"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["16"].TextScaled = false
+G2L["16"].TextSize = 14
+G2L["16"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["16"].TextStrokeTransparency = 1
+G2L["16"].TextWrapped = false
+G2L["16"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["16"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["16"].Active = true
+G2L["16"].AnchorPoint = Vector2.new(0, 0)
+G2L["16"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["16"].BackgroundTransparency = 0
+G2L["16"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["16"].BorderSizePixel = 0
+G2L["16"].ClipsDescendants = false
+G2L["16"].Draggable = false
+G2L["16"].Position = UDim2.new(0.3528265, 0, 0.49858356, 0)
+G2L["16"].Rotation = 0
+G2L["16"].Selectable = true
+G2L["16"].SelectionOrder = 0
+G2L["16"].Size = UDim2.new(0, 125, 0, 41)
+G2L["16"].Visible = true
+G2L["16"].ZIndex = 1
+G2L["16"].Parent = G2L["1"]
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["17"].Name = [[UICorner]]
+G2L["17"].CornerRadius = UDim.new(0, 8)
+G2L["17"].Parent = G2L["16"]
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["18"].Name = [[Script]]
+G2L["18"].Parent = G2L["16"]
+
+--ScreenGui.Frame1.TextButton
+G2L["19"].Name = [[TextButton]]
+G2L["19"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["19"].Text = [[Unanchor]]
+G2L["19"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["19"].TextScaled = false
+G2L["19"].TextSize = 14
+G2L["19"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["19"].TextStrokeTransparency = 1
+G2L["19"].TextWrapped = false
+G2L["19"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["19"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["19"].Active = true
+G2L["19"].AnchorPoint = Vector2.new(0, 0)
+G2L["19"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["19"].BackgroundTransparency = 0
+G2L["19"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["19"].BorderSizePixel = 0
+G2L["19"].ClipsDescendants = false
+G2L["19"].Draggable = false
+G2L["19"].Position = UDim2.new(0.63937616, 0, 0.49858356, 0)
+G2L["19"].Rotation = 0
+G2L["19"].Selectable = true
+G2L["19"].SelectionOrder = 0
+G2L["19"].Size = UDim2.new(0, 115, 0, 41)
+G2L["19"].Visible = true
+G2L["19"].ZIndex = 1
+G2L["19"].Parent = G2L["1"]
+
+--ScreenGui.Frame1.TextButton.UICorner
+G2L["20"].Name = [[UICorner]]
+G2L["20"].CornerRadius = UDim.new(0, 8)
+G2L["20"].Parent = G2L["19"]
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["21"].Name = [[Script]]
+G2L["21"].Parent = G2L["19"]
+
+--ScreenGui.Frame1.TextBox
+G2L["22"].Name = [[TextBox]]
+G2L["22"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["22"].MultiLine = false
+G2L["22"].PlaceholderColor3 = Color3.new(0.7, 0.7, 0.7)
+G2L["22"].PlaceholderText = [[]]
+G2L["22"].Text = [[]]
+G2L["22"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["22"].TextScaled = false
+G2L["22"].TextSize = 14
+G2L["22"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["22"].TextStrokeTransparency = 1
+G2L["22"].TextWrapped = false
+G2L["22"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["22"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["22"].Active = true
+G2L["22"].AnchorPoint = Vector2.new(0, 0)
+G2L["22"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["22"].BackgroundTransparency = 0
+G2L["22"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["22"].BorderSizePixel = 0
+G2L["22"].ClipsDescendants = false
+G2L["22"].Draggable = false
+G2L["22"].Position = UDim2.new(1.0194932, 0, 0.18696883, 0)
+G2L["22"].Rotation = 0
+G2L["22"].Selectable = true
+G2L["22"].SelectionOrder = 0
+G2L["22"].Size = UDim2.new(0, 200, 0, 50)
+G2L["22"].Visible = true
+G2L["22"].ZIndex = 1
+G2L["22"].Parent = G2L["1"]
+
+--ScreenGui.Frame1.TextLabel
+G2L["23"].Name = [[TextLabel]]
+G2L["23"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["23"].Text = [[Music here]]
+G2L["23"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["23"].TextScaled = false
+G2L["23"].TextSize = 14
+G2L["23"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["23"].TextStrokeTransparency = 1
+G2L["23"].TextWrapped = false
+G2L["23"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["23"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["23"].Active = false
+G2L["23"].AnchorPoint = Vector2.new(0, 0)
+G2L["23"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["23"].BackgroundTransparency = 0
+G2L["23"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["23"].BorderSizePixel = 0
+G2L["23"].ClipsDescendants = false
+G2L["23"].Draggable = false
+G2L["23"].Position = UDim2.new(1.0194932, 0, 0, 0)
+G2L["23"].Rotation = 0
+G2L["23"].Selectable = false
+G2L["23"].SelectionOrder = 0
+G2L["23"].Size = UDim2.new(0, 200, 0, 27)
+G2L["23"].Visible = true
+G2L["23"].ZIndex = 1
+G2L["23"].Parent = G2L["1"]
+
+--ScreenGui.Frame1.TextButton
+G2L["24"].Name = [[TextButton]]
+G2L["24"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["24"].Text = [[THEME]]
+G2L["24"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["24"].TextScaled = false
+G2L["24"].TextSize = 70
+G2L["24"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["24"].TextStrokeTransparency = 1
+G2L["24"].TextWrapped = false
+G2L["24"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["24"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["24"].Active = true
+G2L["24"].AnchorPoint = Vector2.new(0, 0)
+G2L["24"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["24"].BackgroundTransparency = 0
+G2L["24"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["24"].BorderSizePixel = 0
+G2L["24"].ClipsDescendants = false
+G2L["24"].Draggable = false
+G2L["24"].Position = UDim2.new(0.023391783, 0, 0.7053824, 0)
+G2L["24"].Rotation = 0
+G2L["24"].Selectable = true
+G2L["24"].SelectionOrder = 0
+G2L["24"].Size = UDim2.new(0, 494, 0, 98)
+G2L["24"].Visible = true
+G2L["24"].ZIndex = 1
+G2L["24"].Parent = G2L["1"]
+
+--ScreenGui.Frame1.TextButton.Script
+G2L["25"].Name = [[Script]]
+G2L["25"].Parent = G2L["24"]
+
+--ScreenGui.Frame1.TextLabel
+G2L["26"].Name = [[TextLabel]]
+G2L["26"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["26"].Text = [[By Brostop915]]
+G2L["26"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["26"].TextScaled = false
+G2L["26"].TextSize = 20
+G2L["26"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["26"].TextStrokeTransparency = 1
+G2L["26"].TextWrapped = false
+G2L["26"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["26"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["26"].Active = false
+G2L["26"].AnchorPoint = Vector2.new(0, 0)
+G2L["26"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["26"].BackgroundTransparency = 1
+G2L["26"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["26"].BorderSizePixel = 0
+G2L["26"].ClipsDescendants = false
+G2L["26"].Draggable = false
+G2L["26"].Position = UDim2.new(0.09234601, 0, 0.07393065, 0)
+G2L["26"].Rotation = 0
+G2L["26"].Selectable = false
+G2L["26"].SelectionOrder = 0
+G2L["26"].Size = UDim2.new(0, 417, 0, 50)
+G2L["26"].Visible = true
+G2L["26"].ZIndex = 1
+G2L["26"].Parent = G2L["1"]
+
+--ScreenGui.Frame
+G2L["27"].Name = [[Frame]]
+G2L["27"].Active = false
+G2L["27"].AnchorPoint = Vector2.new(0, 0)
+G2L["27"].BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+G2L["27"].BackgroundTransparency = 0
+G2L["27"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["27"].BorderSizePixel = 0
+G2L["27"].ClipsDescendants = false
+G2L["27"].Draggable = false
+G2L["27"].Position = UDim2.new(0.20617531, 0, 0.1785124, 0)
+G2L["27"].Rotation = 0
+G2L["27"].Selectable = false
+G2L["27"].SelectionOrder = 0
+G2L["27"].Size = UDim2.new(0, 444, 0, 360)
+G2L["27"].Visible = true
+G2L["27"].ZIndex = 1
+G2L["27"].Parent = G2L["0"]
+
+--ScreenGui.Frame.UICorner
+G2L["28"].Name = [[UICorner]]
+G2L["28"].CornerRadius = UDim.new(0, 8)
+G2L["28"].Parent = G2L["27"]
+
+--ScreenGui.Frame.TextBox
+G2L["29"].Name = [[TextBox]]
+G2L["29"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["29"].MultiLine = false
+G2L["29"].PlaceholderColor3 = Color3.new(0.7, 0.7, 0.7)
+G2L["29"].PlaceholderText = [[]]
+G2L["29"].Text = [[]]
+G2L["29"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["29"].TextScaled = false
+G2L["29"].TextSize = 14
+G2L["29"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["29"].TextStrokeTransparency = 1
+G2L["29"].TextWrapped = false
+G2L["29"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["29"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["29"].Active = true
+G2L["29"].AnchorPoint = Vector2.new(0, 0)
+G2L["29"].BackgroundColor3 = Color3.fromRGB(147, 147, 147)
+G2L["29"].BackgroundTransparency = 0
+G2L["29"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["29"].BorderSizePixel = 0
+G2L["29"].ClipsDescendants = false
+G2L["29"].Draggable = false
+G2L["29"].Position = UDim2.new(0.0945946, 0, 0.17222223, 0)
+G2L["29"].Rotation = 0
+G2L["29"].Selectable = true
+G2L["29"].SelectionOrder = 0
+G2L["29"].Size = UDim2.new(0, 361, 0, 100)
+G2L["29"].Visible = true
+G2L["29"].ZIndex = 1
+G2L["29"].Parent = G2L["27"]
+
+--ScreenGui.Frame.TextBox.UIGradient
+G2L["30"].Name = [[UIGradient]]
+G2L["30"].Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(105, 255, 35)), ColorSequenceKeypoint.new(1, Color3.fromRGB(105, 255, 35))};
+G2L["30"].Enabled = true
+G2L["30"].Rotation = 0
+G2L["30"].Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)};
+G2L["30"].Parent = G2L["29"]
+
+--ScreenGui.Frame.TextBox.UICorner
+G2L["31"].Name = [[UICorner]]
+G2L["31"].CornerRadius = UDim.new(0, 8)
+G2L["31"].Parent = G2L["29"]
+
+--ScreenGui.Frame.TextLabel
+G2L["32"].Name = [[TextLabel]]
+G2L["32"].FontFace = Font.new([[rbxasset://fonts/families/IndieFlower.json]], Enum.FontWeight.ExtraLight, Enum.FontStyle.Normal)
+G2L["32"].Text = [[Key for L0LGUI]]
+G2L["32"].TextColor3 = Color3.fromRGB(181, 181, 181)
+G2L["32"].TextScaled = false
+G2L["32"].TextSize = 60
+G2L["32"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["32"].TextStrokeTransparency = 1
+G2L["32"].TextWrapped = false
+G2L["32"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["32"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["32"].Active = false
+G2L["32"].AnchorPoint = Vector2.new(0, 0)
+G2L["32"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["32"].BackgroundTransparency = 1
+G2L["32"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["32"].BorderSizePixel = 0
+G2L["32"].ClipsDescendants = false
+G2L["32"].Draggable = false
+G2L["32"].Position = UDim2.new(0, 0, 0, 0)
+G2L["32"].Rotation = 0
+G2L["32"].Selectable = false
+G2L["32"].SelectionOrder = 0
+G2L["32"].Size = UDim2.new(0, 444, 0, 51)
+G2L["32"].Visible = true
+G2L["32"].ZIndex = 1
+G2L["32"].Parent = G2L["27"]
+
+--ScreenGui.Frame.TextButton
+G2L["33"].Name = [[TextButton]]
+G2L["33"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["33"].Text = [[Login]]
+G2L["33"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["33"].TextScaled = false
+G2L["33"].TextSize = 30
+G2L["33"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["33"].TextStrokeTransparency = 1
+G2L["33"].TextWrapped = false
+G2L["33"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["33"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["33"].Active = true
+G2L["33"].AnchorPoint = Vector2.new(0, 0)
+G2L["33"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["33"].BackgroundTransparency = 0
+G2L["33"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["33"].BorderSizePixel = 0
+G2L["33"].ClipsDescendants = false
+G2L["33"].Draggable = false
+G2L["33"].Position = UDim2.new(0.29504505, 0, 0.8472222, 0)
+G2L["33"].Rotation = 0
+G2L["33"].Selectable = true
+G2L["33"].SelectionOrder = 0
+G2L["33"].Size = UDim2.new(0, 176, 0, 45)
+G2L["33"].Visible = true
+G2L["33"].ZIndex = 1
+G2L["33"].Parent = G2L["27"]
+
+--ScreenGui.Frame.TextButton.UICorner
+G2L["34"].Name = [[UICorner]]
+G2L["34"].CornerRadius = UDim.new(0, 8)
+G2L["34"].Parent = G2L["33"]
+
+--ScreenGui.Frame.TextButton.LocalScript
+G2L["35"].Name = [[LocalScript]]
+G2L["35"].Parent = G2L["33"]
+
+--[[
+    Scripts
+--]]
+--ScreenGui.Frame1.TextLabel.LocalScript
+local function C_G2L_3()
+local script = G2L["3"]
+-- Suponemos que el TextLabel se encuentra en un ScreenGui
+local textLabel = script.Parent
+local screenGui = textLabel.Parent
+
+-- Variables para almacenar la posición del mouse y la GUI
+local dragging = false
+local dragInput, mousePos, framePos
+
+-- Función para actualizar la posición de la GUI
+local function update(input)
+	local delta = input.Position - mousePos
+	screenGui.Position = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
+end
+
+-- Eventos al empezar a arrastrar
+textLabel.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		dragging = true
+		mousePos = input.Position
+		framePos = screenGui.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+-- Evento al mover el mouse mientras se arrastra
+textLabel.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement then
+		dragInput = input
+	end
+end)
+
+-- Evento para actualizar la posición de la GUI
+game:GetService("UserInputService").InputChanged:Connect(function(input)
+	if dragging and input == dragInput then
+		update(input)
+	end
+end)
+
+end
+task.spawn(C_G2L_3)
+
+
+--ScreenGui.Frame.TextButton.LocalScript
+local function C_G2L_35()
+local script = G2L["35"]
+script.Parent.MouseButton1Click:Connect(function()
+	if script.Parent.Parent.TextBox.Text == "secret" then
+		script.Parent.Parent.Parent.Frame1.Visible = true
+		script.Parent.Parent.Parent.Frame.Visible = false
+	else
+		warn("Error")
+	end
+end)
+end
+task.spawn(C_G2L_35)
+
+
+
+return G2L["0"], require;
