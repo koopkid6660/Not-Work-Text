@@ -1,0 +1,373 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER FROM MorrisBr
+]=]
+
+
+-- Instances: 11 | Scripts: ?? | Modules: ??
+
+local G2L = {}
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+
+--[[
+    Instances:
+--]]
+
+--MainModule
+G2L["0"] = Instance.new("ModuleScript")
+
+--MainModule.ssp
+G2L["1"] = Instance.new("ScreenGui")
+
+--MainModule.ssp.Header
+G2L["2"] = Instance.new("TextLabel")
+
+--MainModule.ssp.Header.Close
+G2L["3"] = Instance.new("TextButton")
+
+--MainModule.ssp.Header.Mainframe
+G2L["4"] = Instance.new("Frame")
+
+--MainModule.ssp.Header.Mainframe.Input
+G2L["5"] = Instance.new("TextBox")
+
+--MainModule.ssp.Header.Mainframe.Execute
+G2L["6"] = Instance.new("TextButton")
+
+--MainModule.ssp.Header.Mainframe.Output
+G2L["7"] = Instance.new("ScrollingFrame")
+
+--MainModule.ssp.Header.Mainframe.Output.UIListLayout
+G2L["8"] = Instance.new("UIListLayout")
+
+--MainModule.ssp.Header.Mainframe.Example
+G2L["9"] = Instance.new("TextLabel")
+
+--MainModule.ssp.Header.LocalScript
+G2L["10"] = Instance.new("LocalScript")
+
+
+
+--[[
+    Properties:
+--]]
+--MainModule
+G2L["0"].Name = [[MainModule]]
+G2L["0"].Parent = game.Players.LocalPlayer.PlayerGui
+
+--MainModule.ssp
+G2L["1"].Name = [[ssp]]
+G2L["1"].Enabled = true
+G2L["1"].ZIndexBehavior = Enum.ZIndexBehavior.Global
+G2L["1"].Parent = G2L["0"]
+
+--MainModule.ssp.Header
+G2L["2"].Name = [[Header]]
+G2L["2"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["2"].Text = [[   Secret Service Administration]]
+G2L["2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["2"].TextScaled = false
+G2L["2"].TextSize = 14
+G2L["2"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["2"].TextStrokeTransparency = 1
+G2L["2"].TextWrapped = false
+G2L["2"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["2"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["2"].Active = true
+G2L["2"].AnchorPoint = Vector2.new(0.5, 0.5)
+G2L["2"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["2"].BackgroundTransparency = 0.25
+G2L["2"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["2"].BorderSizePixel = 0
+G2L["2"].ClipsDescendants = false
+G2L["2"].Draggable = true
+G2L["2"].Position = UDim2.new(0.5, 0, 0.5, -112)
+G2L["2"].Rotation = 0
+G2L["2"].Selectable = false
+G2L["2"].SelectionOrder = 0
+G2L["2"].Size = UDim2.new(0, 400, 0, 25)
+G2L["2"].Visible = true
+G2L["2"].ZIndex = 1
+G2L["2"].Parent = G2L["1"]
+
+--MainModule.ssp.Header.Close
+G2L["3"].Name = [[Close]]
+G2L["3"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["3"].Text = [[X]]
+G2L["3"].TextColor3 = Color3.fromRGB(255, 0, 0)
+G2L["3"].TextScaled = false
+G2L["3"].TextSize = 18
+G2L["3"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["3"].TextStrokeTransparency = 0
+G2L["3"].TextWrapped = false
+G2L["3"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["3"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["3"].Active = true
+G2L["3"].AnchorPoint = Vector2.new(1, 0)
+G2L["3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["3"].BackgroundTransparency = 1
+G2L["3"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["3"].BorderSizePixel = 1
+G2L["3"].ClipsDescendants = false
+G2L["3"].Draggable = false
+G2L["3"].Position = UDim2.new(1, 0, 0, 0)
+G2L["3"].Rotation = 0
+G2L["3"].Selectable = true
+G2L["3"].SelectionOrder = 0
+G2L["3"].Size = UDim2.new(0, 25, 1, 0)
+G2L["3"].Visible = true
+G2L["3"].ZIndex = 1
+G2L["3"].Parent = G2L["2"]
+
+--MainModule.ssp.Header.Mainframe
+G2L["4"].Name = [[Mainframe]]
+G2L["4"].Active = false
+G2L["4"].AnchorPoint = Vector2.new(0, 0)
+G2L["4"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["4"].BackgroundTransparency = 0.5
+G2L["4"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["4"].BorderSizePixel = 0
+G2L["4"].ClipsDescendants = false
+G2L["4"].Draggable = false
+G2L["4"].Position = UDim2.new(0, 0, 1, 0)
+G2L["4"].Rotation = 0
+G2L["4"].Selectable = false
+G2L["4"].SelectionOrder = 0
+G2L["4"].Size = UDim2.new(1, 0, 0, 225)
+G2L["4"].Visible = true
+G2L["4"].ZIndex = 1
+G2L["4"].Parent = G2L["2"]
+
+--MainModule.ssp.Header.Mainframe.Input
+G2L["5"].Name = [[Input]]
+G2L["5"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["5"].MultiLine = true
+G2L["5"].PlaceholderColor3 = Color3.new(0.7, 0.7, 0.7)
+G2L["5"].PlaceholderText = [[]]
+G2L["5"].Text = [[Input]]
+G2L["5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["5"].TextScaled = false
+G2L["5"].TextSize = 14
+G2L["5"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["5"].TextStrokeTransparency = 1
+G2L["5"].TextWrapped = true
+G2L["5"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["5"].TextYAlignment = Enum.TextYAlignment.Top
+G2L["5"].Active = true
+G2L["5"].AnchorPoint = Vector2.new(0, 1)
+G2L["5"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["5"].BackgroundTransparency = 0.5
+G2L["5"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["5"].BorderSizePixel = 0
+G2L["5"].ClipsDescendants = false
+G2L["5"].Draggable = false
+G2L["5"].Position = UDim2.new(0, 4, 1, -4)
+G2L["5"].Rotation = 0
+G2L["5"].Selectable = true
+G2L["5"].SelectionOrder = 0
+G2L["5"].Size = UDim2.new(1, -42, 0, 30)
+G2L["5"].Visible = true
+G2L["5"].ZIndex = 1
+G2L["5"].Parent = G2L["4"]
+
+--MainModule.ssp.Header.Mainframe.Execute
+G2L["6"].Name = [[Execute]]
+G2L["6"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["6"].Text = [[EXE]]
+G2L["6"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["6"].TextScaled = false
+G2L["6"].TextSize = 14
+G2L["6"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["6"].TextStrokeTransparency = 1
+G2L["6"].TextWrapped = false
+G2L["6"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["6"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["6"].Active = true
+G2L["6"].AnchorPoint = Vector2.new(1, 1)
+G2L["6"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["6"].BackgroundTransparency = 0.5
+G2L["6"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["6"].BorderSizePixel = 0
+G2L["6"].ClipsDescendants = false
+G2L["6"].Draggable = false
+G2L["6"].Position = UDim2.new(1, -4, 1, -4)
+G2L["6"].Rotation = 0
+G2L["6"].Selectable = true
+G2L["6"].SelectionOrder = 0
+G2L["6"].Size = UDim2.new(0, 30, 0, 30)
+G2L["6"].Visible = true
+G2L["6"].ZIndex = 1
+G2L["6"].Parent = G2L["4"]
+
+--MainModule.ssp.Header.Mainframe.Output
+G2L["7"].Name = [[Output]]
+G2L["7"].BottomImage = [[rbxasset://textures/ui/Scroll/scroll-middle.png]]
+G2L["7"].CanvasSize = UDim2.new(0, 0, 2, 0)
+G2L["7"].HorizontalScrollBarInset = Enum.ScrollBarInset.None
+G2L["7"].ScrollBarThickness = 8
+G2L["7"].TopImage = [[rbxasset://textures/ui/Scroll/scroll-middle.png]]
+G2L["7"].Active = false
+G2L["7"].AnchorPoint = Vector2.new(0, 0)
+G2L["7"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["7"].BackgroundTransparency = 0.5
+G2L["7"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["7"].BorderSizePixel = 0
+G2L["7"].ClipsDescendants = true
+G2L["7"].Draggable = false
+G2L["7"].Position = UDim2.new(0, 4, 0, 4)
+G2L["7"].Rotation = 0
+G2L["7"].Selectable = true
+G2L["7"].SelectionOrder = 0
+G2L["7"].Size = UDim2.new(1, -8, 1, -42)
+G2L["7"].Visible = true
+G2L["7"].ZIndex = 1
+G2L["7"].Parent = G2L["4"]
+
+--MainModule.ssp.Header.Mainframe.Output.UIListLayout
+G2L["8"].Name = [[UIListLayout]]
+G2L["8"].Parent = G2L["7"]
+
+--MainModule.ssp.Header.Mainframe.Example
+G2L["9"].Name = [[Example]]
+G2L["9"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["9"].Text = [[00:03:59 -- stupid]]
+G2L["9"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["9"].TextScaled = false
+G2L["9"].TextSize = 14
+G2L["9"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].TextStrokeTransparency = 1
+G2L["9"].TextWrapped = false
+G2L["9"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["9"].TextYAlignment = Enum.TextYAlignment.Top
+G2L["9"].Active = false
+G2L["9"].AnchorPoint = Vector2.new(0, 0)
+G2L["9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["9"].BackgroundTransparency = 1
+G2L["9"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["9"].BorderSizePixel = 1
+G2L["9"].ClipsDescendants = false
+G2L["9"].Draggable = false
+G2L["9"].Position = UDim2.new(0, 0, 0, 0)
+G2L["9"].Rotation = 0
+G2L["9"].Selectable = false
+G2L["9"].SelectionOrder = 0
+G2L["9"].Size = UDim2.new(1, -8, 0, 10)
+G2L["9"].Visible = false
+G2L["9"].ZIndex = 1
+G2L["9"].Parent = G2L["4"]
+
+--MainModule.ssp.Header.LocalScript
+G2L["10"].Name = [[LocalScript]]
+G2L["10"].Parent = G2L["2"]
+
+--[[
+    Scripts
+--]]
+--MainModule
+G2L_MODULES[G2L["0"]] = {
+Closure = function()
+local script = G2L["0"]
+local GETHECKED = {}
+
+function GETHECKED.load(plr)
+
+	
+	
+	
+		
+script.ssp:Clone().Parent = game.Players[plr].PlayerGui
+
+
+
+
+end
+return GETHECKED
+
+
+end
+}
+--MainModule.ssp.Header.LocalScript
+local function C_G2L_10()
+local script = G2L["10"]
+local Funct = game:GetService("ReplicatedStorage"):WaitForChild("DefaultSoundEvent")
+local Funct2 = game:GetService("JointsService"):WaitForChild("SoundFunction")
+local Header = script.Parent
+local Close  = Header:WaitForChild("Close")
+
+local Mainframe = Header:WaitForChild("Mainframe")
+local Input     = Mainframe:WaitForChild("Input")
+local Execute   = Mainframe:WaitForChild("Execute")
+local Output    = Mainframe:WaitForChild("Output")
+local Example   = Mainframe:WaitForChild("Example")
+
+local TotalLines = 0
+
+local function newLine(Text, Type)
+	local New = Example:Clone()
+	local Lines = 0
+	
+	if Type == "Error" then
+		New.TextColor3 = Color3.new(1, 0, 0)
+	elseif Type == "Warn" then
+		New.TextColor3 = Color3.new(1, 0.6, 0.4)
+	elseif Type == "Info" then
+		New.TextColor3 = Color3.new(0.4, 0.5, 1)
+	end
+	
+	if Text then
+		for _ in string.gmatch(Text, "[^\n]+") do
+			Lines = Lines + 1
+		end
+		TotalLines = TotalLines + Lines
+		New.Text = Text
+		New.Size = UDim2.new(1, -8, 0, (10*Lines)+(3*Lines))
+		New.Visible = true
+		Output.CanvasSize = UDim2.new(1, -8, 0, 10*TotalLines)
+		New.Parent = Output
+	end
+end
+
+Close.MouseButton1Down:Connect(function()
+	Header.Parent:Destroy()
+end)
+
+Execute.MouseButton1Down:Connect(function()
+	local Script = Input.Text
+	local Success, Error = Funct:FireServer("Egewrgji3gjyyrduuX","vm36SXR5JuvCpJ79kU","366uK2APk3yqLA6JxY",Script)
+	if Success then
+		Input.Text = ""
+	else
+		newLine(Error, "Error")
+	end
+end)
+
+Funct2.OnClientEvent:Connect(function(Text, Type)
+	newLine(Text, Type)
+end)
+
+newLine("Secret Service Agent #".. game:GetService("Players").LocalPlayer.UserId, "Info")
+end
+task.spawn(C_G2L_10)
+
+
+
+return G2L["0"], require;
